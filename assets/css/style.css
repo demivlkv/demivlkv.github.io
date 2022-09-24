@@ -1,0 +1,33 @@
+/* CSS VARIABLES */
+@import url(./partials/variables.css);
+
+/* NAVIGATION */
+
+.header .main-menu .navbar .navbar-brand {
+    padding: 0 2rem 0 5rem;
+}
+
+.header .main-menu .navbar {
+    padding: 1rem 20rem;
+}
+
+.header .main-menu .nav-item .nav-link {
+    font: normal 500 15px/2px var(--text);
+    text-transform: uppercase;
+    padding: 1.7rem;
+    color: var(--title);
+}
+
+.header .main-menu .navbar-nav .active a {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header .main-menu .navbar-nav a:hover {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
