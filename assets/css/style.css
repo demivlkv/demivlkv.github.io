@@ -1,6 +1,9 @@
 /* CSS VARIABLES */
 @import url(./partials/variables.css);
 
+/* GLOBAL STYLING */
+@import url(./partials/global.css);
+
 /* NAVIGATION */
 
 .header .main-menu .navbar .navbar-brand {
@@ -30,4 +33,28 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+
+/* INTRODUCTION SECTION */
+
+.site-main .intro .site-title h3 {
+    padding-top: 15%;
+}
+
+.site-main .intro .site-title h3::after {
+    content: "";
+    height: 2px;
+    width: 18vw;
+    background: #444;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+
+.site-main .intro .site-title h1 {
+    font-size: 5rem;
+}
+
+.site-main .intro .site-title h4 {
+    font-size: 1.5rem;
 }
