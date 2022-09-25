@@ -37,6 +37,10 @@
 
 /* INTRODUCTION SECTION */
 
+section.intro {
+    margin-bottom: 15%;;
+}
+
 .site-main .intro .site-title h3 {
     padding-top: 15%;
 }
@@ -57,4 +61,24 @@
 
 .site-main .intro .site-title h4 {
     font-size: 1.5rem;
+}
+
+/* ABOUT ME SECTION */
+
+.site-main .about-image {
+    width: 60%;
+}
+
+.site-main .about-me {
+    padding: 8rem 5rem;
+}
+
+.site-main .about-me .about-title h2 > span {
+    display: block;
+    font: normal bold 49px/60px var(--font);
+    letter-spacing: 20px;;
+}
+
+.site-main .about-me .about-title .paragraph > p {
+    padding: .4rem 0;
 }
