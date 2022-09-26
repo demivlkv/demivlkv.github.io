@@ -8,13 +8,22 @@
     text-transform: uppercase;
 }
 
+/* LINKS */
+
+a {
+    display: inline-block;
+    color: inherit;
+    font-family: var(--font);
+    text-decoration: none;
+}
+
 /* BUTTONS */
 
 .button {
     padding: .8rem 2.2rem;
     font: normal 500 16px/20px var(--font);
     position: relative;
-    border: 3px solid transparent;
+    border: 0;
     border-radius: 4px;
 }
 
@@ -57,4 +66,31 @@
 p.para {
     color: var(--text);
     font: normal 500 16px/25px var(--font);
+}
+
+/* SECTIONS */
+
+section {
+    min-height: 100vh;
+    padding: 3rem 18rem;
+}
+
+.section {
+    transform: translateY(-100%) scale(0);
+    transition: all .6s ease-in-out;
+    background-color: var(--primary);
+}
+
+.section#about-me {
+    display: none;
+    transform: translateY(0) scale(0);
+}
+
+.section#portfolio {
+    display: none;
+    transform: translateY(0) scale(0);
+}
+.section#contact {
+    display: none;
+    transform: translateY(0) scale(0);
 }

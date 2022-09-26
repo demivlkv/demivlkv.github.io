@@ -35,10 +35,52 @@
     background-clip: text;
 }
 
+/* SIDE MENU */
+
+#menu {
+    position: fixed;
+    z-index: 10;
+    top: 50%; right: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-50%);
+}
+
+#menu .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    margin: .7rem 0;
+    padding: 1rem;
+    box-shadow: var(--box-shadow);
+    background-color: var(--grey-4);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#menu .menu i {
+    color: var(--grey-2);
+    font-size: 1.2rem;
+    pointer-events: none;
+}
+
+#menu .menu.active-btn {
+    background-color: var(--secondary) !important;
+    transition: all .6s ease-in-out;
+}
+
+#menu .menu.active-btn i {
+    color: var(--grey-4);
+}
+
 /* INTRODUCTION SECTION */
 
-section.intro {
-    margin-bottom: 15%;;
+section#intro {
+    margin-bottom: 15%;
 }
 
 .site-main .intro .site-title h3 {
@@ -65,7 +107,7 @@ section.intro {
 
 /* ABOUT ME SECTION */
 
-.site-main .about-image {
+.site-main .about-image img {
     width: 60%;
 }
 
@@ -75,8 +117,8 @@ section.intro {
 
 .site-main .about-me .about-title h2 > span {
     display: block;
-    font: normal bold 49px/60px var(--font);
-    letter-spacing: 20px;;
+    font: normal bold 36px/60px var(--font);
+    letter-spacing: 20px;
 }
 
 .site-main .about-me .about-title .paragraph > p {
