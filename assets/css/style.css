@@ -11,7 +11,7 @@
 }
 
 .header .main-menu .navbar {
-    padding: 1rem 20rem;
+    padding: 1rem 10rem;
 }
 
 .header .main-menu .nav-item .nav-link {
@@ -70,7 +70,7 @@
 
 .side-menu .icon-menu.active-btn {
     background-color: var(--secondary) !important;
-    transition: all .6s ease-in-out;
+    transition: all .4s ease-in-out;
 }
 
 .side-menu .icon-menu.active-btn i {
@@ -78,10 +78,6 @@
 }
 
 /* INTRODUCTION SECTION */
-
-section#home {
-    margin-bottom: 15%;
-}
 
 .site-main #home .site-title h3 {
     padding-top: 15%;
@@ -103,10 +99,6 @@ section#home {
 
 .site-main #home .site-title h4 {
     font-size: 1.5rem;
-}
-
-.title span.name {
-    color: var(--secondary);
 }
 
 .cv-btn {
@@ -132,6 +124,7 @@ section#home {
     align-items: center;
     padding: 1rem;
     background-color: var(--secondary);
+    color: var(--grey-3);
     border-radius: 50%;
 }
 
@@ -141,12 +134,13 @@ section#home {
     top: 0;
     right: 0;
     transform: translateX(100%);
-    transition: all 0.4s ease-out;
+    transition: all .4s ease-out;
     z-index: -1;
 }
 
 .cv-btn:hover {
-    transition: all 0.4s ease-out;
+    transition: all .4s ease-out;
+    color: var(--grey-3);
 }
 
 .cv-btn:hover::before {
@@ -154,7 +148,7 @@ section#home {
     height: 100%;
     background-color: var(--secondary);
     transform: translateX(0);
-    transition: all 0.4s ease-out;
+    transition: all .4s ease-out;
 }
 
 /* ABOUT ME SECTION */
@@ -164,15 +158,92 @@ section#home {
 }
 
 .site-main #about {
-    padding: 8rem 5rem;
+    padding: 0 10rem;
 }
 
 .site-main #about .about-title h2 > span {
     display: block;
-    font: normal bold 36px/60px var(--font);
-    letter-spacing: 20px;
+    font: normal 400 3rem/60px var(--font);
+    letter-spacing: .7rem;
 }
 
 .site-main #about .about-title .paragraph > p {
     padding: .4rem 0;
+}
+
+/* PORTFOLIO SECTION */
+
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio-entry {
+    border: 1px solid var(--border-color);
+    text-align: center;
+    padding: 1.5rem 0;
+    width: 100%;
+    cursor: pointer;
+    transition: transform .4s ease;
+}
+
+.portfolio-entry > img {
+    width: 95%;
+    border-radius: 3px;
+}
+
+.portfolio-entry .hover-links {
+    width: 95.3%;
+    height: 86%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 9px; top: 24px;
+
+    background-color: var(--secondary);
+    border-radius: 3px;
+    opacity: 0;
+    transform: scale(0);
+    transition: all .4s ease-in-out;
+}
+
+.portfolio-entry .hover-links h3 {
+    margin-bottom: 1.5rem;
+    color: var(--grey-4);
+    font-size: 1.5rem;
+}
+
+.portfolio-entry .hover-links .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-entry .hover-links .icons i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem;
+    width: 50px;
+    height: 50px;
+
+    background-color: var(--primary);
+    color: var(--white);
+    font-size: 1.5rem;
+    border-radius: 50%;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+
+.portfolio-entry .hover-links .icons i:hover {
+    background-color: var(--white);
+    color: var(--primary);
+}
+
+.portfolio-entry:hover .hover-links {
+    opacity: .9;
+    transform: scale(1);
 }

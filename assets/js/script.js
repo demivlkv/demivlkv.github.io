@@ -4,7 +4,7 @@ const sectionBtns = document.querySelectorAll('.side-menu');
 const sectBtn = document.querySelectorAll('.icon-menu');
 
 function pageTransitions() {
-    // create active class for button click
+    // create active class for side-menu button click
     for (let i = 0; i < sectBtn.length; i++) {
         sectBtn[i].addEventListener('click', function() {
             let currentBtn = document.querySelectorAll('.active-btn');
@@ -20,7 +20,7 @@ function pageTransitions() {
 
         if (id) {
             // add 'active' class to target button
-            sectionBtns.forEach((btn) => {
+            sectionBtns.forEach(btn => {
                 btn.classList.remove('active');
             })
             e.target.classList.add('active');
