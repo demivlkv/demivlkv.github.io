@@ -1,10 +1,10 @@
-const siteMain = document.querySelector('.main-site');
-const section = document.querySelectorAll('.section');
-const sectionBtns = document.querySelectorAll('menu');
-const sectBtn = document.querySelectorAll('.menu');
+const siteMain = document.querySelector('.site-main');
+const sections = document.querySelectorAll('.section');
+const sectionBtns = document.querySelectorAll('.side-menu');
+const sectBtn = document.querySelectorAll('.icon-menu');
 
 function pageTransitions() {
-    // button click - active class
+    // create active class for button click
     for (let i = 0; i < sectBtn.length; i++) {
         sectBtn[i].addEventListener('click', function() {
             let currentBtn = document.querySelectorAll('.active-btn');
@@ -13,5 +13,27 @@ function pageTransitions() {
             this.className += ' active-btn';
         })
     }
+
+    // activate sections
+    siteMain.addEventListener('click', (e) => {
+        const id = e.target.dataset.id;
+
+        if (id) {
+            // add 'active' class to target button
+            sectionBtns.forEach((btn) => {
+                btn.classList.remove('active');
+            })
+            e.target.classList.add('active');
+
+            // hide other sections
+            sections.forEach((section) => {
+                section.classList.remove('active');
+            })
+
+            const element = document.getElementById(id);
+            element.classList.add('active');
+        }
+    })
 };
+
 pageTransitions();

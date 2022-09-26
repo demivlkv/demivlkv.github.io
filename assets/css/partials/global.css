@@ -1,7 +1,7 @@
 /* GLOBAL CLASSES */
 
 .title {
-    font: normal bold 50px/72px var(--font);
+    font: normal 500 3rem/72px var(--font);
 }
 
 .text-uppercase {
@@ -63,7 +63,7 @@ a {
     box-shadow: var(--box-shadow);
 }
 
-p.para {
+p.text {
     color: var(--text);
     font: normal 500 16px/25px var(--font);
 }
@@ -76,21 +76,23 @@ section {
 }
 
 .section {
-    transform: translateY(-100%) scale(0);
-    transition: all .6s ease-in-out;
+    display: none;
     background-color: var(--primary);
+    transform: translateY(-100%) scale(0);
+    transition: all .4s ease-in-out;
 }
 
-.section#about-me {
-    display: none;
-    transform: translateY(0) scale(0);
+.active {
+    display: block;
+    animation: display 1s ease-in-out;
+    transform: translateY(0) scaleY(1);
 }
 
-.section#portfolio {
-    display: none;
-    transform: translateY(0) scale(0);
-}
-.section#contact {
-    display: none;
-    transform: translateY(0) scale(0);
+@keyframes display {
+    0% {
+        transform: translateY(-100%) scaleY(0);
+    }
+    100% {
+        transform: translateY(0) scaleY(1);
+    }
 }

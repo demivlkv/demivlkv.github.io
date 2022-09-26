@@ -37,7 +37,7 @@
 
 /* SIDE MENU */
 
-#menu {
+.side-menu {
     position: fixed;
     z-index: 10;
     top: 50%; right: 3%;
@@ -48,7 +48,7 @@
     transform: translateY(-50%);
 }
 
-#menu .menu {
+.side-menu .icon-menu {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,32 +62,32 @@
     cursor: pointer;
 }
 
-#menu .menu i {
+.side-menu .icon-menu i {
     color: var(--grey-2);
     font-size: 1.2rem;
     pointer-events: none;
 }
 
-#menu .menu.active-btn {
+.side-menu .icon-menu.active-btn {
     background-color: var(--secondary) !important;
     transition: all .6s ease-in-out;
 }
 
-#menu .menu.active-btn i {
+.side-menu .icon-menu.active-btn i {
     color: var(--grey-4);
 }
 
 /* INTRODUCTION SECTION */
 
-section#intro {
+section#home {
     margin-bottom: 15%;
 }
 
-.site-main .intro .site-title h3 {
+.site-main #home .site-title h3 {
     padding-top: 15%;
 }
 
-.site-main .intro .site-title h3::after {
+.site-main #home .site-title h3::after {
     content: "";
     height: 2px;
     width: 18vw;
@@ -97,12 +97,64 @@ section#intro {
     transform: translateY(-10px);
 }
 
-.site-main .intro .site-title h1 {
+.site-main #home .site-title h1 {
     font-size: 5rem;
 }
 
-.site-main .intro .site-title h4 {
+.site-main #home .site-title h4 {
     font-size: 1.5rem;
+}
+
+.title span.name {
+    color: var(--secondary);
+}
+
+.cv-btn {
+    position: relative;
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    overflow: hidden;
+
+    color: var(--white);
+    line-height: 1rem;
+    border: 1px solid var(--secondary);
+    border-radius: 30px;
+}
+
+.cv-btn .btn-text {
+    padding: 0 1.7rem;
+}
+
+.cv-btn i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--secondary);
+    border-radius: 50%;
+}
+
+.cv-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    transition: all 0.4s ease-out;
+    z-index: -1;
+}
+
+.cv-btn:hover {
+    transition: all 0.4s ease-out;
+}
+
+.cv-btn:hover::before {
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary);
+    transform: translateX(0);
+    transition: all 0.4s ease-out;
 }
 
 /* ABOUT ME SECTION */
@@ -111,16 +163,16 @@ section#intro {
     width: 60%;
 }
 
-.site-main .about-me {
+.site-main #about {
     padding: 8rem 5rem;
 }
 
-.site-main .about-me .about-title h2 > span {
+.site-main #about .about-title h2 > span {
     display: block;
     font: normal bold 36px/60px var(--font);
     letter-spacing: 20px;
 }
 
-.site-main .about-me .about-title .paragraph > p {
+.site-main #about .about-title .paragraph > p {
     padding: .4rem 0;
 }

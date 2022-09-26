@@ -30,5 +30,5 @@ body {
     --box-shadow: 0 3px 15px rgba(0,0,0,.3);
     --gradient: linear-gradient(to right, #051937, #79FCCA);
 
-    --font: 'Helvetica', Arial, sans-serif;
+    --font: 'Jost', Helvetica, Arial, sans-serif;
 }
