@@ -48,7 +48,7 @@
         </div>
     </header>
 
-    <!----- MAIN ----->
+    <!----- BEGIN MAIN ----->
 
     <main class="site-main">
 
@@ -69,7 +69,7 @@
             </div>
         </section>
 
-        <!----- ABOUT ME ----->
+        <!----- ABOUT ME SECTION ----->
 
         <section class="section about" id="about">
             <div class="container-fluid">
@@ -85,26 +85,42 @@
                             <span>about <span class="highlight">me</span>
                         </h2>
                         <div class="paragraph py-4 w-75">
-                            <p class="text">
+                            <p>
                                 Hello! My name is Demi Hayashi. I currently live in Los Angeles.
                             </p>
-                            <p class="text">
+                            <p>
                                 My passion for coding all began back in the early 2000s, when Geocities and MySpace was a trend. Back then, I loved to customize my MySpace profile page with basic HTML, and I was designing & coding websites from scratch with HTML, CSS, & JavaScript. After graduating the University of Florida with a Fine Arts degree, I worked in sales and currently work as a flight attendant. Throughout the years, I have worked on several small projects to help promote local businesses.
                             </p>
-                            <p class="skills">
-                                Technical skills:<br />
-                                <i class="ri-arrow-drop-right-line"></i> HTML5<br />
-                                <i class="ri-arrow-drop-right-line"></i> CSS3<br />
-                                <i class="ri-arrow-drop-right-line"></i> JavaScript<br />
-                                <i class="ri-arrow-drop-right-line"></i> SQL<br />
+                            <p>
+                                Technical skills:
                             </p>
+                            <div class="row">
+                                <div class="col-sm-3 technical-skills">
+                                    <i class="ri-arrow-drop-right-line"></i> HTML5<br />
+                                    <i class="ri-arrow-drop-right-line"></i> CSS3<br />
+                                    <i class="ri-arrow-drop-right-line"></i> JavaScript<br />
+                                    <i class="ri-arrow-drop-right-line"></i> SQL
+                                </div>
+                                <div class="col-sm-3 technical-skills">
+                                    <i class="ri-arrow-drop-right-line"></i> jQuery<br />
+                                    <i class="ri-arrow-drop-right-line"></i> Node.js<br />
+                                    <i class="ri-arrow-drop-right-line"></i> Express.js<br />
+                                    <i class="ri-arrow-drop-right-line"></i> Bootstrap
+                                </div>
+                                <div class="col-sm-3 technical-skills">
+                                    <i class="ri-arrow-drop-right-line"></i> Git<br />
+                                    <i class="ri-arrow-drop-right-line"></i> Heroku<br />
+                                    <i class="ri-arrow-drop-right-line"></i> Photoshop<br />
+                                    <i class="ri-arrow-drop-right-line"></i> InDesign
+                                 </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!----- PORTFOLIO ----->
+        <!----- PORTFOLIO SECTION ----->
 
         <section class="section portfolio" id="portfolio">
             <div class="container-fluid">
@@ -113,7 +129,7 @@
                         <h2 class="title text-uppercase">
                             My <span class="highlight">Works</span>
                         </h2>
-                        <p class="text">
+                        <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, saepe cumque hic quia cupiditate deleniti ipsum laboriosam optio eaque ab!
                         </p>
                     </div>
@@ -224,13 +240,68 @@
             </div>
         </section>
 
-        <!----- CONTACT ----->
+        <!----- CONTACT SECTION ----->
 
         <section class="section contact" id="contact">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-6 col-md-12">
-                    
+                    <div class="col-lg-6 col-md-12 contact-left">
+                        <h2 class="title text-uppercase">
+                            Contact <span class="highlight">Me</span>
+                        </h2>
+
+                        <h3 class="title text-uppercase">Say <span class="highlight">hello</span></h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam alias vel, quod quia provident facere tenetur rem explicabo ipsum molestias.
+                        </p>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="ri-map-pin-line"></i> Location
+                            </div>
+                            <p>
+                                : Los Angeles, California, USA
+                            </p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="ri-at-line"></i> E-mail
+                            </div>
+                            <p>
+                                : hayashi.demi@gmail.com
+                            </p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="ri-phone-line"></i> Phone
+                            </div>
+                            <p>
+                                : 555.867.5309
+                            </p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="ri-earth-line"></i> Languages
+                            </div>
+                            <p>
+                                : English, Japanese
+                            </p>
+                        </div>
+                        <div class="social-media">
+                            <a href="https://www.linkedin.com/in/demihayashi/" target="_blank"><i class="ri-linkedin-fill"></i></a>
+                            <a href="https://github.com/demivlkv" target="_blank"><i class="ri-github-line"></i></a>
+                            <a href="https://www.instagram.com/hii.demii/" target="_blank"><i class="ri-instagram-line"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 contact-right">
+                        <form action="" class="contact-form">
+                            <input type="text" required placeholder="Your Name" />
+                            <input type="text" required placeholder="Your Email" />
+                            <input type="text" required placeholder="Enter Subject" />
+                            <textarea name="" id="contact-textarea" rows="4" placeholder="Message Here..."></textarea>
+                            <div class="submit-btn">
+                                <button type="submit" class="button primary-button">Submit</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -250,7 +321,7 @@
     <!----- NAVIGATION MENU ----->
 
     <footer class="text-center">
-        Website designed & built by Demi Hayashi.<br />
+        Made with <span class="highlight"><i class="ri-heart-3-line"></i></span> by Demi Hayashi.<br />
         &copy; 2022. All rights reserved.
     </footer>
 

@@ -153,22 +153,32 @@
 
 /* ABOUT ME SECTION */
 
-.site-main .about-image img {
+.about-image img {
     width: 60%;
 }
 
-.site-main #about {
+#about {
     padding: 0 10rem;
 }
 
-.site-main #about .about-title h2 > span {
+#about .about-title h2 > span {
     display: block;
-    font: normal 400 3rem/60px var(--font);
-    letter-spacing: .7rem;
 }
 
-.site-main #about .about-title .paragraph > p {
+#about .about-title .paragraph > p {
     padding: .4rem 0;
+}
+
+.technical-skills {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    font: normal 500 16px/25px var(--font);
+}
+
+.technical-skills i {
+    display: flex;
+    align-items: center;
+    color: var(--secondary);
 }
 
 /* PORTFOLIO SECTION */
@@ -213,6 +223,7 @@
 .portfolio-entry .hover-links h3 {
     margin-bottom: 1.5rem;
     color: var(--grey-4);
+    font: normal 500 3rem var(--font);
     font-size: 1.5rem;
 }
 
@@ -246,4 +257,96 @@
 .portfolio-entry:hover .hover-links {
     opacity: .9;
     transform: scale(1);
+}
+
+/* CONTACT SECTION */
+
+.contact {
+    display: flex;
+    padding-top: 3.5rem;
+}
+
+.contact-left {
+    flex: 2;
+}
+
+.contact-left h3 {
+    margin-top: 1rem;
+    font-size: 2rem;
+    letter-spacing: .5rem;
+}
+
+.contact-left .contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font: normal 500 16px/25px var(--font);
+}
+
+.contact-left .contact-item p {
+    margin: .3rem 0 !important;
+    padding: 0 !important;
+}
+
+.contact-icon {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    font: normal 500 16px/25px var(--font);
+}
+
+.contact-icon i {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.contact-left .social-media {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.social-media a, .social-media a:active, .social-media a:visited {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin: 0 .4rem;
+    background-color: var(--grey-6);
+    color: var(--white);
+    border-radius: 50%;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+
+.social-media a:hover {
+    background-color: var(--secondary);
+}
+
+.social-media a i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+}
+
+.social-media i:hover {
+    color: var(--primary);
+}
+
+.contact-right {
+    flex: 3;
+    margin: 3rem;
+}
+
+.contact-right .contact-form {
+    margin: 1.5rem 0;
+}
+
+/* FOOTER */
+
+footer {
+    margin: 2rem 0;
+    font: normal 500 16px/25px var(--font);
+    color: var(--grey-2);
 }

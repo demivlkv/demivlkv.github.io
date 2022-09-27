@@ -1,3 +1,13 @@
+h2 {
+    font: normal 400 3rem/60px var(--font);
+    letter-spacing: .5rem;
+}
+
+p {
+    color: var(--grey-1);
+    font: normal 500 16px/25px var(--font);
+}
+
 /* GLOBAL CLASSES */
 
 .title {
@@ -8,18 +18,8 @@
     text-transform: uppercase;
 }
 
-span.highlight {
+.highlight {
     color: var(--secondary);
-}
-
-p.text {
-    color: var(--grey-1);
-    font: normal 500 16px/25px var(--font);
-}
-
-p.skills {
-    color: var(--grey-1);
-    font: normal 500 16px/25px var(--font);
 }
 
 /* LINKS */
@@ -47,17 +47,18 @@ a:hover {
 }
 
 .button.primary-button {
-    background: var(--gradient);
+    background: var(--secondary);
     background-clip: padding-box;
-    color: whitesmoke;
-    transition: background .6s ease;
+    color: var(--grey-4);
+    text-transform: uppercase;
+    transition: background .4s ease;
     box-shadow: var(--box-shadow);
 }
 
 .button.primary-button:hover {
-    background: whitesmoke;
+    background: var(--primary);
     background-clip: padding-box;
-    color: var(--text);
+    color: var(--grey2);
 }
 
 .button.primary-button::after, .button.secondary-button::after {
@@ -82,11 +83,29 @@ a:hover {
     box-shadow: var(--box-shadow);
 }
 
+/* INPUT */
+
+input, textarea {
+    display: block;
+    width: 90%;
+    margin: .5rem 0;
+    padding: .5rem;
+    background-color: var(--grey-5);
+    color: var(--grey-1);
+    font: normal 500 1rem/2rem var(--font);
+    border: 1px solid var(--grey-4);
+    border-radius: 3px;
+}
+
 /* SECTIONS */
 
 section {
-    min-height: 100vh;
+    min-height: 90vh;
     padding: 3rem 18rem;
+}
+
+.section.about {
+    margin-bottom: -10rem !important;
 }
 
 /* .section {
