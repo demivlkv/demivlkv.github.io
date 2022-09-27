@@ -40,6 +40,7 @@ a:hover {
 /* BUTTONS */
 
 .button {
+    width: 90%;
     padding: .8rem 2.2rem;
     font: normal 500 16px/20px var(--font);
     position: relative;
@@ -48,40 +49,31 @@ a:hover {
 }
 
 .button.primary-button {
-    background: var(--secondary);
-    background-clip: padding-box;
-    color: var(--grey-4);
+    background: rgba(121, 252, 202, .6);
+    color: var(--grey-1);
     text-transform: uppercase;
+    border: 1px solid var(--grey-4);
     transition: background .4s ease;
-    box-shadow: var(--box-shadow);
 }
 
 .button.primary-button:hover {
-    background: var(--primary);
-    background-clip: padding-box;
-    color: var(--grey2);
-}
-
-.button.primary-button::after, .button.secondary-button::after {
-    position: absolute;
-    top: -2px; left: -2px;
-    bottom: -2px; right: -2px;
-    background: var(--gradient);
-    content: '';
-    z-index: -1;
-    border-radius: 4px;
+    background: var(--secondary);
+    color: var(--grey-6);
+    cursor: pointer;
 }
 
 .button.secondary-button {
-    background: #fff;
-    background-clip: padding-box;
-    transition: background .6s ease;
+    background: var(--primary);
+    color: var(--secondary);
+    text-transform: uppercase;
+    border: 1px solid var(--secondary);
+    transition: background .4s ease;
 }
 
 .button.secondary-button:hover {
-    background: var(--gradient);
-    color: whitesmoke;
-    box-shadow: var(--box-shadow);
+    background: var(--button-hover);
+    color: var(--grey-6);
+    cursor: pointer;
 }
 
 /* INPUT */
@@ -109,7 +101,7 @@ section {
     margin-bottom: -10rem !important;
 }
 
-.section {
+/* .section {
     display: none;
     background-color: var(--primary);
     transform: translateY(-100%) scale(0);
@@ -120,7 +112,7 @@ section {
     display: block;
     animation: display 1s ease-in-out;
     transform: translateY(0) scaleY(1);
-}
+} */
 
 @keyframes display {
     0% {
