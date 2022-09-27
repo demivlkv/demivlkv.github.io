@@ -26,13 +26,14 @@ p {
 
 a, a:active, a:visited {
     display: inline-block;
-    color: inherit;
+    color: var(--secondary);
     font-family: var(--font);
     text-decoration: none;
+    transition: all .4s ease-in-out;
 }
 
 a:hover {
-    font-family: var(--font);
+    color: var(--grey-3);
     text-decoration: none;
 }
 
@@ -108,7 +109,7 @@ section {
     margin-bottom: -10rem !important;
 }
 
-/* .section {
+.section {
     display: none;
     background-color: var(--primary);
     transform: translateY(-100%) scale(0);
@@ -119,7 +120,7 @@ section {
     display: block;
     animation: display 1s ease-in-out;
     transform: translateY(0) scaleY(1);
-} */
+}
 
 @keyframes display {
     0% {

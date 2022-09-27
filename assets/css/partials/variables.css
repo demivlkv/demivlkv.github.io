@@ -32,3 +32,17 @@ body {
 
     --font: 'Jost', Helvetica, Arial, sans-serif;
 }
+
+.light-mode {
+    --primary: #fbfbfb;
+    --secondary: #2fc28a;
+    --white: #333;
+    --black: #fff;
+    --grey-0: #12181b;
+    --grey-1: #2a2e35;
+    --grey-2: #393e42;
+    --grey-3: #5b6166;
+    --grey-4: #dbe0e7;
+    --grey-5: #eee;
+    --grey-6: #f9f9f9;
+}
