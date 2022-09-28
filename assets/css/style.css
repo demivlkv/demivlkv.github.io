@@ -7,7 +7,11 @@
 /* NAVIGATION */
 
 .header .main-menu .navbar .navbar-brand {
-    padding: 0 2rem 0 5rem;
+    padding-top: 1rem;
+}
+
+.header .main-menu .navbar .navbar-brand img {
+    width: 200px;
 }
 
 .header .main-menu .navbar {
@@ -114,9 +118,9 @@
 
 .about-image img {
     width: 60%;
-    padding-top: 12%;
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
+    border-radius: 5px;
     opacity: .6;
     transition: all .4s ease-in-out;
 }
@@ -147,7 +151,6 @@
 .technical-skills {
     display: grid;
     grid-template-columns: 20px 1fr;
-    font: normal 500 16px/25px var(--font);
 }
 
 .technical-skills i {
@@ -158,36 +161,36 @@
 
 /* PORTFOLIO SECTION */
 
-.portfolio-grid {
+.row.portfolio-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 .portfolio-entry {
-    border: 1px solid var(--border-color);
+    margin: 1rem 0;
+    padding: 0 .3rem;
     text-align: center;
-    padding: 1.5rem 0;
-    width: 100%;
     cursor: pointer;
-    transition: transform .4s ease;
 }
 
 .portfolio-entry > img {
-    width: 95%;
+    width: 100%;
     border-radius: 3px;
+    opacity: .85;
 }
 
 .portfolio-entry .hover-links {
-    width: 95.3%;
-    height: 86%;
+    width: 97.5%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: absolute;
-    left: 9px; top: 24px;
-
+    left: .3rem; top: 0;
+    
     background-color: var(--secondary);
     border-radius: 3px;
     opacity: 0;
@@ -198,8 +201,7 @@
 .portfolio-entry .hover-links h3 {
     margin-bottom: 1.5rem;
     color: var(--grey-6);
-    font: normal 500 3rem var(--font);
-    font-size: 1.5rem;
+    font: normal 500 1.5rem var(--font);
 }
 
 .portfolio-entry .hover-links .icons {
@@ -238,11 +240,7 @@
 
 #contact {
     display: flex;
-    padding-top: 10%;
-}
-
-.contact-left {
-    flex: 2;
+    padding-top: 15%;
 }
 
 .contact-left h3 {
@@ -251,24 +249,32 @@
     letter-spacing: .5rem;
 }
 
-.contact-left .contact-item {
+.contact-right {
+    padding-top: 9%;
+}
+
+.contact-right .contact-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 75%;
     margin: 0 auto;
-    font: normal 500 16px/25px var(--font);
+    font: normal 500 1rem/2.5rem var(--font);
 }
 
-.contact-left .contact-item p {
-    margin: .3rem 0 !important;
-    padding: 0 !important;
+.contact-right p {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+    margin: 0;
+    font: normal 500 1rem/2.5rem var(--font);
 }
 
 .contact-icon {
     display: grid;
     grid-template-columns: 30px 1fr;
-    font: normal 500 16px/25px var(--font);
+    font: normal 500 1rem/2.5rem var(--font);
 }
 
 .contact-icon i {
@@ -278,88 +284,9 @@
     font-size: 1.3rem;
 }
 
-.contact-right {
-    flex: 3;
-    margin: 3rem;
-}
-
-.contact-right .contact-form {
-    margin: 1.5rem 0;
-}
-
 /* FOOTER */
 
 footer {
     margin: 2rem 0;
-    font: normal 500 16px/25px var(--font);
     color: var(--grey-2);
-}
-
-/* LIGHT/DARK MODE */
-
-.theme-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 5%; right: 3%;
-    width: 70px;
-    height: 70px;
-    background-color: var(--grey-4);
-    border-radius: 50%;
-    transition: all .1s ease-in-out;
-    cursor: pointer;
-    box-shadow: var(--box-shadow);
-}
-
-.theme-btn:active {
-    transform: translateY(-3px);
-}
-
-.theme-btn i {
-    font-size: 1.4rem;
-    color: var(--grey-2);
-    pointer-events: none;
-}
-
-/* SIDE SOCIAL MEDIA LINKS */
-
-.social-media {
-    position: fixed;
-    z-index: 10;
-    top: 50%; right: 3%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transform: translateY(-50%);
-}
-
-.social-media a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 55px;
-    height: 55px;
-    margin: .7rem 0;
-    padding: 1rem;
-    box-shadow: var(--box-shadow);
-    background-color: var(--grey-4);
-    border-radius: 50%;
-    transition: all .4s ease-in-out;
-    cursor: pointer;
-}
-
-.social-media i {
-    color: var(--grey-1);
-    font-size: 1.5rem;
-    pointer-events: none;
-}
-
-.social-media a:hover {
-    background-color: var(--secondary) !important;
-}
-
-.social-media a:hover i {
-    color: var(--grey-4) !important;
 }
