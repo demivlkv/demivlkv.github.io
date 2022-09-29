@@ -1,7 +1,7 @@
 @media screen and (max-width: 1205px){
     section#contact {
         margin: 0 auto;
-        padding: 2% 10% !important;
+        padding: 2% 10%;
     }
 }
 
@@ -49,9 +49,15 @@
         padding: 0;
     }
 
+    .theme-btn {
+        top: 15%; right: 3%;
+    }
+}
+
+@media screen and (max-width: 990px){
     .contact-right .contact-item,
     .contact-right .contact-item p {
-        flex-wrap: wrap;
+        width: 65%;
     }
 }
 
@@ -64,7 +70,6 @@
 
     section,
     section.section#about {
-        min-height: 60vh;
         margin: 0;
         padding: 2% 5%;
     }
@@ -92,14 +97,13 @@
         padding: 0;
     }
 
-    .theme-btn {
-        top: 18%; right: 3%;
-        width: 50px;
-        height: 50px;
-    }
-
     footer {
         margin-bottom: 7rem;
+    }
+
+    .theme-btn {
+        width: 50px;
+        height: 50px;
     }
 
     .social-media {
@@ -118,12 +122,17 @@
     }
 }
 
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 547px){
+    section.contact {
+        padding: 2% !important;
+    }
+}
+
+@media screen and (max-width: 451px) {
     .header .main-menu .navbar,
     .header .main-menu .navbar .navbar-brand,
     section.section,
     section.section#about {
-        min-height: 30vh;
         margin: 0;
         padding: 2%;
     }
@@ -163,7 +172,7 @@
     .contact-right .contact-icon,
     .contact-right .contact-item,
     .contact-right .contact-item p {
-        width: 100%;
+        width: 100% !important;
         font: normal 500 .9rem/2.5rem var(--font);
     }
 }
