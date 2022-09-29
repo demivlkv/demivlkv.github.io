@@ -1,28 +1,53 @@
-$(document).ready(function() {
-    // sticky navigation menu
-    let navOffset = $('.header').height() + 50;
+// display or hide navbar when scrolling
+document.addEventListener("DOMContentLoaded", function(){
+    const autoHideEl = document.querySelector('.auto-hide');
+  
+    if (autoHideEl) {
+        var lastScrollTop = 0;
 
-    function fixedNavbar() {
-        if ($('.header').length) {
-            $(window).scroll(function() {
-                let scroll = $(window).scrollTop();
-                if (scroll >= navOffset) {
-                    $('.header .main-menu').addClass('navbar-fixed');
-                } else {
-                    $('.header .main-menu').removeClass('navbar-fixed');
-                }
-            })
-        }
-    }
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.scrollY;
 
-    fixedNavbar();
+            if (scrollTop < lastScrollTop) {
+                autoHideEl.classList.remove('scroll-down');
+                autoHideEl.classList.add('scroll-up');
+                autoHideEl.classList.add('navbar-fixed');
+            } else {
+                autoHideEl.classList.remove('scroll-up');
+                autoHideEl.classList.remove('navbar-fixed');
+                autoHideEl.classList.add('scroll-down');
+            }
+            
+            lastScrollTop = scrollTop;
+        });
+    };
+}); 
 
-});
+// $(document).ready(function() {
+//     // sticky navigation menu
+//     let navOffset = $('.header').height() + 50;
 
-const siteMain = document.querySelector('.site-main');
-const sections = document.querySelectorAll('.section');
-const sectionBtns = document.querySelectorAll('.side-menu');
-const sectBtn = document.querySelectorAll('.icon-menu');
+//     function fixedNavbar() {
+//         if ($('.header').length) {
+//             $(window).scroll(function() {
+//                 let scroll = $(window).scrollTop();
+//                 if (scroll >= navOffset) {
+//                     $('.header .main-menu').addClass('navbar-fixed');
+//                 } else {
+//                     $('.header .main-menu').removeClass('navbar-fixed');
+//                 }
+//             })
+//         }
+//     }
+
+//     fixedNavbar();
+
+// });
+
+// const siteMain = document.querySelector('.site-main');
+// const sections = document.querySelectorAll('.section');
+// const sectionBtns = document.querySelectorAll('.side-menu');
+// const sectBtn = document.querySelectorAll('.icon-menu');
 
 function pageTransitions() {
     // create active class for side-menu button click
