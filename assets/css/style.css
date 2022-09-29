@@ -250,14 +250,13 @@
 }
 
 .contact-right {
-    padding-top: 9%;
+    padding: 9% 5% 0 5%;
 }
 
 .contact-right .contact-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 75%;
     margin: 0 auto;
     font: normal 500 1rem/2.5rem var(--font);
 }
@@ -266,7 +265,6 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 50%;
     margin: 0;
     font: normal 500 1rem/2.5rem var(--font);
 }
