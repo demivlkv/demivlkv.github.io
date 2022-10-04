@@ -9,7 +9,7 @@
     .header .main-menu .navbar,
     .header .main-menu .navbar .navbar-brand {
         margin: 0;
-        padding: 2% 10%;
+        padding: 2% 5%;
     }
 
     section {
@@ -61,7 +61,6 @@
     .header .main-menu .navbar,
     .header .main-menu .navbar .navbar-brand {
         margin: 0;
-        padding: 2% 10%;
     }
 
     section,
