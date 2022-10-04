@@ -3,9 +3,7 @@
 
 [Version 1 here.](https://github.com/demivlkv/portfolio)
 
-![This is a screenshot of my portfolio in dark mode.](/../main/assets/images/screenshot-dark-mode.png)
-
-![This is a screenshot of my portfolio in light mode.](/../main/assets/images/screenshot-light-mode.png)
+![This is a screenshot of my portfolio in dark mode.](/../main/assets/images/demi.gif)
 
 ### Built With:
 - HTML
