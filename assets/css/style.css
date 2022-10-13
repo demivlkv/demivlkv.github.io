@@ -133,6 +133,7 @@
     border-radius: 5px;
     opacity: .6;
     transition: all .4s ease-in-out;
+    box-shadow: var(--box-shadow);
 }
 
 .about-image img:hover {
