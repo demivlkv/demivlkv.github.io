@@ -49,8 +49,8 @@ const Header = () => {
         </div>
           {/* NAVBAR AT 768PX & ABOVE */}
           <div className="md:flex hidden z-20">
-            <a href="#main" className="pr-3 hover:text-slate-400 cursor-pointer">About</a>
-            <a href="#work" className="px-3 hover:text-slate-400 cursor-pointer">Work</a>
+            <a href="#about" className="pr-3 hover:text-slate-400 cursor-pointer">About</a>
+            <a href="#work" className="px-3 hover:text-slate-400 cursor-pointer">Experience</a>
             <a href="#projects" className="px-3 hover:text-slate-400 cursor-pointer">Projects</a>
             <a href="#contact" className="px-3 hover:text-slate-400 cursor-pointer">Contact</a>
             <a href="#main" className="pl-3 hover:text-slate-400 cursor-pointer">Resume</a>
@@ -71,7 +71,7 @@ const Header = () => {
             </a>
             <a href="#work" className="w-1/2 m-2 p-4 flex justify-center items-center bg-gray-100 rounded-full shadow-lg shadow-gray-400 cursor-pointer transition-all ease-in duration-300">
               <Briefcase size={20} />
-              <span className="pl-4">Work</span>
+              <span className="pl-4">Experience</span>
             </a>
             <a href="#projects" className="w-1/2 m-2 p-4 flex justify-center items-center bg-gray-100 rounded-full shadow-lg shadow-gray-400 cursor-pointer transition-all ease-in duration-300">
               <Grid size={20} />
