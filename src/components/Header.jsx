@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, User, Briefcase, Grid, File, Send } from 'react-feather';
+import { Menu, X } from 'react-feather';
 
 function handleScroll() {
   const [scrollDirection, setScrollDirection] = useState(null);
@@ -42,50 +42,40 @@ const Header = () => {
   }, [top]);
 
   return (
-    <div className={`sticky ${scrollDirection === "down" ? "-top-[70px]" : "top-0"} ${!top && `shadow-lg`} h-[70px] bg-slate-50 transition-all duration-500 z-[99]`}>
-      <div className="w-full h-full flex justify-between items-center py-4 px-6">
+    <div className={`sticky ${scrollDirection === "down" ? "-top-[70px]" : "top-0"} ${!top && `shadow-lg bg-stone-100/80 backdrop-blur-md`} h-[70px] bg-stone-100 transition-all duration-500 z-[99]`}>
+      <div className="header w-full h-full flex justify-between items-center py-4 px-6">
         <div>
           <h1>DH</h1>
         </div>
           {/* NAVBAR AT 768PX & ABOVE */}
           <div className="md:flex hidden z-20">
-            <a href="#about" className="pr-3 hover:text-slate-400 cursor-pointer">About</a>
-            <a href="#work" className="px-3 hover:text-slate-400 cursor-pointer">Experience</a>
-            <a href="#projects" className="px-3 hover:text-slate-400 cursor-pointer">Projects</a>
-            <a href="#contact" className="px-3 hover:text-slate-400 cursor-pointer">Contact</a>
-            <a href="#resume" className="pl-3 hover:text-slate-400 cursor-pointer">Resume</a>
+            <a href="#about" className="links pr-4">About</a>
+            <a href="#work" className="links px-4">Experience</a>
+            <a href="#projects" className="links px-4">Projects</a>
+            <a href="#contact" className="links px-4">Contact</a>
+            <a href="#resume" className="links pl-4">Resume</a>
           </div>
 
           {/* HAMBURGER MENU AT 768PX & LOWER */}
-          <div onClick={handleNav} className="md:hidden cursor-pointer z-20">
+          <div onClick={handleNav} className="md:hidden transition-all ease-in duration-500 z-20">
           {!nav ? (
-            <Menu size={30} />
+            <Menu size={30} className="hover:text-slate-400 transition-all ease-in duration-300 cursor-pointer" />
           ) : (
-            <X size={30} />
+            ''
           )}
           {nav ? (
-          <div className="fixed top-[70px] right-0 w-full h-screen bg-white/90 flex flex-col justify-center items-center z-[1]">
-            <a href="#about" className="w-1/2 m-2 p-4 flex justify-center items-center bg-gray-100 rounded-full shadow-lg shadow-gray-400 cursor-pointer transition-all ease-in duration-300">
-              <User size={20} />
-              <span className="pl-4">About</span>
-            </a>
-            <a href="#work" className="w-1/2 m-2 p-4 flex justify-center items-center bg-gray-100 rounded-full shadow-lg shadow-gray-400 cursor-pointer transition-all ease-in duration-300">
-              <Briefcase size={20} />
-              <span className="pl-4">Experience</span>
-            </a>
-            <a href="#projects" className="w-1/2 m-2 p-4 flex justify-center items-center bg-gray-100 rounded-full shadow-lg shadow-gray-400 cursor-pointer transition-all ease-in duration-300">
-              <Grid size={20} />
-              <span className="pl-4">Projects</span>
-            </a>
-            <a href="#contact" className="w-1/2 m-2 p-4 flex justify-center items-center bg-gray-100 rounded-full shadow-lg shadow-gray-400 cursor-pointer transition-all ease-in duration-300">
-              <Send size={20} />
-              <span className="pl-4">Contact</span>
-            </a>
-            <a href="#resume" className="w-1/2 m-2 p-4 flex justify-center items-center bg-gray-100 rounded-full shadow-lg shadow-gray-400 cursor-pointer transition-all ease-in duration-300">
-              <File size={20} />
-              <span className="pl-4">Resume</span>
-            </a>
-          </div>
+            <div className={`fixed ${scrollDirection === "down" ? "top-[70px]" : "top-0"} right-0 w-1/2 h-screen shadow-lg bg-stone-100/90 z-[1]`}>
+              <div className="w-full h-[70px] px-6 flex justify-end items-center">
+                <X size={30} className="hover:text-slate-400 transition-all ease-in duration-300 cursor-pointer" />
+              </div>
+              <div className="h-full flex flex-col justify-center items-center">
+                <a href="#about" className="mobile-links">About</a>
+                <a href="#work" className="mobile-links">Experience</a>
+                <a href="#projects" className="mobile-links">Projects</a>
+                <a href="#contact" className="mobile-links">Contact</a>
+                <a href="#resume" className="mobile-links">Resume</a>
+              </div>
+            </div>
         ) : (
           ''
         )}

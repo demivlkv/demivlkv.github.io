@@ -3,8 +3,8 @@ import AboutPic from '../assets/avatar.png';
 
 const About = () => {
   return (
-    <div id="about" className="max-w-screen-lg m-auto md:pl-20 px-8 py-32">
-      <h1 className="pb-8 font-medium text-4xl text-center">About</h1>
+    <div id="about" className="max-w-screen-lg m-auto md:pl-20 px-8 py-24 sm:py-32">
+      <h2>About</h2>
       <div className="mx-auto w-full max-w-screen-md flex flex-col md:flex-row justify-center items-center">
         <div className="flex justify-center w-full pb-8 pr-0 md:pr-12 md:pb-0">
           <img src={AboutPic} className="shadow-lg rounded-full" alt="Hi, I'm Demi!" />
