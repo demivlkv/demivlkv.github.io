@@ -20,8 +20,8 @@ const data = [
 
 const Work = () => {
   return (
-    <div id="work" className="max-w-screen-lg m-auto md:pl-20 p-4 py-16">
-      <h1 className="text-4xl font-medium text-center">Work</h1>
+    <div id="work" className="max-w-screen-lg m-auto md:pl-20 px-8 py-16">
+      <h1 className="pb-8 text-4xl font-medium text-center">Experience</h1>
       {data.map((item, i) => (
         <WorkItem
           key={i}
