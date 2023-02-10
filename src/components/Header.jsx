@@ -42,7 +42,7 @@ const Header = () => {
   }, [top]);
 
   return (
-    <div className={`sticky ${scrollDirection === "down" ? "-top-[70px]" : "top-0"} ${!top && `shadow-lg`} h-[70px] bg-slate-300 transition-all duration-500 z-[99]`}>
+    <div className={`sticky ${scrollDirection === "down" ? "-top-[70px]" : "top-0"} ${!top && `shadow-lg`} h-[70px] bg-slate-50 transition-all duration-500 z-[99]`}>
       <div className="w-full h-full flex justify-between items-center py-4 px-6">
         <div>
           <h1>DH</h1>
@@ -53,7 +53,7 @@ const Header = () => {
             <a href="#work" className="px-3 hover:text-slate-400 cursor-pointer">Experience</a>
             <a href="#projects" className="px-3 hover:text-slate-400 cursor-pointer">Projects</a>
             <a href="#contact" className="px-3 hover:text-slate-400 cursor-pointer">Contact</a>
-            <a href="#main" className="pl-3 hover:text-slate-400 cursor-pointer">Resume</a>
+            <a href="#resume" className="pl-3 hover:text-slate-400 cursor-pointer">Resume</a>
           </div>
 
           {/* HAMBURGER MENU AT 768PX & LOWER */}
@@ -77,13 +77,13 @@ const Header = () => {
               <Grid size={20} />
               <span className="pl-4">Projects</span>
             </a>
-            <a href="#main" className="w-1/2 m-2 p-4 flex justify-center items-center bg-gray-100 rounded-full shadow-lg shadow-gray-400 cursor-pointer transition-all ease-in duration-300">
-              <File size={20} />
-              <span className="pl-4">Resume</span>
-            </a>
             <a href="#contact" className="w-1/2 m-2 p-4 flex justify-center items-center bg-gray-100 rounded-full shadow-lg shadow-gray-400 cursor-pointer transition-all ease-in duration-300">
               <Send size={20} />
               <span className="pl-4">Contact</span>
+            </a>
+            <a href="#resume" className="w-1/2 m-2 p-4 flex justify-center items-center bg-gray-100 rounded-full shadow-lg shadow-gray-400 cursor-pointer transition-all ease-in duration-300">
+              <File size={20} />
+              <span className="pl-4">Resume</span>
             </a>
           </div>
         ) : (

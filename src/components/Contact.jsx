@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MapPin, AtSign, GitHub, Globe } from 'react-feather';
+import { MapPin, AtSign, GitHub, Globe, ChevronsRight } from 'react-feather';
 
 import { validateEmail } from '../utils/helpers';
 
@@ -33,7 +33,7 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="max-w-screen-lg m-auto md:pl-20 px-8 py-16">
+    <div id="contact" className="max-w-screen-lg m-auto md:pl-20 px-8 py-32">
       <h1 className="pb-8 text-4xl font-medium text-center">Contact</h1>
       <div className="max-w-screen-lg w-full grid grid-cols-1 md:grid-cols-2 gap-4">
       <div>
@@ -69,7 +69,7 @@ const Contact = () => {
 
         {/* CONTACT FORM */}
         <div>
-          <form method="POST" action={formUrl} id="contact-form" className="flex flex-col justify-center max-w-[600px] w-full">
+          <form method="POST" action={formUrl} id="contact-form" className="flex flex-col justify-center max-w-[600px] mx-auto w-full">
             <div class="w-full mx-auto">
               <label className="block text-slate-500 font-medium">Name:</label>
               <input type="text" defaultValue={name} onBlur={handleChange} name="name" className="w-full my-2 p-2 rounded bg-stone-100 border border-gray-300" />
@@ -89,7 +89,7 @@ const Contact = () => {
               <button type="submit" className="group w-[130px] mx-auto flex items-center my-2 pl-6 py-2 border-2 border-gray-300 rounded hover:bg-[#a1a1a11e] hover:border-stone-700">
                 Submit
                 <span className="group-hover:ml-1 duration-300">
-                    
+                  <ChevronsRight size={18} className="ml-2" />
                 </span>
               </button>
             </div>

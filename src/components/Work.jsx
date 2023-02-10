@@ -20,7 +20,7 @@ const data = [
 
 const Work = () => {
   return (
-    <div id="work" className="max-w-screen-lg m-auto md:pl-20 px-8 py-16">
+    <div id="work" className="max-w-screen-md m-auto md:pl-20 px-8 py-32">
       <h1 className="pb-8 text-4xl font-medium text-center">Experience</h1>
       {data.map((item, i) => (
         <WorkItem
