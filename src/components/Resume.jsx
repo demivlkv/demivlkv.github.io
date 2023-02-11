@@ -2,7 +2,7 @@ import React from 'react';
 import { ChevronsRight, FastForward } from 'react-feather';
 
 const Resume = () => {
-  const icon = <FastForward className="inline-flex justify-center items-center pb-1 text-stone-400" size={15} />
+  const icon = <FastForward className="inline-flex justify-center items-center pb-1 text-slate-400" size={15} />
 
   return (
     <div id="resume" className="max-w-screen-lg m-auto md:pl-20 px-8 py-24 sm:py-32">

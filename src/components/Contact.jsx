@@ -71,13 +71,13 @@ const Contact = () => {
         <div>
           <form method="POST" action={formUrl} id="contact-form" className="flex flex-col justify-center max-w-[600px] mx-auto w-full">
             <div class="w-full mx-auto">
-              <label className="block text-slate-500 font-['Source_Code_pro'] font-medium">Name:</label>
+              <label className="block text-stone-400 font-['Source_Code_Pro'] font-medium">Name:</label>
               <input type="text" defaultValue={name} onBlur={handleChange} name="name" className="w-full my-2 p-2 rounded bg-stone-100 border border-gray-300" />
 
-              <label className="block text-slate-500 font-['Source_Code_pro'] font-medium">E-mail:</label>
+              <label className="block text-stone-400 font-['Source_Code_Pro'] font-medium">E-mail:</label>
               <input type="email" defaultValue={email} onBlur={handleChange} name="email" className="w-full my-2 p-2 rounded bg-stone-100 border border-gray-300" />
 
-              <label className="block text-slate-500 font-['Source_Code_pro'] font-medium">Message:</label>
+              <label className="block text-stone-400 font-['Source_Code_Pro'] font-medium">Message:</label>
               <textarea name="message" defaultValue={message} onBlur={handleChange} rows="4" className="w-full my-2 p-2 rounded bg-stone-100 border border-gray-300" />
 
               {errorMessage && (

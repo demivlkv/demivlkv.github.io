@@ -49,11 +49,11 @@ const Header = () => {
         </div>
           {/* NAVBAR AT 768PX & ABOVE */}
           <div className="md:flex hidden z-20">
-            <a href="#about" className="links pr-4">About</a>
-            <a href="#work" className="links px-4">Experience</a>
-            <a href="#projects" className="links px-4">Projects</a>
-            <a href="#contact" className="links px-4">Contact</a>
-            <a href="#resume" className="links pl-4">Resume</a>
+            <a href="#about" className="links mr-6">About</a>
+            <a href="#work" className="links mx-6">Experience</a>
+            <a href="#projects" className="links mx-6">Projects</a>
+            <a href="#contact" className="links mx-6">Contact</a>
+            <a href="#resume" className="links ml-6">Resume</a>
           </div>
 
           {/* HAMBURGER MENU AT 768PX & LOWER */}

@@ -21,7 +21,7 @@ const projects = [
       title: 'Sound Stream',
       thumbnail: SoundStreamImg,
       description: 'A simple Spotify clone',
-      technologies: 'ReactJS / ExpressJS / TailwindCSS / Spotify API',
+      technologies: 'ReactJS / ExpressJS / Tailwind CSS / Spotify API',
       url: 'https://soundstream.herokuapp.com/',
       github: 'https://github.com/demivlkv/soundstream'
   },
@@ -91,7 +91,7 @@ const Project = () => {
                             
               <div class="absolute top-0 left-0 w-full h-full flex justify-center items-end opacity-0 hover:opacity-100">
                 <div class="flex-row text-center p-6">
-                  <h3 className="mb-2 font-semibold text-slate-300 text-2xl uppercase drop-shadow-md tracking-tighter">
+                  <h3 className="mb-2 font-semibold text-sky-200 text-2xl uppercase drop-shadow-md tracking-tighter">
                     {project.title}
                   </h3>
                   <p className="text-white text-sm tracking-tight leading-snug drop-shadow-md">
