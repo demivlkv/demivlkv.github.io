@@ -1,9 +1,11 @@
 import React from 'react';
 import { ExternalLink, GitHub } from 'react-feather';
+
 import TripTideImg from '../assets/portfolio/trip-tide.png';
 import SoundStreamImg from '../assets/portfolio/soundstream.png';
 import TokioImg from '../assets/portfolio/tokio-ramen.png';
-import BookNookImg from '../assets/portfolio/book-nook-v2.png';
+import BookNookv2Img from '../assets/portfolio/book-nook-v2.png';
+import BookNookv1Img from '../assets/portfolio/book-nook-v1.png';
 import TechBlogImg from '../assets/portfolio/tech-blog.png';
 import FindAStoryImg from '../assets/portfolio/find-a-story.png';
 import WeatherImg from '../assets/portfolio/weather-dashboard.png';
@@ -35,20 +37,20 @@ const projects = [
   },
   {
       title: 'Book Nook v2',
-      thumbnail: BookNookImg,
+      thumbnail: BookNookv2Img,
       description: 'A collaborative project to build a MERN stack social media site based off the original Book Nook project',
       technologies: 'MongoDB / ExpressJS / ReactJS / NodeJS',
       url: 'https://book-nook-v2.herokuapp.com/',
       github: 'https://github.com/demivlkv/book-nook-v2'
   },
-  // {
-  //     title: 'Book Nook',
-  //     thumbnail: '../assets/portfolio/book-nook.png',
-  //     description: 'A collaborative effort to provide a platform for all parents to discuss books for their young readers',
-  //     technologies: 'JavaScript / NodeJS / MySQL',
-  //     url: 'https://booknook-stars.herokuapp.com/',
-  //     github: 'https://github.com/demivlkv/book-nook'
-  // },
+  {
+      title: 'Book Nook v1',
+      thumbnail: BookNookv1Img,
+      description: 'A collaborative effort to provide a platform for all parents to discuss books for their young readers',
+      technologies: 'JavaScript / HandlebarsJS / NodeJS / MySQL',
+      url: 'https://booknook-stars.herokuapp.com/',
+      github: 'https://github.com/demivlkv/book-nook'
+  },
   {
       title: 'Tech Blog',
       thumbnail: TechBlogImg,

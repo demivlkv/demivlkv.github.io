@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="my-8 text-xs sm:text-sm">
       <div className="flex flex-col justify-center items-center">
-        <p>Made with <Heart size={18} className="inline-flex text-slate-400" /> by Demi.</p>
+        <p>Made with <Heart size={18} className="inline-flex text-slate-400" /> by <a href="https://github.com/demivlkv/demivlkv.github.io" target="_blank" className="text-slate-400 hover:text-gray-700">Demi</a>.</p>
         <p><span className="text-slate-400">&copy;</span> 2023. All rights reserved.</p>
       </div>
 

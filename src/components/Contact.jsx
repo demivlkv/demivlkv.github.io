@@ -36,34 +36,34 @@ const Contact = () => {
     <div id="contact" className="max-w-screen-lg m-auto md:pl-20 px-8 py-24 sm:py-32">
       <h2>Contact</h2>
       <div className="max-w-screen-lg w-full grid grid-cols-1 md:grid-cols-2 gap-4">
-      <div>
-        <p className="pb-8">Please feel free to reach out with any questions or opportunities. I look forward to hearing from you!</p>
+        <div>
+          <p className="pb-8">Please feel free to reach out with any questions or opportunities. I look forward to hearing from you!</p>
 
-        <div className="max-w-[75%] w-full mx-auto grid grid-cols-2 gap-4">
-          <div className="inline-flex items-center">
-            <MapPin className="text-slate-400" size={22} />&nbsp;Location
-          </div>
-          <div className="inline-flex justify-end items-center">
-            : Los Angeles, CA
-          </div>
-          <div className="inline-flex items-center">
-            <AtSign className="text-slate-400" size={22} />&nbsp;E-mail
-          </div>
-          <div className="inline-flex justify-end items-center">
-            :&nbsp;<a href="mailto:hayashi.demi@gmail.com" className="text-slate-400 hover:text-slate-700">hayashi.demi@gmail.com</a>
-          </div>
-          <div className="inline-flex items-center">
-            <GitHub className="text-slate-400" size={22} />&nbsp;GitHub
-          </div>
-          <div className="inline-flex justify-end items-center">
-            :&nbsp;<a href="https://github.com/demivlkv" target="_blank" className="text-slate-400 hover:text-slate-700">@demivlkv</a>
-          </div>
-          <div className="inline-flex items-center">
-            <Globe className="text-slate-400" size={22} />&nbsp;Languages
-          </div>
-          <div className="inline-flex justify-end items-center">
-            : English, Japanese
-          </div>
+          <div className="max-w-[75%] w-full mx-auto grid grid-cols-2 gap-4">
+            <div className="inline-flex items-center">
+              <MapPin className="text-slate-400" size={22} />&nbsp;Location
+            </div>
+            <div className="inline-flex justify-end items-center">
+              : Los Angeles, CA
+            </div>
+            <div className="inline-flex items-center">
+              <AtSign className="text-slate-400" size={22} />&nbsp;E-mail
+            </div>
+            <div className="inline-flex justify-end items-center">
+              :&nbsp;<a href="mailto:hayashi.demi@gmail.com" className="text-slate-400 hover:text-slate-700">hayashi.demi@gmail.com</a>
+            </div>
+            <div className="inline-flex items-center">
+              <GitHub className="text-slate-400" size={22} />&nbsp;GitHub
+            </div>
+            <div className="inline-flex justify-end items-center">
+              :&nbsp;<a href="https://github.com/demivlkv" target="_blank" className="text-slate-400 hover:text-slate-700">@demivlkv</a>
+            </div>
+            <div className="inline-flex items-center">
+              <Globe className="text-slate-400" size={22} />&nbsp;Languages
+            </div>
+            <div className="inline-flex justify-end items-center">
+              : English, Japanese
+            </div>
           </div>
         </div>
 
@@ -95,8 +95,8 @@ const Contact = () => {
             </div>
           </form>
         </div>
-      </div>
     </div>
+  </div>
   );
 };
 
