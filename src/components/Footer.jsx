@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { Heart, GitHub, Linkedin, Instagram, Mail } from 'react-feather';
 
 const Footer = () => {
@@ -11,14 +12,12 @@ const Footer = () => {
 
       {/* DISPLAY SOCIAL MEDIA ICONS ON SIDE OVER 768PX SCRN RES */}
       <div className="hidden md:block fixed top-[35%] z-10">
-        <div className="flex flex-col">
-          <ul className="list-none">
-              <li className="px-6 py-3 flex justify-between items-center ml-[5px] hover:ml-[10px] duration-300"><a className="text-gray-800 hover:text-slate-400" href="https://github.com/demivlkv" target="_blank"><GitHub size={30} /></a></li>
-              <li className="px-6 py-3 flex justify-between items-center ml-[5px] hover:ml-[10px] duration-300"><a className="text-gray-800 hover:text-slate-400" href="https://www.linkedin.com/in/demihayashi/" target="_blank"><Linkedin size={30} /></a></li>
-              <li className="px-6 py-3 flex justify-between items-center ml-[5px] hover:ml-[10px] duration-300"><a className="text-gray-800 hover:text-slate-400" href="https://www.instagram.com/hii.demii/" target="_blank"><Instagram size={30} /></a></li>
-              <li className="px-6 py-3 flex justify-between items-center ml-[5px] hover:ml-[10px] duration-300"><a className="text-gray-800 hover:text-slate-400" href="mailto:hayashi.demi@gmail.com"><Mail size={30} /></a></li>
-          </ul>
-        </div>
+        <ul className="list-none flex flex-col">
+          <motion.li initial={{ opacity: 0, x: -70 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.4, delay: 3 }} viewport={{ once: true }} className="px-6 py-3 flex justify-between items-center ml-[5px] hover:ml-[10px] duration-300"><a className="text-gray-800 hover:text-slate-400" href="https://github.com/demivlkv" target="_blank"><GitHub size={30} /></a></motion.li>
+          <motion.li initial={{ opacity: 0, x: -70 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.4, delay: 3.25 }} viewport={{ once: true }} className="px-6 py-3 flex justify-between items-center ml-[5px] hover:ml-[10px] duration-300"><a className="text-gray-800 hover:text-slate-400" href="https://www.linkedin.com/in/demihayashi/" target="_blank"><Linkedin size={30} /></a></motion.li>
+          <motion.li initial={{ opacity: 0, x: -70 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.4, delay: 3.5 }} viewport={{ once: true }} className="px-6 py-3 flex justify-between items-center ml-[5px] hover:ml-[10px] duration-300"><a className="text-gray-800 hover:text-slate-400" href="https://www.instagram.com/hii.demii/" target="_blank"><Instagram size={30} /></a></motion.li>
+          <motion.li initial={{ opacity: 0, x: -70 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.4, delay: 3.75 }} viewport={{ once: true }} className="px-6 py-3 flex justify-between items-center ml-[5px] hover:ml-[10px] duration-300"><a className="text-gray-800 hover:text-slate-400" href="mailto:hayashi.demi@gmail.com"><Mail size={30} /></a></motion.li>
+        </ul>
       </div>
 
       {/* DISPLAY SOCIAL MEDIA ICONS ON BOTTOM UNDER 768PX SCRN RES */}

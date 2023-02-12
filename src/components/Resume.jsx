@@ -29,21 +29,20 @@ const Resume = () => {
         <h2>Technical Skills</h2>
         <div className="w-[90%] mx-auto grid grid-cols-2 sm:grid-cols-4 gap-4">
           <div className="leading-loose">
-            <h3 className="block font-['Source_Code_Pro'] font-semibold text-lg md:text-xl tracking-tighter">Front-end</h3>
-            {icon} ReactJS<br />
-            {icon} JavaScript<br />
+            <h3 className="block font-['Source_Code_Pro'] font-semibold text-lg md:text-xl tracking-tighter">Languages</h3>
+            {icon} JavaScript (ES6)<br />
             {icon} HTML5<br />
             {icon} CSS3<br />
             {icon} jQuery
           </div>
           <div className="leading-loose">
-            <h3 className="block font-['Source_Code_Pro'] font-semibold text-lg md:text-xl tracking-tighter">Back-end</h3>
+            <h3 className="block font-['Source_Code_Pro'] font-semibold text-lg md:text-xl tracking-tighter">Technologies</h3>
+            {icon} ReactJS<br />
             {icon} NodeJS<br />
-            {icon} ExpressJS<br />
-            {icon} PWAs<br />
+            {icon} GraphQL<br />
             {icon} REST APIs<br />
-            {icon} Sequelize<br />
-            {icon} MVC
+            {icon} Tailwind CSS<br />
+            {icon} Bootstrap
           </div>
           <div className="leading-loose">
             <h3 className="block font-['Source_Code_Pro'] font-semibold text-lg md:text-xl tracking-tighter">Database</h3>

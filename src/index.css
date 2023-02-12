@@ -42,6 +42,6 @@
 
   /* HOME COMPONENT */
   #main a.home {
-    @apply text-slate-400 md:text-yellow-800 hover:text-gray-800 cursor-pointer;
+    @apply text-slate-400 lg:text-yellow-800 hover:text-gray-800 cursor-pointer;
   }
 }
