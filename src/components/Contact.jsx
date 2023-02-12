@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 import { MapPin, AtSign, GitHub, Globe, ChevronsRight } from 'react-feather';
 
 import { validateEmail } from '../utils/helpers';
@@ -34,10 +35,25 @@ const Contact = () => {
 
   return (
     <div id="contact" className="max-w-screen-lg m-auto md:pl-20 px-8 py-24 sm:py-32">
-      <h2>Contact</h2>
-      <div className="max-w-screen-lg w-full grid grid-cols-1 md:grid-cols-2 gap-4">
+      <motion.h2
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, delay: 0.5 }}
+        viewport={{ once: true }}
+      >
+        Contact
+      </motion.h2>
+      <motion.div
+        className="max-w-screen-lg w-full grid grid-cols-1 md:grid-cols-2 gap-4"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, delay: 0.75 }}
+        viewport={{ once: true }}
+      >
         <div>
-          <p className="pb-8">Please feel free to reach out with any questions or opportunities. I look forward to hearing from you!</p>
+          <p>
+            Please feel free to reach out with any questions or opportunities. I look forward to hearing from you!
+          </p>
 
           <div className="max-w-[75%] w-full mx-auto grid grid-cols-2 gap-4">
             <div className="inline-flex items-center">
@@ -71,21 +87,43 @@ const Contact = () => {
         <div>
           <form method="POST" action={formUrl} id="contact-form" className="flex flex-col justify-center max-w-[600px] mx-auto w-full">
             <div class="w-full mx-auto">
-              <label className="block text-stone-400 font-['Source_Code_Pro'] font-medium">Name:</label>
-              <input type="text" defaultValue={name} onBlur={handleChange} name="name" className="w-full my-2 p-2 rounded bg-stone-100 border border-gray-300" />
+              <label className="block text-stone-400 font-['Source_Code_Pro'] font-medium">
+                Name:
+              </label>
+              <input
+                type="text"
+                name="name"
+                defaultValue={name}
+                onBlur={handleChange}
+                className="w-full my-2 p-2 rounded bg-stone-100 border border-gray-300"
+              />
 
-              <label className="block text-stone-400 font-['Source_Code_Pro'] font-medium">E-mail:</label>
-              <input type="email" defaultValue={email} onBlur={handleChange} name="email" className="w-full my-2 p-2 rounded bg-stone-100 border border-gray-300" />
+              <label className="block text-stone-400 font-['Source_Code_Pro'] font-medium">
+                E-mail:
+              </label>
+              <input
+                type="email"
+                name="email"
+                defaultValue={email}
+                onBlur={handleChange}
+                className="w-full my-2 p-2 rounded bg-stone-100 border border-gray-300" />
 
-              <label className="block text-stone-400 font-['Source_Code_Pro'] font-medium">Message:</label>
-              <textarea name="message" defaultValue={message} onBlur={handleChange} rows="4" className="w-full my-2 p-2 rounded bg-stone-100 border border-gray-300" />
+              <label className="block text-stone-400 font-['Source_Code_Pro'] font-medium">
+                Message:
+              </label>
+              <textarea
+                name="message"
+                defaultValue={message}
+                onBlur={handleChange}
+                rows="4"
+                className="w-full my-2 p-2 rounded bg-stone-100 border border-gray-300"
+              />
 
               {errorMessage && (
                 <div>
                   <p className="font-['Source_Code_pro'] tracking-tight text-xs">{errorMessage}</p>
                 </div>
               )}
-
               <button type="submit" className="group w-[120px]">
                 Submit
                 <span className="group-hover:ml-1 duration-300">
@@ -95,7 +133,7 @@ const Contact = () => {
             </div>
           </form>
         </div>
-    </div>
+    </motion.div>
   </div>
   );
 };

@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { ChevronsRight, FastForward } from 'react-feather';
 import TigerImg from '../assets/tiger.png';
 
@@ -7,56 +8,86 @@ const Resume = () => {
 
   return (
     <div id="resume" className="relative w-full h-screen">
-      <img
+      <motion.img
         className="w-full h-screen hidden md:flex md:object-cover md:object-left"
         src={TigerImg}
         alt="Sketch of a tiger"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 3, delay: 0.5 }}
+        viewport={{ once: true }}
       />
       <div className="w-full h-screen absolute top-0 left-0 bg-stone-100/60">
         <div className="max-w-screen-lg m-auto md:pl-20 px-8 py-24 sm:py-32">
-        <h2>Resume</h2>
-        <div className="mb-12 flex flex-col justify-center items-center w-full h-full">
-          <a href="#">
-            <button type="submit" className="group w-[160px]">
-              Download CV
-              <span className="group-hover:ml-1 duration-300">
-                <ChevronsRight size={15} className="ml-2" />
-              </span>
-            </button>
-          </a>
-        </div>
+          <motion.h2
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0.5 }}
+            viewport={{ once: true }}
+          >
+            Resume
+          </motion.h2>
+          <motion.div
+            className="mb-12 flex flex-col justify-center items-center w-full h-full"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0.75 }}
+            viewport={{ once: true }}
+          >
+            <a href="#">
+              <button type="submit" className="group w-[160px]">
+                Download CV
+                <span className="group-hover:ml-1 duration-300">
+                  <ChevronsRight size={15} className="ml-2" />
+                </span>
+              </button>
+            </a>
+          </motion.div>
 
-        <h2>Technical Skills</h2>
-        <div className="w-[90%] mx-auto grid grid-cols-2 sm:grid-cols-4 gap-4">
-          <div className="leading-loose">
-            <h3 className="block font-['Source_Code_Pro'] font-semibold text-lg md:text-xl tracking-tighter">Languages</h3>
-            {icon} JavaScript (ES6)<br />
-            {icon} HTML5<br />
-            {icon} CSS3<br />
-            {icon} jQuery
-          </div>
-          <div className="leading-loose">
-            <h3 className="block font-['Source_Code_Pro'] font-semibold text-lg md:text-xl tracking-tighter">Technologies</h3>
-            {icon} ReactJS<br />
-            {icon} NodeJS<br />
-            {icon} GraphQL<br />
-            {icon} REST APIs<br />
-            {icon} Tailwind CSS<br />
-            {icon} Bootstrap
-          </div>
-          <div className="leading-loose">
-            <h3 className="block font-['Source_Code_Pro'] font-semibold text-lg md:text-xl tracking-tighter">Database</h3>
-            {icon} MySQL<br />
-            {icon} MongoDB
-          </div>
-          <div className="leading-loose">
-            <h3 className="block font-['Source_Code_Pro'] font-semibold text-lg md:text-xl tracking-tighter">Tools</h3>
-            {icon} Git + GitHub<br />
-            {icon} Heroku<br />
-            {icon} Chrome Dev Tools<br />
-            {icon} Photoshop
+          <motion.h2
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 1 }}
+            viewport={{ once: true }}
+          >
+            Technical Skills
+          </motion.h2>
+          <motion.div
+            className="w-[90%] mx-auto grid grid-cols-2 sm:grid-cols-4 gap-4"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 1.25 }}
+            viewport={{ once: true }}
+          >
+            <div className="leading-loose">
+              <h3 className="block font-['Source_Code_Pro'] font-semibold text-lg md:text-xl tracking-tighter">Languages</h3>
+              {icon} JavaScript (ES6)<br />
+              {icon} HTML5<br />
+              {icon} CSS3<br />
+              {icon} jQuery
             </div>
-          </div>
+            <div className="leading-loose">
+              <h3 className="block font-['Source_Code_Pro'] font-semibold text-lg md:text-xl tracking-tighter">Technologies</h3>
+              {icon} ReactJS<br />
+              {icon} NodeJS<br />
+              {icon} GraphQL<br />
+              {icon} REST APIs<br />
+              {icon} Tailwind CSS<br />
+              {icon} Bootstrap
+            </div>
+            <div className="leading-loose">
+              <h3 className="block font-['Source_Code_Pro'] font-semibold text-lg md:text-xl tracking-tighter">Database</h3>
+              {icon} MySQL<br />
+              {icon} MongoDB
+            </div>
+            <div className="leading-loose">
+              <h3 className="block font-['Source_Code_Pro'] font-semibold text-lg md:text-xl tracking-tighter">Tools</h3>
+              {icon} Git + GitHub<br />
+              {icon} Heroku<br />
+              {icon} Chrome Dev Tools<br />
+              {icon} Photoshop
+            </div>
+          </motion.div>
         </div>
       </div>
     </div>

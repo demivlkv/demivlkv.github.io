@@ -8,12 +8,12 @@ const Home = () => {
   return (
     <div id="main" className="w-full h-screen">
       <motion.img
-        className="w-full h-screen hidden md:flex md:object-cover md:object-center lg:object-right"
+        className="w-full h-screen flex object-contain object-top md:object-cover md:object-center lg:object-right"
         src={DragonImg}
         alt="Sketch of a dragon"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 3, delay: 4.25 }}
+        transition={{ duration: 4, delay: 0.5 }}
         viewport={{ once: true }}
       />
       <div className="w-full h-screen absolute top-[70px] left-0 bg-stone-100/50">

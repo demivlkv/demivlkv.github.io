@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { ExternalLink, GitHub } from 'react-feather';
 
 import TripTideImg from '../assets/portfolio/trip-tide.png';
@@ -77,13 +78,48 @@ const projects = [
   }
 ];
 
+const animateProject = {
+  hidden: { opacity: 0, y: 50 },
+  animate: {
+      opacity: 1, 
+      y: 0,
+      transition: {
+          delay: 1,
+          duration: 0.4,
+          type: 'tween',
+          delayChildren: 1,
+          staggerChildren: 0.4
+      }
+  }
+};
+
+const animateProjectItem = {
+  hidden: { opacity: 0, y: 50 },
+  animate: { 
+      y: 0,
+      opacity: 1,
+      transition: {
+          duration: 0.4,
+          type: 'tween'
+      }
+  }
+};
+
 const Project = () => {
   return (
-    <div className="w-full grid md:grid-cols-2 gap-8">
+    <motion.div
+      className="w-full grid md:grid-cols-2 gap-8"
+      variants={animateProject}
+      initial="hidden"
+      whileInView="animate"
+      viewport={{ once: true }}
+    >
       {projects.map((project) => (
-        <div
+        <motion.div
           key={project}
           className="relative group"
+          variants={animateProjectItem}
+          viewport={{ once: true }}
         >
           <div className="w-full h-max aspect-auto overflow-hidden rounded-lg opacity-90 hover:opacity-100 transition-all shadow-lg shadow-gray-700 cursor-pointer">
     
@@ -114,9 +150,9 @@ const Project = () => {
               </div>   
             </div>
           </div>
-        </div>
+        </motion.div>
       ))}
-    </div>
+    </motion.div>
   );
 };
 
