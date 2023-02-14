@@ -9,7 +9,7 @@ const Resume = () => {
   return (
     <div id="resume" className="relative w-full h-screen">
       <motion.img
-        className="w-full h-screen hidden md:flex md:object-cover md:object-left"
+        className="w-full h-screen object-contain object-left-bottom lg:object-cover lg:object-left"
         src={TigerImg}
         alt="Sketch of a tiger"
         initial={{ opacity: 0 }}
@@ -53,7 +53,7 @@ const Resume = () => {
             Technical Skills
           </motion.h2>
           <motion.div
-            className="w-[90%] mx-auto grid grid-cols-2 sm:grid-cols-4 gap-4"
+            className="w-3/4 mx-auto grid grid-cols-2 lg:grid-cols-4 gap-4"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 1.25 }}

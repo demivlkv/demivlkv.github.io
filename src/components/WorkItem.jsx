@@ -35,7 +35,7 @@ const WorkItem = ({ year, title, company, duration, details }) => {
           className="absolute mt-1.5 -left-1.5 w-3 h-3 bg-stone-300 rounded-full"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 1.5, delay: 2 }}
+          transition={{ duration: 0.4, delay: 1.75 }}
           viewport={{ once: true }}
         />
 

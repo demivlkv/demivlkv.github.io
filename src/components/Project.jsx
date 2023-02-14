@@ -84,10 +84,10 @@ const animateProject = {
       opacity: 1, 
       y: 0,
       transition: {
-          delay: 1,
+          delay: 0.75,
           duration: 0.4,
           type: 'tween',
-          delayChildren: 1,
+          delayChildren: 0.5,
           staggerChildren: 0.4
       }
   }
