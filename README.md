@@ -1,9 +1,9 @@
 # v3: Portfolio
-![This is my logo.](/../main/assets/readme-banner.png)
+![This is my logo.](/../main/src/assets/readme-banner.png)
 
 <p align="center">:sparkles: My web developer portfolio. :sparkles:</p>
 
-![Screenshot](/../main/assets/images/screenshot.png)
+![Screenshot](/../main/src/assets/images/screenshot.png)
 
 ### Built With:
 - [Vite](https://vitejs.dev/)
