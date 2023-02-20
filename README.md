@@ -3,7 +3,7 @@
 
 <p align="center">:sparkles: My web developer portfolio. :sparkles:</p>
 
-![Screenshot](/../main/src/assets/images/screenshot.png)
+![Screenshot](/../main/src/assets/screenshot.png)
 
 ### Built With:
 - [Vite](https://vitejs.dev/)
