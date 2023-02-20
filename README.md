@@ -1,13 +1,15 @@
-# v2: Portfolio
-![This is my logo.](/../main/assets/images/name-logo.png)
+# v3: Portfolio
+![This is my logo.](/../main/assets/readme-banner.png)
 
-<p align="center">:sparkles: Second rendition of my web developer portfolio. :sparkles:</p>
+<p align="center">:sparkles: My web developer portfolio. :sparkles:</p>
 
-![This is a screenshot of my portfolio in dark mode.](/../main/assets/images/demo.gif)
-
-[Version 1 here.](https://github.com/demivlkv/portfolio)
+![Screenshot](/../main/assets/images/screenshot.png)
 
 ### Built With:
-- HTML
-- CSS / [Bootstrap](https://getbootstrap.com/)
-- JavaScript / [jQuery](https://jquery.com/)
+- [Vite](https://vitejs.dev/)
+- JavaScript
+- CSS / [Tailwind CSS](https://tailwindcss.com/)
+- npm packages:
+    - [Framer-Motion](https://www.framer.com/motion/)
+    - [Feather Icons](https://feathericons.com/)
+- [Getform.io](https://getform.io/)
