@@ -55,7 +55,7 @@ const Contact = () => {
             Please feel free to reach out with any questions or opportunities. I look forward to hearing from you!
           </p>
 
-          <div className="max-w-[75%] w-full mx-auto grid grid-cols-2 gap-4">
+          <div className="max-w-[75%] w-full mx-auto py-8 grid grid-cols-2 gap-4">
             <div className="inline-flex items-center">
               <MapPin className="text-slate-400" size={22} />&nbsp;Location
             </div>
@@ -87,7 +87,7 @@ const Contact = () => {
         <div>
           <form method="POST" action={formUrl} id="contact-form" className="flex flex-col justify-center max-w-[600px] mx-auto w-full">
             <div class="w-full mx-auto">
-              <label className="block text-stone-400 font-['Source_Code_Pro'] font-medium">
+              <label className="block font-['Source_Code_Pro'] font-medium">
                 Name:
               </label>
               <input
@@ -98,7 +98,7 @@ const Contact = () => {
                 className="w-full my-2 p-2 rounded bg-stone-100 border border-gray-300"
               />
 
-              <label className="block text-stone-400 font-['Source_Code_Pro'] font-medium">
+              <label className="block font-['Source_Code_Pro'] font-medium">
                 E-mail:
               </label>
               <input
@@ -108,7 +108,7 @@ const Contact = () => {
                 onBlur={handleChange}
                 className="w-full my-2 p-2 rounded bg-stone-100 border border-gray-300" />
 
-              <label className="block text-stone-400 font-['Source_Code_Pro'] font-medium">
+              <label className="block font-['Source_Code_Pro'] font-medium">
                 Message:
               </label>
               <textarea

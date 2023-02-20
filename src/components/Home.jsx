@@ -75,10 +75,10 @@ const Home = () => {
             transition={{ duration: 0.5, delay: 1.5 }}
             viewport={{ once: true }}
           >
-            <a href="#">
+            <a href="/Demi-Hayashi-CV.pdf">
               <button type="submit" className="group w-[160px]">
                 Download CV
-                <span className="group-hover:ml-1 duration-300">
+                <span className="group-hover:text-slate-400 group-hover:ml-1 duration-300">
                   <ChevronsRight size={15} className="ml-2" />
                 </span>
               </button>

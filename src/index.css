@@ -26,22 +26,22 @@
   }
 
   button[type=submit] {
-    @apply font-['Source_Code_Pro'] text-sm hover:text-slate-400 tracking-tight mx-auto flex items-center my-2 pl-6 py-3 border-2 border-gray-300 rounded hover:bg-[#94a3b81f] hover:border-slate-400 transition-all ease-in duration-300;
+    @apply font-['Source_Code_Pro'] text-sm tracking-tight mx-auto flex items-center my-2 pl-6 py-3 border-2 border-gray-300 rounded hover:bg-[#94a3b81f] hover:border-slate-400 transition-all ease-in duration-300;
   }
 }
 
 @layer components {
-  /* HEADER COMPONENT */
-  .header a.links {
+  /* NAVBAR COMPONENT */
+  .navbar a.links {
     @apply font-['Source_Code_Pro'] text-sm text-slate-400 hover:text-gray-800 cursor-pointer;
   }
 
-  .header a.mobile-links {
+  .navbar a.mobile-links {
     @apply font-['Source_Code_Pro'] w-1/2 m-2 p-3 flex justify-center items-center text-slate-400 hover:text-gray-800 cursor-pointer;
   }
 
   /* HOME COMPONENT */
   #main a.home {
-    @apply text-slate-400 lg:text-yellow-800 hover:text-gray-800 cursor-pointer;
+    @apply text-slate-400 lg:text-amber-900/80 hover:text-gray-800 cursor-pointer;
   }
 }

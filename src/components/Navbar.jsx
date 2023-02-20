@@ -27,7 +27,7 @@ function handleScroll() {
   return scrollDirection;
 };
 
-const Header = () => {
+const Navbar = () => {
   const scrollDirection = handleScroll();
   // toggle hamburger menu
   const [nav, setNav] = useState(false);
@@ -45,7 +45,7 @@ const Header = () => {
 
   return (
     <div className={`sticky ${scrollDirection === "down" ? "-top-[70px]" : "top-0"} ${!top && `shadow-lg bg-stone-100/80 backdrop-blur-md`} h-[70px] bg-stone-100 transition-all duration-500 z-[99]`}>
-      <div className="header w-full h-full flex justify-between items-center py-4 px-6">
+      <div className="navbar w-full h-full flex justify-between items-center py-4 px-6">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -59,11 +59,11 @@ const Header = () => {
           {/* NAVBAR AT 768PX & ABOVE */}
           <div>
             <ul className="hidden md:flex list-none">
-              <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 1.75 }} viewport={{ once: true }}><a href="#about" className="links mr-6">About</a></motion.li>
-              <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 2 }} viewport={{ once: true }}><a href="#work" className="links mx-6">Experience</a></motion.li>
-              <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 2.25 }} viewport={{ once: true }}><a href="#projects" className="links mx-6">Projects</a></motion.li>
-              <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 2.5 }} viewport={{ once: true }}><a href="#contact" className="links mx-6">Contact</a></motion.li>
-              <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 2.75 }} viewport={{ once: true }}><a href="#resume" className="links ml-6">Resume</a></motion.li>
+              <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 3 }} viewport={{ once: true }}><a href="#about" className="links mr-6">About</a></motion.li>
+              <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 3.25 }} viewport={{ once: true }}><a href="#work" className="links mx-6">Experience</a></motion.li>
+              <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 3.5 }} viewport={{ once: true }}><a href="#projects" className="links mx-6">Projects</a></motion.li>
+              <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 3.75 }} viewport={{ once: true }}><a href="#contact" className="links mx-6">Contact</a></motion.li>
+              <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 4 }} viewport={{ once: true }}><a href="#resume" className="links ml-6">Resume</a></motion.li>
             </ul>
           </div>
 
@@ -103,4 +103,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Navbar;

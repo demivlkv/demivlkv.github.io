@@ -1,4 +1,4 @@
-import Header from './components/Header';
+import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
 import Work from './components/Work';
@@ -11,10 +11,10 @@ function App() {
 
   return (
     <>
-      <Header />
+      <Navbar />
       <Home />
       <About />
-      <Work />
+      {/* <Work /> */}
       <Portfolio />
       <Contact />
       <Resume />
