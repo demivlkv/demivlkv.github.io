@@ -52,10 +52,10 @@ const Contact = () => {
       >
         <div>
           <p>
-            Please feel free to reach out with any questions or opportunities. I look forward to hearing from you!
+            Please feel free to reach out with any questions or opportunities, and I'll do my best to respond as soon as possible. I look forward to hearing from you!
           </p>
 
-          <div className="max-w-[75%] w-full mx-auto py-8 grid grid-cols-2 gap-4">
+          <div className="max-w-[90%] w-full mx-auto py-8 grid grid-cols-2 gap-2 sm:gap-4">
             <div className="inline-flex items-center">
               <MapPin className="text-slate-400" size={22} />&nbsp;Location
             </div>

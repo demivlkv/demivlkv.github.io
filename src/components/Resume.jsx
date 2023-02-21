@@ -53,7 +53,7 @@ const Resume = () => {
             Technical Skills
           </motion.h2>
           <motion.div
-            className="w-3/4 mx-auto grid grid-cols-2 lg:grid-cols-4 gap-4"
+            className="w-full sm:w-3/4 mx-auto grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-4"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 1.25 }}

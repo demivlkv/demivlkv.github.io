@@ -121,7 +121,7 @@ const Project = () => {
           variants={animateProjectItem}
           viewport={{ once: true }}
         >
-          <div className="w-full h-max aspect-auto overflow-hidden rounded-lg opacity-90 hover:opacity-100 transition-all shadow-lg shadow-gray-700 cursor-pointer">
+          <div className="w-full h-max aspect-auto overflow-hidden rounded-lg opacity-90 hover:opacity-100 transition-all shadow-lg cursor-pointer">
     
             <img src={project.thumbnail} alt={project.title} className="w-full" />
     

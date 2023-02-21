@@ -1,7 +1,6 @@
 # v3: Portfolio
 ![This is my logo.](/../main/src/assets/readme-banner.png)
-
-<p align="center">:sparkles: My web developer portfolio. :sparkles:</p>
+<p align="center">:sparkles: <a href="https://demihayashi.com/">My web developer portfolio.</a> :sparkles:</p>
 
 ![Screenshot](/../main/src/assets/screenshot.png)
 
