@@ -13,36 +13,44 @@ import WeatherImg from '../assets/portfolio/weather-dashboard.png';
 
 const projects = [
   {
-      title: 'Trip Tide',
-      thumbnail: TripTideImg,
-      description: 'A MERN + GraphQL stack travel application intended to be a one-stop shop for travel enthusiasts. Users can discuss all-things travel.',
-      technologies: 'MongoDB / ExpressJS / ReactJS / NodeJS',
-      url: 'https://trip-tide.herokuapp.com/',
-      github: 'https://github.com/demivlkv/trip-tide'
+    title: 'Trip Tide',
+    thumbnail: TripTideImg,
+    description: 'A MERN + GraphQL stack travel application intended to be a one-stop shop for travel enthusiasts. Users can discuss all-things travel.',
+    technologies: 'MongoDB / ExpressJS / ReactJS / NodeJS',
+    url: 'https://trip-tide.herokuapp.com/',
+    github: 'https://github.com/demivlkv/trip-tide'
   },
   {
-      title: 'Sound Stream',
-      thumbnail: SoundStreamImg,
-      description: 'A simple Spotify clone',
-      technologies: 'ReactJS / ExpressJS / Tailwind CSS / Spotify API',
-      url: 'https://soundstream.herokuapp.com/',
-      github: 'https://github.com/demivlkv/soundstream'
+    title: 'Weather Dashboard',
+    thumbnail: WeatherImg,
+    description: 'A weather dashboard application built with OpenWeather API',
+    technologies: 'ReactJS / TypeScript / Tailwind CSS',
+    url: 'https://creative-gaufre-7a5162.netlify.app/',
+    github: 'https://github.com/demivlkv/weather-dashboard'
   },
   {
-      title: 'Tokio Ramen',
-      thumbnail: TokioImg,
-      description: 'A freelance project to revamp the website of Tokio Ramen - a local ramen business in Boynton Beach, FL',
-      technologies: 'GatsbyJS / Contentful / GraphQL / Tailwind CSS',
-      url: 'https://tokio-ramen.netlify.app/',
-      github: 'https://github.com/demivlkv/tokio-ramen'
+    title: 'Sound Stream',
+    thumbnail: SoundStreamImg,
+    description: 'A simple Spotify clone',
+    technologies: 'ReactJS / ExpressJS / Tailwind CSS / Spotify API',
+    url: 'https://soundstream.herokuapp.com/',
+    github: 'https://github.com/demivlkv/soundstream'
   },
   {
-      title: 'Book Nook v2',
-      thumbnail: BookNookv2Img,
-      description: 'A collaborative project to build a MERN stack social media site based off the original Book Nook project',
-      technologies: 'MongoDB / ExpressJS / ReactJS / NodeJS',
-      url: 'https://book-nook-v2.herokuapp.com/',
-      github: 'https://github.com/demivlkv/book-nook-v2'
+    title: 'Tokio Ramen',
+    thumbnail: TokioImg,
+    description: 'A freelance project to revamp the website of Tokio Ramen - a local ramen business in Boynton Beach, FL',
+    technologies: 'GatsbyJS / Contentful / GraphQL / Tailwind CSS',
+    url: 'https://tokio-ramen.netlify.app/',
+    github: 'https://github.com/demivlkv/tokio-ramen'
+  },
+  {
+    title: 'Book Nook v2',
+    thumbnail: BookNookv2Img,
+    description: 'A collaborative project to build a MERN stack social media site based off the original Book Nook project',
+    technologies: 'MongoDB / ExpressJS / ReactJS / NodeJS',
+    url: 'https://book-nook-v2.herokuapp.com/',
+    github: 'https://github.com/demivlkv/book-nook-v2'
   },
   {
       title: 'Book Nook v1',
@@ -53,28 +61,20 @@ const projects = [
       github: 'https://github.com/demivlkv/book-nook'
   },
   {
-      title: 'Tech Blog',
-      thumbnail: TechBlogImg,
-      description: 'A full-stack CMS-style blog site where users can create an account, publish articles, blog posts, & thoughts',
-      technologies: 'JavaScript / NodeJS / MySQL',
-      url: 'https://frozen-sierra-30429.herokuapp.com/',
-      github: 'https://github.com/demivlkv/tech-blog'
+    title: 'Tech Blog',
+    thumbnail: TechBlogImg,
+    description: 'A full-stack CMS-style blog site where users can create an account, publish articles, blog posts, & thoughts',
+    technologies: 'JavaScript / NodeJS / MySQL',
+    url: 'https://frozen-sierra-30429.herokuapp.com/',
+    github: 'https://github.com/demivlkv/tech-blog'
   },
   {
-      title: 'Find-A-Story',
-      thumbnail: FindAStoryImg,
-      description: 'A collaborative project to develop a media database application using the Open Movie Database API & Google Books API',
-      technologies: 'JavaScript / jQuery /  HTML / CSS',
-      url: 'https://demivlkv.github.io/Find-A-Story',
-      github: 'https://github.com/demivlkv/Find-A-Story'
-  },
-  {
-      title: 'Weather Dashboard',
-      thumbnail: WeatherImg,
-      description: 'A weather dashboard application built with OpenWeather API',
-      technologies: 'JavaScript / HTML / Bootstrap',
-      url: 'https://demivlkv.github.io/weather-dashboard',
-      github: 'https://github.com/demivlkv/weather-dashboard'
+    title: 'Find-A-Story',
+    thumbnail: FindAStoryImg,
+    description: 'A collaborative project to develop a media database application using the Open Movie Database API & Google Books API',
+    technologies: 'JavaScript / jQuery /  HTML / CSS',
+    url: 'https://demivlkv.github.io/Find-A-Story',
+    github: 'https://github.com/demivlkv/Find-A-Story'
   }
 ];
 
