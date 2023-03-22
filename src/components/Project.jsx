@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink, GitHub } from 'react-feather';
 
@@ -29,14 +28,6 @@ const projects = [
     github: 'https://github.com/demivlkv/weather-dashboard'
   },
   {
-    title: 'Sound Stream',
-    thumbnail: SoundStreamImg,
-    description: 'A simple Spotify clone',
-    technologies: 'ReactJS / ExpressJS / Tailwind CSS / Spotify API',
-    url: 'https://soundstream.herokuapp.com/',
-    github: 'https://github.com/demivlkv/soundstream'
-  },
-  {
     title: 'Tokio Ramen',
     thumbnail: TokioImg,
     description: 'A freelance project to revamp the website of Tokio Ramen - a local ramen business in Boynton Beach, FL',
@@ -53,21 +44,29 @@ const projects = [
     github: 'https://github.com/demivlkv/book-nook-v2'
   },
   {
-      title: 'Book Nook v1',
-      thumbnail: BookNookv1Img,
-      description: 'A collaborative effort to provide a platform for all parents to discuss books for their young readers',
-      technologies: 'JavaScript / HandlebarsJS / NodeJS / MySQL',
-      url: 'https://booknook-stars.herokuapp.com/',
-      github: 'https://github.com/demivlkv/book-nook'
+    title: 'Sound Stream',
+    thumbnail: SoundStreamImg,
+    description: 'A simple Spotify clone',
+    technologies: 'ReactJS / ExpressJS / Tailwind CSS / Spotify API',
+    url: 'https://soundstream.herokuapp.com/',
+    github: 'https://github.com/demivlkv/soundstream'
   },
-  {
-    title: 'Tech Blog',
-    thumbnail: TechBlogImg,
-    description: 'A full-stack CMS-style blog site where users can create an account, publish articles, blog posts, & thoughts',
-    technologies: 'JavaScript / NodeJS / MySQL',
-    url: 'https://frozen-sierra-30429.herokuapp.com/',
-    github: 'https://github.com/demivlkv/tech-blog'
-  },
+  // {
+  //     title: 'Book Nook v1',
+  //     thumbnail: BookNookv1Img,
+  //     description: 'A collaborative effort to provide a platform for all parents to discuss books for their young readers',
+  //     technologies: 'JavaScript / HandlebarsJS / NodeJS / MySQL',
+  //     url: 'https://booknook-stars.herokuapp.com/',
+  //     github: 'https://github.com/demivlkv/book-nook'
+  // },
+  // {
+  //   title: 'Tech Blog',
+  //   thumbnail: TechBlogImg,
+  //   description: 'A full-stack CMS-style blog site where users can create an account, publish articles, blog posts, & thoughts',
+  //   technologies: 'JavaScript / NodeJS / MySQL',
+  //   url: 'https://frozen-sierra-30429.herokuapp.com/',
+  //   github: 'https://github.com/demivlkv/tech-blog'
+  // },
   {
     title: 'Find-A-Story',
     thumbnail: FindAStoryImg,
@@ -115,13 +114,13 @@ const Project = () => {
       viewport={{ once: true }}
     >
       {projects.map((project) => (
-        <motion.div
+        <motion.article
           key={project}
           className="relative group"
           variants={animateProjectItem}
           viewport={{ once: true }}
         >
-          <div className="w-full h-max aspect-auto overflow-hidden rounded-lg opacity-90 hover:opacity-100 transition-all shadow-lg cursor-pointer">
+          <div className="w-full h-max aspect-auto overflow-hidden rounded-lg opacity-90 hover:opacity-100 transition-all shadow-lg dark:shadow-gray-900 cursor-pointer">
     
             <img src={project.thumbnail} alt={project.title} className="w-full" />
     
@@ -150,7 +149,7 @@ const Project = () => {
               </div>   
             </div>
           </div>
-        </motion.div>
+        </motion.article>
       ))}
     </motion.div>
   );

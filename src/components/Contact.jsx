@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { MapPin, AtSign, GitHub, Globe, ChevronsRight } from 'react-feather';
 
@@ -34,7 +34,7 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="max-w-screen-lg m-auto md:pl-20 px-8 py-24 sm:py-32">
+    <section id="contact" className="max-w-screen-lg m-auto md:pl-20 px-8 py-24 sm:py-32">
       <motion.h2
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -95,7 +95,7 @@ const Contact = () => {
                 name="name"
                 defaultValue={name}
                 onBlur={handleChange}
-                className="w-full my-2 p-2 rounded bg-stone-100 border border-gray-300"
+                className="w-full my-2 p-2 rounded bg-stone-100 dark:bg-slate-700 border border-gray-300 dark:border-gray-500"
               />
 
               <label className="block font-['Source_Code_Pro'] font-medium">
@@ -106,7 +106,7 @@ const Contact = () => {
                 name="email"
                 defaultValue={email}
                 onBlur={handleChange}
-                className="w-full my-2 p-2 rounded bg-stone-100 border border-gray-300" />
+                className="w-full my-2 p-2 rounded bg-stone-100 dark:bg-slate-700 border border-gray-300 dark:border-gray-500" />
 
               <label className="block font-['Source_Code_Pro'] font-medium">
                 Message:
@@ -116,7 +116,7 @@ const Contact = () => {
                 defaultValue={message}
                 onBlur={handleChange}
                 rows="4"
-                className="w-full my-2 p-2 rounded bg-stone-100 border border-gray-300"
+                className="w-full my-2 p-2 rounded bg-stone-100 dark:bg-slate-700 border border-gray-300 dark:border-gray-500"
               />
 
               {errorMessage && (
@@ -134,7 +134,7 @@ const Contact = () => {
           </form>
         </div>
     </motion.div>
-  </div>
+  </section>
   );
 };
 

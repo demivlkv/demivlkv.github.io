@@ -1,23 +1,23 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { ChevronsRight, FastForward } from 'react-feather';
 import TigerImg from '../assets/tiger.png';
+import DarkTigerImg from '../assets/dark-tiger.png';
 
-const Resume = () => {
+const Resume = ({ darkMode }) => {
   const icon = <FastForward className="inline-flex justify-center items-center pb-1 text-slate-400" size={15} />
 
   return (
-    <div id="resume" className="relative w-full h-screen">
+    <section id="resume" className="relative w-full h-screen">
       <motion.img
         className="w-full h-screen object-contain object-left-bottom lg:object-cover lg:object-left"
-        src={TigerImg}
+        src={darkMode ? DarkTigerImg : TigerImg}
         alt="Sketch of a tiger"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 3, delay: 0.5 }}
         viewport={{ once: true }}
       />
-      <div className="w-full h-screen absolute top-0 left-0 bg-stone-100/60">
+      <div className="w-full h-screen absolute top-0 left-0 bg-stone-100/60 dark:bg-slate-800/30">
         <div className="max-w-screen-lg m-auto md:pl-20 px-8 py-24 sm:py-32">
           <motion.h2
             initial={{ opacity: 0, y: 50 }}
@@ -27,7 +27,7 @@ const Resume = () => {
           >
             Resume
           </motion.h2>
-          <motion.div
+          <motion.article
             className="mb-12 flex flex-col justify-center items-center w-full h-full"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -42,7 +42,7 @@ const Resume = () => {
                 </span>
               </button>
             </a>
-          </motion.div>
+          </motion.article>
 
           <motion.h2
             initial={{ opacity: 0, y: 50 }}
@@ -52,7 +52,7 @@ const Resume = () => {
           >
             Technical Skills
           </motion.h2>
-          <motion.div
+          <motion.article
             className="w-full sm:w-3/4 mx-auto grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-4"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -62,13 +62,14 @@ const Resume = () => {
             <div className="leading-loose">
               <h3 className="block font-['Source_Code_Pro'] font-semibold text-lg md:text-xl tracking-tighter">Languages</h3>
               {icon} JavaScript (ES6)<br />
+              {icon} TypeScript<br />
               {icon} HTML5<br />
-              {icon} CSS3<br />
-              {icon} jQuery
+              {icon} CSS3
             </div>
             <div className="leading-loose">
               <h3 className="block font-['Source_Code_Pro'] font-semibold text-lg md:text-xl tracking-tighter">Technologies</h3>
               {icon} ReactJS<br />
+              {icon} jQuery<br />
               {icon} NodeJS<br />
               {icon} GraphQL<br />
               {icon} REST APIs<br />
@@ -87,10 +88,10 @@ const Resume = () => {
               {icon} Chrome Dev Tools<br />
               {icon} Photoshop
             </div>
-          </motion.div>
+          </motion.article>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

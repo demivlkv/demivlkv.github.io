@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Menu, X } from 'react-feather';
+import { Menu, X, Sun, Moon } from 'react-feather';
 import Logo from '../assets/logo.png';
 
 function handleScroll() {
@@ -27,7 +27,7 @@ function handleScroll() {
   return scrollDirection;
 };
 
-const Navbar = () => {
+const Navbar = ({ darkMode, toggleDarkMode }) => {
   const scrollDirection = handleScroll();
   // toggle hamburger menu
   const [nav, setNav] = useState(false);
@@ -44,7 +44,7 @@ const Navbar = () => {
   }, [top]);
 
   return (
-    <div className={`sticky ${scrollDirection === "down" ? "-top-[70px]" : "top-0"} ${!top && `shadow-lg bg-stone-100/80 backdrop-blur-md`} h-[70px] bg-stone-100 transition-all duration-500 z-[99]`}>
+    <section className={`sticky ${scrollDirection === "down" ? "-top-[70px]" : "top-0"} ${!top && `shadow-lg bg-stone-100/80 dark:bg-slate-800/80 dark:shadow-gray-900 backdrop-blur-md`} h-[70px] bg-stone-100 dark:bg-slate-800 transition-all duration-500 z-[99]`}>
       <div className="navbar w-full h-full flex justify-between items-center py-4 px-6">
         <motion.div
           initial={{ opacity: 0 }}
@@ -58,17 +58,20 @@ const Navbar = () => {
         </motion.div>
           {/* NAVBAR AT 768PX & ABOVE */}
           <div>
-            <ul className="hidden md:flex list-none">
-              <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 3 }} viewport={{ once: true }}><a href="#about" className="links mr-6">About</a></motion.li>
-              <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 3.25 }} viewport={{ once: true }}><a href="#work" className="links mx-6">Experience</a></motion.li>
-              <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 3.5 }} viewport={{ once: true }}><a href="#projects" className="links mx-6">Projects</a></motion.li>
-              <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 3.75 }} viewport={{ once: true }}><a href="#contact" className="links mx-6">Contact</a></motion.li>
-              <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 4 }} viewport={{ once: true }}><a href="#resume" className="links ml-6">Resume</a></motion.li>
+            <ul className="hidden md:flex md:items-center list-none">
+              <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 3 }} viewport={{ once: true }}><a href="#about" className="mr-6">About</a></motion.li>
+              <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 3.25 }} viewport={{ once: true }}><a href="#work" className="mx-6">Experience</a></motion.li>
+              <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 3.5 }} viewport={{ once: true }}><a href="#projects" className="mx-6">Projects</a></motion.li>
+              <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 3.75 }} viewport={{ once: true }}><a href="#contact" className="mx-6">Contact</a></motion.li>
+              <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 4 }} viewport={{ once: true }}><a href="#resume" className="mx-6">Resume</a></motion.li>
+              <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 4.25 }} viewport={{ once: true }} onClick={toggleDarkMode}>
+                {darkMode ? <Sun className="ml-6 transition-all ease-in duration-300" /> : <Moon className="ml-6 transition-all ease-in duration-300" />}
+              </motion.li>
             </ul>
           </div>
 
           {/* HAMBURGER MENU AT 768PX & LOWER */}
-          <div onClick={handleNav} className="md:hidden transition-all ease-in duration-500 z-20">
+          <div onClick={handleNav} className={`md:hidden transition-all ease-in duration-500 z-20`}>
           {!nav ? (
             <Menu size={30} className="hover:text-slate-400 transition-all ease-in duration-300 cursor-pointer" />
           ) : (
@@ -76,7 +79,7 @@ const Navbar = () => {
           )}
           {nav ? (
             <motion.div
-              className={`fixed ${scrollDirection === "down" ? "top-[70px]" : "top-0"} right-0 w-1/2 h-screen shadow-lg bg-stone-100/90 z-[1]`}
+              className={`fixed ${scrollDirection === "down" ? "top-[70px]" : "top-0"} right-0 w-1/2 h-screen shadow-lg bg-stone-100/90 dark:bg-slate-800/90 dark:shadow-gray-900 backdrop-blur-md z-[1]`}
               initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 100 }}
@@ -92,6 +95,9 @@ const Navbar = () => {
                 <a href="#projects" className="mobile-links">Projects</a>
                 <a href="#contact" className="mobile-links">Contact</a>
                 <a href="#resume" className="mobile-links">Resume</a>
+                <button onClick={toggleDarkMode} className="w-1/2 m-2 p-3 flex justify-center items-center text-slate-400 hover:text-gray-800 cursor-pointer">
+                  {darkMode ? <Sun /> : <Moon />}
+                </button>
               </div>
             </motion.div>
         ) : (
@@ -99,7 +105,7 @@ const Navbar = () => {
         )}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

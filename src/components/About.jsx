@@ -1,10 +1,9 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import AboutImg from '../assets/me.png';
 
 const About = () => {
   return (
-    <div id="about" className="max-w-screen-lg m-auto md:pl-20 px-8 py-24 sm:py-32">
+    <section id="about" className="max-w-screen-lg m-auto md:pl-20 px-8 py-24 sm:py-32">
       <motion.h2
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -17,7 +16,7 @@ const About = () => {
         <div className="flex justify-center w-1/2 md:w-full pb-8 md:pr-12 md:pb-0">
           <motion.img
             src={AboutImg}
-            className="shadow-lg rounded-full"
+            className="shadow-lg dark:shadow-gray-900 rounded-full"
             alt="Hi, I'm Demi!"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -45,7 +44,7 @@ const About = () => {
           </motion.p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
