@@ -66,13 +66,13 @@ const Contact = () => {
               <AtSign className="text-slate-400" size={22} />&nbsp;E-mail
             </div>
             <div className="inline-flex justify-end items-center">
-              :&nbsp;<a href="mailto:hayashi.demi@gmail.com" className="text-slate-400 hover:text-slate-700">hayashi.demi@gmail.com</a>
+              :&nbsp;<a href="mailto:hayashi.demi@gmail.com" className="text-slate-400 hover:text-slate-700 dark:hover:text-slate-200">hayashi.demi@gmail.com</a>
             </div>
             <div className="inline-flex items-center">
               <GitHub className="text-slate-400" size={22} />&nbsp;GitHub
             </div>
             <div className="inline-flex justify-end items-center">
-              :&nbsp;<a href="https://github.com/demivlkv" target="_blank" className="text-slate-400 hover:text-slate-700">@demivlkv</a>
+              :&nbsp;<a href="https://github.com/demivlkv" target="_blank" className="text-slate-400 hover:text-slate-700 dark:hover:text-slate-200">@demivlkv</a>
             </div>
             <div className="inline-flex items-center">
               <Globe className="text-slate-400" size={22} />&nbsp;Languages

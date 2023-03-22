@@ -11,7 +11,7 @@ function handleScroll() {
 
     const updateScrollDirection = () => {
       const scrollY = window.pageYOffset;
-      const direction = scrollY > lastScrollY ? "down" : "up";
+      const direction = scrollY > lastScrollY ? 'down' : 'up';
       if (direction !== scrollDirection && (scrollY - lastScrollY > 10 || scrollY - lastScrollY < -10)) {
         setScrollDirection(direction);
       }
@@ -44,7 +44,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
   }, [top]);
 
   return (
-    <section className={`sticky ${scrollDirection === "down" ? "-top-[70px]" : "top-0"} ${!top && `shadow-lg bg-stone-100/80 dark:bg-slate-800/80 dark:shadow-gray-900 backdrop-blur-md`} h-[70px] bg-stone-100 dark:bg-slate-800 transition-all duration-500 z-[99]`}>
+    <section className={`sticky ${scrollDirection === 'down' ? '-top-[70px]' : 'top-0'} ${!top && `shadow-lg bg-stone-100/80 dark:bg-slate-800/80 dark:shadow-gray-900 backdrop-blur-md`} h-[70px] bg-stone-100 dark:bg-slate-800 transition-all duration-500 z-[99]`}>
       <div className="navbar w-full h-full flex justify-between items-center py-4 px-6">
         <motion.div
           initial={{ opacity: 0 }}
@@ -79,7 +79,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
           )}
           {nav ? (
             <motion.div
-              className={`fixed ${scrollDirection === "down" ? "top-[70px]" : "top-0"} right-0 w-1/2 h-screen shadow-lg bg-stone-100/90 dark:bg-slate-800/90 dark:shadow-gray-900 backdrop-blur-md z-[1]`}
+              className={`fixed ${scrollDirection === 'down' ? 'top-[70px]' : 'top-0'} right-0 w-1/2 h-screen shadow-lg bg-stone-100/90 dark:bg-slate-800/90 dark:shadow-gray-900 backdrop-blur-md z-[1]`}
               initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 100 }}
