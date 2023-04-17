@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { MapPin, AtSign, GitHub, Globe, ChevronsRight } from 'react-feather';
 
-import { validateEmail } from '../utils/helpers';
+import { validateEmail, capitalizeFirstLetter } from '../utils/helpers';
 
 const Contact = () => {
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
@@ -23,7 +23,7 @@ const Contact = () => {
       }
     } else {
       if (!e.target.value.length) {
-        setErrorMessage(`${e.target.name} is required.`);
+        setErrorMessage(`${capitalizeFirstLetter(e.target.name)} is required.`);
       } else {
         setErrorMessage('');
       }
@@ -95,7 +95,6 @@ const Contact = () => {
                 name="name"
                 defaultValue={name}
                 onBlur={handleChange}
-                className="w-full my-2 p-2 rounded bg-stone-100 dark:bg-slate-700 border border-gray-300 dark:border-gray-500"
               />
 
               <label className="block font-['Source_Code_Pro'] font-medium">
@@ -106,7 +105,7 @@ const Contact = () => {
                 name="email"
                 defaultValue={email}
                 onBlur={handleChange}
-                className="w-full my-2 p-2 rounded bg-stone-100 dark:bg-slate-700 border border-gray-300 dark:border-gray-500" />
+              />
 
               <label className="block font-['Source_Code_Pro'] font-medium">
                 Message:
@@ -116,12 +115,11 @@ const Contact = () => {
                 defaultValue={message}
                 onBlur={handleChange}
                 rows="4"
-                className="w-full my-2 p-2 rounded bg-stone-100 dark:bg-slate-700 border border-gray-300 dark:border-gray-500"
               />
 
               {errorMessage && (
                 <div>
-                  <p className="font-['Source_Code_pro'] tracking-tight text-xs">{errorMessage}</p>
+                  <p className="text-slate-400 font-['Source_Code_pro'] font-medium tracking-tight text-xs">{errorMessage}</p>
                 </div>
               )}
               <button type="submit" className="group w-[120px]">

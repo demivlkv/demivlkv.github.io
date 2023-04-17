@@ -59,11 +59,21 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
           {/* NAVBAR AT 768PX & ABOVE */}
           <div>
             <ul className="hidden md:flex md:items-center list-none">
-              <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 3 }} viewport={{ once: true }}><a href="#about" className="mr-6">About</a></motion.li>
-              <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 3.25 }} viewport={{ once: true }}><a href="#work" className="mx-6">Experience</a></motion.li>
-              <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 3.5 }} viewport={{ once: true }}><a href="#projects" className="mx-6">Projects</a></motion.li>
-              <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 3.75 }} viewport={{ once: true }}><a href="#contact" className="mx-6">Contact</a></motion.li>
-              <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 4 }} viewport={{ once: true }}><a href="#resume" className="mx-6">Resume</a></motion.li>
+              <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 3 }} viewport={{ once: true }}>
+                <a href="#about" className="mr-6">About</a>
+              </motion.li>
+              <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 3.25 }} viewport={{ once: true }}>
+                <a href="#work" className="mx-6">Experience</a>
+              </motion.li>
+              <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 3.5 }} viewport={{ once: true }}>
+                <a href="#projects" className="mx-6">Projects</a>
+              </motion.li>
+              <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 3.75 }} viewport={{ once: true }}>
+                <a href="#contact" className="mx-6">Contact</a>
+              </motion.li>
+              <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 4 }} viewport={{ once: true }}>
+                <a href="#resume" className="mx-6">Resume</a>
+              </motion.li>
               <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 4.25 }} viewport={{ once: true }} onClick={toggleDarkMode}>
                 {darkMode ? <Sun className="ml-6 transition-all ease-in duration-300" /> : <Moon className="ml-6 transition-all ease-in duration-300" />}
               </motion.li>
@@ -72,37 +82,37 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
 
           {/* HAMBURGER MENU AT 768PX & LOWER */}
           <div onClick={handleNav} className={`md:hidden transition-all ease-in duration-500 z-20`}>
-          {!nav ? (
-            <Menu size={30} className="hover:text-slate-400 transition-all ease-in duration-300 cursor-pointer" />
+            {!nav ? (
+              <Menu size={30} className="hover:text-slate-400 transition-all ease-in duration-300 cursor-pointer" />
+            ) : (
+              ''
+            )}
+            {nav ? (
+              <motion.div
+                className={`fixed ${scrollDirection === 'down' ? 'top-[70px]' : 'top-0'} right-0 w-1/2 h-screen shadow-lg bg-stone-100/90 dark:bg-slate-800/90 dark:shadow-gray-900 backdrop-blur-md z-[1]`}
+                initial={{ opacity: 0, x: 100 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: 100 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true }}
+              >
+                <div className="w-full h-[70px] px-6 flex justify-end items-center">
+                  <X size={30} className="hover:text-slate-400 transition-all ease-in duration-300 cursor-pointer" />
+                </div>
+                <div className="h-full flex flex-col justify-center items-center">
+                  <a href="#about" className="mobile-links">About</a>
+                  <a href="#work" className="mobile-links">Experience</a>
+                  <a href="#projects" className="mobile-links">Projects</a>
+                  <a href="#contact" className="mobile-links">Contact</a>
+                  <a href="#resume" className="mobile-links">Resume</a>
+                  <button onClick={toggleDarkMode} className="w-1/2 m-2 p-3 flex justify-center items-center text-slate-400 hover:text-gray-800 cursor-pointer">
+                    {darkMode ? <Sun /> : <Moon />}
+                  </button>
+                </div>
+              </motion.div>
           ) : (
             ''
           )}
-          {nav ? (
-            <motion.div
-              className={`fixed ${scrollDirection === 'down' ? 'top-[70px]' : 'top-0'} right-0 w-1/2 h-screen shadow-lg bg-stone-100/90 dark:bg-slate-800/90 dark:shadow-gray-900 backdrop-blur-md z-[1]`}
-              initial={{ opacity: 0, x: 100 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: 100 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-            >
-              <div className="w-full h-[70px] px-6 flex justify-end items-center">
-                <X size={30} className="hover:text-slate-400 transition-all ease-in duration-300 cursor-pointer" />
-              </div>
-              <div className="h-full flex flex-col justify-center items-center">
-                <a href="#about" className="mobile-links">About</a>
-                <a href="#work" className="mobile-links">Experience</a>
-                <a href="#projects" className="mobile-links">Projects</a>
-                <a href="#contact" className="mobile-links">Contact</a>
-                <a href="#resume" className="mobile-links">Resume</a>
-                <button onClick={toggleDarkMode} className="w-1/2 m-2 p-3 flex justify-center items-center text-slate-400 hover:text-gray-800 cursor-pointer">
-                  {darkMode ? <Sun /> : <Moon />}
-                </button>
-              </div>
-            </motion.div>
-        ) : (
-          ''
-        )}
         </div>
       </div>
     </section>

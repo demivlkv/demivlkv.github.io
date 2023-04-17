@@ -14,7 +14,7 @@ function App() {
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
-  }
+  };
 
   return (
     <main className={`${darkMode ? 'dark' : ''}`}>
