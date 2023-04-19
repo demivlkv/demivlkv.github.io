@@ -48,7 +48,7 @@ const WorkItem = ({ year, title, company, duration, details }) => {
           {duration}
         </p>
         <p className="my-2 font-normal">
-          {details}
+          {details()}
         </p>
       </motion.li>
     </motion.ol>

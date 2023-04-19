@@ -1,5 +1,8 @@
 import { motion } from 'framer-motion';
+import { FastForward } from 'react-feather';
 import WorkItem from './WorkItem';
+
+const icon = <FastForward className="inline-flex justify-center items-center pb-1 text-slate-400" size={15} />;
 
 const data = [
   {
@@ -7,14 +10,26 @@ const data = [
     title: 'Full-Stack Developer',
     company: 'Company',
     duration: 'Feb 2022 - Present',
-    details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque perspiciatis, iste ipsa aliquid sequi magnam iusto quos sed a exercitationem earum. Tenetur itaque officiis molestiae eveniet, dicta eos vel cumque.'
+    details: () => (
+      <ul>
+        <li>{icon} Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+        <li>{icon} Cumque perspiciatis, iste ipsa aliquid sequi magnam iusto quos sed a exercitationem earum.</li>
+        <li>{icon} Tenetur itaque officiis molestiae eveniet, dicta eos vel cumque.</li>
+      </ul>
+    )
   },
   {
     year: 2015,
     title: 'Frontend Developer',
     company: 'Company',
     duration: 'Mar 2015 - Present',
-    details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque perspiciatis, iste ipsa aliquid sequi magnam iusto quos sed a exercitationem earum. Tenetur itaque officiis molestiae eveniet, dicta eos vel cumque.'
+    details: () => (
+      <ul>
+        <li>{icon} Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+        <li>{icon} Cumque perspiciatis, iste ipsa aliquid sequi magnam iusto quos sed a exercitationem earum.</li>
+        <li>{icon} Tenetur itaque officiis molestiae eveniet, dicta eos vel cumque.</li>
+      </ul>
+    )
   }
 ];
 
