@@ -9,6 +9,7 @@ const Moon = () => {
         stroke-width="2"
         stroke-linecap="round"
         stroke-linejoin="round"
+        className="transition-all ease-in duration-300"
       >
         <use href="/feather-sprite.svg#moon"/>
       </svg>

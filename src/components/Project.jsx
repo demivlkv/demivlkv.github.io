@@ -140,10 +140,10 @@ const Project = () => {
                   </p>
                   <div className="text-center">
                     <a href={project.url} target="_blank">
-                      <button className="mx-2 w-[50px] h-[50px] inline-flex justify-center items-center rounded-full bg-slate-500 hover:bg-white text-white hover:text-slate-800 transition-all ease-in duration-300"><ExternalLink size={20} /></button>
+                      <button className="mx-2 w-[50px] h-[50px] inline-flex justify-center items-center rounded-full bg-slate-500 hover:bg-white text-white hover:text-slate-800 transition-all ease-in duration-300"><ExternalLink /></button>
                     </a>
                     <a href={project.github} target="_blank">
-                      <button className="mx-2 w-[50px] h-[50px] inline-flex justify-center items-center rounded-full bg-slate-500 hover:bg-white text-white hover:text-slate-800 transition-all ease-in duration-300"><GitHub size={20} /></button>
+                      <button className="mx-2 w-[50px] h-[50px] inline-flex justify-center items-center rounded-full bg-slate-500 hover:bg-white text-white hover:text-slate-800 transition-all ease-in duration-300"><GitHub /></button>
                     </a>
                   </div>
                 </div>

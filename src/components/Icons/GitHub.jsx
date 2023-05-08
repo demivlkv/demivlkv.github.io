@@ -2,8 +2,8 @@ const GitHub = () => {
   return (
     <div>
       <svg
-        width="24"
-        height="24"
+        width="22"
+        height="22"
         fill="none"
         stroke="currentColor"
         stroke-width="2"

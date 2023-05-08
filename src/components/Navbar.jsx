@@ -79,7 +79,9 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
                 <a href="#resume" className="mx-6">Resume</a>
               </motion.li>
               <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 4.25 }} viewport={{ once: true }} onClick={toggleDarkMode}>
-                {darkMode ? <Sun className="ml-6 transition-all ease-in duration-300" /> : <Moon className="ml-6 transition-all ease-in duration-300" />}
+                <div className="ml-6">
+                  {darkMode ? <Sun /> : <Moon />}
+                </div>
               </motion.li>
             </ul>
           </div>
@@ -87,7 +89,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
           {/* HAMBURGER MENU AT 768PX & LOWER */}
           <div onClick={handleNav} className={`md:hidden transition-all ease-in duration-500 z-20`}>
             {!nav ? (
-              <Menu size={30} className="hover:text-slate-400 transition-all ease-in duration-300 cursor-pointer" />
+              <Menu />
             ) : (
               ''
             )}
@@ -101,7 +103,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
                 viewport={{ once: true }}
               >
                 <div className="w-full h-[70px] px-6 flex justify-end items-center">
-                  <X size={30} className="hover:text-slate-400 transition-all ease-in duration-300 cursor-pointer" />
+                  <X />
                 </div>
                 <div className="h-full flex flex-col justify-center items-center">
                   <a href="#about" className="mobile-links">About</a>
