@@ -61,25 +61,25 @@ const Contact = () => {
 
           <div className="max-w-[90%] w-full mx-auto py-8 grid grid-cols-2 gap-2 sm:gap-4">
             <div className="inline-flex items-center">
-              <MapPin className="text-slate-400" size={22} />&nbsp;Location
+              <span className="text-slate-400"><MapPin /></span>&nbsp;Location
             </div>
             <div className="inline-flex justify-end items-center">
               : Los Angeles, CA
             </div>
             <div className="inline-flex items-center">
-              <AtSign className="text-slate-400" size={22} />&nbsp;E-mail
+              <span className="text-slate-400"><AtSign /></span>&nbsp;E-mail
             </div>
             <div className="inline-flex justify-end items-center">
               :&nbsp;<a href="mailto:hayashi.demi@gmail.com" className="text-slate-400 hover:text-slate-700 dark:hover:text-slate-200">hayashi.demi@gmail.com</a>
             </div>
             <div className="inline-flex items-center">
-              <GitHub className="text-slate-400" size={22} />&nbsp;GitHub
+              <span className="text-slate-400"><GitHub /></span>&nbsp;GitHub
             </div>
             <div className="inline-flex justify-end items-center">
               :&nbsp;<a href="https://github.com/demivlkv" target="_blank" className="text-slate-400 hover:text-slate-700 dark:hover:text-slate-200">@demivlkv</a>
             </div>
             <div className="inline-flex items-center">
-              <Globe className="text-slate-400" size={22} />&nbsp;Languages
+              <span className="text-slate-400"><Globe /></span>&nbsp;Languages
             </div>
             <div className="inline-flex justify-end items-center">
               : English, Japanese
@@ -128,8 +128,8 @@ const Contact = () => {
               )}
               <button type="submit" className="group w-[120px]">
                 Submit
-                <span className="group-hover:ml-1 duration-300">
-                  <ChevronsRight size={15} className="ml-2" />
+                <span className="group-hover:text-slate-400 group-hover:ml-1 duration-300">
+                  <ChevronsRight size={15} />
                 </span>
               </button>
             </div>

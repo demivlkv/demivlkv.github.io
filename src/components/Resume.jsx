@@ -40,7 +40,7 @@ const Resume = ({ darkMode }) => {
               <button type="submit" className="group w-[160px]">
                 Download CV
                 <span className="group-hover:text-slate-400 group-hover:ml-1 duration-300">
-                  <ChevronsRight size={15} className="ml-2" />
+                  <ChevronsRight />
                 </span>
               </button>
             </a>
