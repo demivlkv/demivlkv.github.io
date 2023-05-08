@@ -8,7 +8,7 @@ import Mail from './Icons/Mail';
 
 const Footer = () => {
   return (
-    <footer className="footer my-8 text-xs sm:text-sm">
+    <footer className="footer py-8 text-xs sm:text-sm">
       <div className="flex flex-col justify-center items-center">
         <p className="flex justify-center items-center">Made with <Heart /> by <a href="https://github.com/demivlkv/demivlkv.github.io" target="_blank" className="ml-1 text-slate-400 hover:text-gray-700">Demi</a>.</p>
         <p><span className="text-slate-400">&copy;</span> 2023. All rights reserved.</p>
