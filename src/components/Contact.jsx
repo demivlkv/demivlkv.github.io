@@ -1,8 +1,12 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, AtSign, GitHub, Globe, ChevronsRight } from 'react-feather';
 
 import { validateEmail, capitalizeFirstLetter } from '../utils/helpers';
+import MapPin from './Icons/MapPin';
+import AtSign from './Icons/AtSign';
+import GitHub from './Icons/GitHub';
+import Globe from './Icons/Globe';
+import ChevronsRight from './Icons/ChevronsRight';
 
 const Contact = () => {
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });

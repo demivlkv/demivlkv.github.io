@@ -1,8 +1,9 @@
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
-import { ChevronsRight } from 'react-feather';
+
 import DragonImg from '../assets/dragon.png';
 import DarkDragonImg from '../assets/dark-dragon.png';
+import ChevronsRight from './Icons/ChevronsRight';
 
 const Home = ({ darkMode }) => {
   return (

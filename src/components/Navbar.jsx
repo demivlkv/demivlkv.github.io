@@ -1,7 +1,11 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Menu, X, Sun, Moon } from 'react-feather';
+
 import Logo from '../assets/logo.png';
+import Menu from './Icons/Menu';
+import X from './Icons/X';
+import Sun from './Icons/Sun';
+import Moon from './Icons/Moon';
 
 function handleScroll() {
   const [scrollDirection, setScrollDirection] = useState(null);

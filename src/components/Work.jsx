@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
-import { FastForward } from 'react-feather';
 import WorkItem from './WorkItem';
+
+import FastForward from './Icons/FastForward';
 
 const icon = <FastForward className="inline-flex justify-center items-center pb-1 text-slate-400" size={15} />;
 

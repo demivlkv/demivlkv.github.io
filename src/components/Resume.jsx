@@ -1,7 +1,9 @@
 import { motion } from 'framer-motion';
-import { ChevronsRight, FastForward } from 'react-feather';
+
 import TigerImg from '../assets/tiger.png';
 import DarkTigerImg from '../assets/dark-tiger.png';
+import ChevronsRight from './Icons/ChevronsRight';
+import FastForward from './Icons/FastForward';
 
 const Resume = ({ darkMode }) => {
   const icon = <FastForward className="inline-flex justify-center items-center pb-1 text-slate-400" size={15} />

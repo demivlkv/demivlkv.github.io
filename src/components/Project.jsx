@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
-import { ExternalLink, GitHub } from 'react-feather';
 
+import ExternalLink from './Icons/ExternalLink';
+import GitHub from './Icons/GitHub';
 import TripTideImg from '../assets/portfolio/trip-tide.png';
 import SoundStreamImg from '../assets/portfolio/soundstream.png';
 import TokioImg from '../assets/portfolio/tokio-ramen.png';

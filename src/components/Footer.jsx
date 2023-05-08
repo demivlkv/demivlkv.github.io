@@ -1,5 +1,10 @@
 import { motion } from 'framer-motion';
-import { Heart, GitHub, Linkedin, Instagram, Mail } from 'react-feather';
+
+import Heart from './Icons/Heart';
+import GitHub from './Icons/GitHub';
+import Linkedin from './Icons/Linkedin';
+import Instagram from './Icons/Instagram';
+import Mail from './Icons/Mail';
 
 const Footer = () => {
   return (
