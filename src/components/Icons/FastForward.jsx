@@ -2,13 +2,14 @@ const FastForward = () => {
   return (
     <div>
       <svg
-        width="24"
-        height="24"
+        width="15"
+        height="15"
         fill="none"
         stroke="currentColor"
         stroke-width="2"
         stroke-linecap="round"
         stroke-linejoin="round"
+        className="inline-flex justify-center items-center pb-1 mr-1 text-slate-400"
       >
         <use href="/feather-sprite.svg#fast-forward"/>
       </svg>

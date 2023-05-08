@@ -6,7 +6,7 @@ import ChevronsRight from './Icons/ChevronsRight';
 import FastForward from './Icons/FastForward';
 
 const Resume = ({ darkMode }) => {
-  const icon = <FastForward className="inline-flex justify-center items-center pb-1 text-slate-400" size={15} />
+  const icon = <FastForward />
 
   return (
     <section id="resume" className="relative w-full h-screen">
@@ -62,33 +62,33 @@ const Resume = ({ darkMode }) => {
             viewport={{ once: true }}
           >
             <div className="leading-loose">
-              <h3 className="block font-['Source_Code_Pro'] font-semibold text-lg md:text-xl tracking-tighter">Languages</h3>
-              {icon} JavaScript (ES6)<br />
-              {icon} TypeScript<br />
-              {icon} HTML5<br />
-              {icon} CSS3
+              <h3 className="font-['Source_Code_Pro'] font-semibold text-lg md:text-xl tracking-tighter">Languages</h3>
+              <p>{icon} JavaScript (ES6)</p>
+              <p>{icon} TypeScript</p>
+              <p>{icon} HTML5</p>
+              <p>{icon} CSS3</p>
             </div>
             <div className="leading-loose">
               <h3 className="block font-['Source_Code_Pro'] font-semibold text-lg md:text-xl tracking-tighter">Technologies</h3>
-              {icon} ReactJS<br />
-              {icon} jQuery<br />
-              {icon} NodeJS<br />
-              {icon} GraphQL<br />
-              {icon} REST APIs<br />
-              {icon} Tailwind CSS<br />
-              {icon} Bootstrap
+              <p>{icon} ReactJS</p>
+              <p>{icon} jQuery</p>
+              <p>{icon} NodeJS</p>
+              <p>{icon} GraphQL</p>
+              <p>{icon} REST APIs</p>
+              <p>{icon} Tailwind CSS</p>
+              <p>{icon} Bootstrap</p>
             </div>
             <div className="leading-loose">
               <h3 className="block font-['Source_Code_Pro'] font-semibold text-lg md:text-xl tracking-tighter">Database</h3>
-              {icon} MySQL<br />
-              {icon} MongoDB
+              <p>{icon} MySQL</p>
+              <p>{icon} MongoDB</p>
             </div>
             <div className="leading-loose">
               <h3 className="block font-['Source_Code_Pro'] font-semibold text-lg md:text-xl tracking-tighter">Tools</h3>
-              {icon} Git + GitHub<br />
-              {icon} Heroku<br />
-              {icon} Chrome Dev Tools<br />
-              {icon} Photoshop
+              <p>{icon} Git + GitHub</p>
+              <p>{icon} Heroku</p>
+              <p>{icon} Chrome Dev Tools</p>
+              <p>{icon} Photoshop</p>
             </div>
           </motion.article>
         </div>

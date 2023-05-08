@@ -17,10 +17,18 @@ const Footer = () => {
       {/* DISPLAY SOCIAL MEDIA ICONS ON SIDE OVER 768PX SCRN RES */}
       <div className="social hidden md:block fixed top-[35%] z-10">
         <ul className="list-none flex flex-col">
-          <motion.li initial={{ opacity: 0, x: -70 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.4, delay: 1.75 }} viewport={{ once: true }}><a href="https://github.com/demivlkv" target="_blank"><GitHub size={30} /></a></motion.li>
-          <motion.li initial={{ opacity: 0, x: -70 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.4, delay: 2 }} viewport={{ once: true }}><a href="https://www.linkedin.com/in/demihayashi/" target="_blank"><Linkedin size={30} /></a></motion.li>
-          <motion.li initial={{ opacity: 0, x: -70 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.4, delay: 2.25 }} viewport={{ once: true }}><a href="https://www.instagram.com/hii.demii/" target="_blank"><Instagram size={30} /></a></motion.li>
-          <motion.li initial={{ opacity: 0, x: -70 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.4, delay: 2.5 }} viewport={{ once: true }}><a href="mailto:hayashi.demi@gmail.com"><Mail size={30} /></a></motion.li>
+          <motion.li initial={{ opacity: 0, x: -70 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.4, delay: 1.75 }} viewport={{ once: true }}>
+            <a href="https://github.com/demivlkv" target="_blank"><GitHub size={30} /></a>
+          </motion.li>
+          <motion.li initial={{ opacity: 0, x: -70 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.4, delay: 2 }} viewport={{ once: true }}>
+            <a href="https://www.linkedin.com/in/demihayashi/" target="_blank"><Linkedin size={30} /></a>
+          </motion.li>
+          <motion.li initial={{ opacity: 0, x: -70 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.4, delay: 2.25 }} viewport={{ once: true }}>
+            <a href="https://www.instagram.com/hii.demii/" target="_blank"><Instagram size={30} /></a>
+          </motion.li>
+          <motion.li initial={{ opacity: 0, x: -70 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.4, delay: 2.5 }} viewport={{ once: true }}>
+            <a href="mailto:hayashi.demi@gmail.com"><Mail size={30} /></a>
+          </motion.li>
         </ul>
       </div>
 
