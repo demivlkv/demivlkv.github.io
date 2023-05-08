@@ -13,22 +13,6 @@ import WeatherImg from '../assets/portfolio/weather-dashboard.png';
 
 const projects = [
   {
-    title: 'Trip Tide',
-    thumbnail: TripTideImg,
-    description: 'A MERN + GraphQL stack travel application intended to be a one-stop shop for travel enthusiasts. Users can discuss all-things travel.',
-    technologies: 'MongoDB / ExpressJS / ReactJS / NodeJS',
-    url: 'https://trip-tide.herokuapp.com/',
-    github: 'https://github.com/demivlkv/trip-tide'
-  },
-  {
-    title: 'Weather Dashboard',
-    thumbnail: WeatherImg,
-    description: 'A weather dashboard application built with OpenWeather API',
-    technologies: 'ReactJS / TypeScript / Tailwind CSS',
-    url: 'https://creative-gaufre-7a5162.netlify.app/',
-    github: 'https://github.com/demivlkv/weather-dashboard'
-  },
-  {
     title: 'Tokio Ramen',
     thumbnail: TokioImg,
     description: 'A freelance project to revamp the website of Tokio Ramen - a local ramen business in Boynton Beach, FL',
@@ -37,12 +21,28 @@ const projects = [
     github: 'https://github.com/demivlkv/tokio-ramen'
   },
   {
+    title: 'Trip Tide',
+    thumbnail: TripTideImg,
+    description: 'A MERN + GraphQL stack travel application intended to be a one-stop shop for travel enthusiasts. Users can discuss all-things travel.',
+    technologies: 'MongoDB / ExpressJS / ReactJS / NodeJS',
+    url: 'https://trip-tide.herokuapp.com/',
+    github: 'https://github.com/demivlkv/trip-tide'
+  },
+  {
     title: 'Book Nook v2',
     thumbnail: BookNookv2Img,
     description: 'A collaborative project to build a MERN stack social media site based off the original Book Nook project',
     technologies: 'MongoDB / ExpressJS / ReactJS / NodeJS',
     url: 'https://book-nook-v2.herokuapp.com/',
     github: 'https://github.com/demivlkv/book-nook-v2'
+  },
+  {
+    title: 'Weather Dashboard',
+    thumbnail: WeatherImg,
+    description: 'A weather dashboard application built with OpenWeather API',
+    technologies: 'ReactJS / TypeScript / Tailwind CSS',
+    url: 'https://creative-gaufre-7a5162.netlify.app/',
+    github: 'https://github.com/demivlkv/weather-dashboard'
   },
   {
     title: 'Sound Stream',

@@ -24,7 +24,7 @@ function App() {
       />
       <Home darkMode={darkMode} />
       <About />
-      {/* <Work /> */}
+      <Work />
       <Portfolio />
       <Contact />
       <Resume darkMode={darkMode} />

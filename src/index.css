@@ -12,7 +12,7 @@
 
 @layer base {
   body {
-    @apply bg-stone-100 font-['Inter'] text-sm sm:text-base text-gray-700 font-normal leading-loose;
+    @apply bg-stone-100 font-['Inter'] text-xs sm:text-sm text-gray-700 font-normal leading-loose;
   }
 
   p {
@@ -52,6 +52,10 @@
   }
 
   /* WORK COMPONENT */
+  #work ul li {
+    @apply ml-6 flex;
+  }
+
   #work ul.work {
     @apply text-slate-400 hover:text-gray-700 dark:hover:text-gray-200 cursor-pointer;
   }

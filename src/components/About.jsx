@@ -26,13 +26,13 @@ const About = () => {
         </div>
         <div>
           <motion.p
-            className="pb-8"
+            className="pb-6"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 1 }}
             viewport={{ once: true }}
           >
-            My interest in coding began back in the early 2000s, when Geocities and MySpace were popular. I never thought that customizing a MySpace page would lead to teaching myself HTML, CSS, JavaScript, PHP, and b2/WordPress/Greymatter just to put together a blog.
+            My interest in coding began back in the early 2000s, when Geocities and MySpace were popular. I never thought that customizing a MySpace page would lead to teaching myself HTML, CSS, JavaScript, PHP, and b2/Greymatter/WordPress just to put together a blog. This inspired me to major in Fine Arts at the University of Florida, where I expanded my knowledge in graphic design, typography, color theory, digital imaging, and technology in art.
           </motion.p>
           <motion.p
             initial={{ opacity: 0, y: 50 }}
@@ -40,7 +40,7 @@ const About = () => {
             transition={{ duration: 0.4, delay: 1.25 }}
             viewport={{ once: true }}
           >
-            When I'm not coding, I'm most likely traveling the world with my current job as a flight attendant, taking care of my house plants, hiking, watching true-crime documentaries, or learning new languages like Java and Russian. :3
+            When I'm not on my computer, I'm most likely traveling the world with my current job as a flight attendant, taking care of my house plants, playing video games, hiking, watching true-crime documentaries, or learning new languages like Java and Russian. :3
           </motion.p>
         </div>
       </div>
