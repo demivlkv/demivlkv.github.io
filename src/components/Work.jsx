@@ -13,10 +13,10 @@ const data = [
     duration: 'Mar 2020 - Present',
     details: () => (
       <ul>
-        <li>{icon} Redesigned and developed a responsive front-end web application for a local ramen shop business using Gatsby.js, JavaScript, GraphQL, Tailwind CSS, and Contentful CMS to enhance the user experience and increase site traffic</li>
-        <li>{icon} Collaborated with the client to create a brand new company logo, menus, and digital content, resulting in a cohesive and visually appealing brand identity</li>
-        <li>{icon} Established and maintained positive and enduring relationships with the client, leveraging bilingual skills to serve English-speaking and Japanese-speaking customers</li>
-        <li>{icon} Proactively identified areas for improvement and implemented solutions to optimize website functionality and usability</li>
+        <li>{icon} Developed and redesigned a responsive front-end web application for a local ramen shop using JavaScript, Gatsby.js, GraphQL, Tailwind CSS, and Contentful CMS to attract more traffic and enhance user experience</li>
+        <li>{icon} Worked closely with the client to create a cohesive and visually appealing brand identity by designing a new company logo, menus, and digital content</li>
+        <li>{icon} Successfully built and maintained relationships with English-speaking and Japanese-speaking customers through bilingual communication skills</li>
+        <li>{icon} Identified areas for improvement and implemented solutions to optimize website functionality and usability</li>
       </ul>
     )
   },
