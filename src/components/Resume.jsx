@@ -1,7 +1,5 @@
 import { motion } from 'framer-motion';
 
-import TigerImg from '../assets/tiger.png';
-import DarkTigerImg from '../assets/dark-tiger.png';
 import ChevronsRight from './Icons/ChevronsRight';
 import FastForward from './Icons/FastForward';
 
@@ -10,15 +8,6 @@ const Resume = ({ darkMode }) => {
 
   return (
     <section id="resume" className="relative w-full h-screen">
-      <motion.img
-        className="w-full h-screen object-contain object-left-bottom lg:object-cover lg:object-left"
-        src={darkMode ? DarkTigerImg : TigerImg}
-        alt="Sketch of a tiger"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 3, delay: 0.5 }}
-        viewport={{ once: true }}
-      />
       <div className="w-full h-screen absolute top-0 left-0 bg-stone-100/60 dark:bg-slate-800/30">
         <div className="max-w-screen-lg m-auto md:pl-20 px-8 py-24 sm:py-32">
           <motion.h2

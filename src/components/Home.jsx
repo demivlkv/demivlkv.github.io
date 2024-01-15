@@ -1,26 +1,15 @@
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
 
-import DragonImg from '../assets/dragon.png';
-import DarkDragonImg from '../assets/dark-dragon.png';
 import ChevronsRight from './Icons/ChevronsRight';
 
 const Home = ({ darkMode }) => {
   return (
     <section id="main" className="w-full h-screen">
-      <motion.img
-        className="w-full h-screen flex object-contain object-top md:object-cover md:object-center lg:object-right"
-        src={darkMode ? DarkDragonImg : DragonImg}
-        alt="Sketch of a dragon"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 4, delay: 0.5 }}
-        viewport={{ once: true }}
-      />
-      <div className="w-full h-screen absolute top-[70px] left-0 bg-stone-100/50 dark:bg-slate-800/30">
+      <div className="w-full h-screen absolute top-[70px] left-0 dark:bg-slate-800/30">
         <div className="max-w-screen-md w-full h-full m-auto md:ml-20 lg:ml-48 px-8 flex flex-col justify-center items-start">
           <motion.h3
-            className="font-medium text-gray-500 text-lg sm:text-2xl tracking-tight"
+            className="font-medium text-lg sm:text-2xl tracking-tight"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.5 }}
@@ -29,7 +18,7 @@ const Home = ({ darkMode }) => {
             Hello there, I'm
           </motion.h3>
           <motion.h1
-            className="pt-1 font-semibold text-4xl sm:text-5xl text-gray-800 dark:text-slate-100 tracking-tighter"
+            className="pt-1 font-semibold text-4xl sm:text-5xl text-gray-500 dark:text-slate-100 tracking-tighter"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.75 }}
@@ -38,7 +27,7 @@ const Home = ({ darkMode }) => {
             Demi Hayashi
           </motion.h1>
           <motion.h3
-            className="font-['Source_Code_Pro'] flex pt-4 text-gray-800 dark:text-slate-100 text-2xl sm:text-3xl"
+            className="font-['Source_Code_Pro'] flex pt-4 dark:text-slate-100 text-2xl sm:text-3xl"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 1 }}

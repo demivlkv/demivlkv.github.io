@@ -12,7 +12,7 @@
 
 @layer base {
   body {
-    @apply bg-stone-100 font-['Inter'] text-xs sm:text-sm text-gray-700 font-normal leading-loose;
+    @apply bg-stone-100 font-['Inter'] text-xs sm:text-sm text-gray-900 font-normal leading-loose;
   }
 
   p {
