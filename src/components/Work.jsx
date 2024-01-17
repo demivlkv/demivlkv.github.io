@@ -7,10 +7,24 @@ const icon = <FastForward />;
 
 const data = [
   {
+    year: 2023,
+    title: 'Front-End Developer',
+    company: 'Nexalure Technologies',
+    duration: 'Jan 2023 - Present',
+    details: () => (
+      <ul>
+        <li>{icon} Developed and redesigned a responsive front-end web application for a local ramen shop using JavaScript, Gatsby.js, GraphQL, Tailwind CSS, and Contentful CMS to attract more traffic and enhance user experience</li>
+        <li>{icon} Worked closely with the client to create a cohesive and visually appealing brand identity by designing a new company logo, menus, and digital content</li>
+        <li>{icon} Successfully built and maintained relationships with English-speaking and Japanese-speaking customers through bilingual communication skills</li>
+        <li>{icon} Identified areas for improvement and implemented solutions to optimize website functionality and usability</li>
+      </ul>
+    )
+  },
+  {
     year: 2020,
     title: 'Freelance Web Developer, Graphic Designer',
     company: 'Tokio Ramen',
-    duration: 'Mar 2020 - Present',
+    duration: 'Mar 2020 - Jan 2023',
     details: () => (
       <ul>
         <li>{icon} Developed and redesigned a responsive front-end web application for a local ramen shop using JavaScript, Gatsby.js, GraphQL, Tailwind CSS, and Contentful CMS to attract more traffic and enhance user experience</li>
