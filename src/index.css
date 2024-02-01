@@ -24,7 +24,7 @@
   }
 
   h2 {
-    @apply font-['Rozha+One'] pb-8 font-semibold text-2xl sm:text-3xl text-slate-400 text-center tracking-tighter;
+    @apply font-['Rozha+One'] pb-8 font-semibold text-3xl sm:text-4xl bg-gradient-to-r from-rose-200 to-teal-200 inline-block text-transparent bg-clip-text tracking-tighter;
   }
 
   button {
@@ -32,14 +32,18 @@
   }
 
   button[type=submit] {
-    @apply font-['Source_Code_Pro'] text-sm tracking-tight mx-auto flex items-center my-2 pl-6 py-3 border-2 border-gray-300 dark:border-gray-500 rounded hover:bg-[#94a3b81f] hover:border-slate-400;
+    @apply font-['Source_Code_Pro'] text-sm tracking-tight mx-auto flex items-center my-2 pl-6 py-3 border-2 border-teal-200 rounded hover:bg-rose-200/10 hover:border-rose-200;
+  }
+
+  .gradient {
+    @apply bg-gradient-to-r from-rose-200 to-teal-200 inline-block text-transparent bg-clip-text;
   }
 }
 
 @layer components {
   /* NAVBAR COMPONENT */
   .navbar li {
-    @apply font-['Source_Code_Pro'] text-sm text-slate-400 hover:text-gray-800 dark:hover:text-slate-200 cursor-pointer;
+    @apply font-['Source_Code_Pro'] text-sm text-gray-200 hover:text-teal-200 cursor-pointer;
   }
 
   .navbar a.mobile-links {
@@ -52,7 +56,7 @@
   }
 
   #main a.home {
-    @apply text-slate-400 hover:text-gray-700 dark:hover:text-gray-200 cursor-pointer;
+    @apply text-teal-200 hover:text-gray-200 hover:border-b-4 hover:border-b-rose-200 cursor-pointer;
   }
 
   /* WORK COMPONENT */

@@ -48,7 +48,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
   }, [top]);
 
   return (
-    <section className={`sticky ${scrollDirection === 'down' ? '-top-[70px]' : 'top-0'} ${!top && `shadow-lg bg-stone-100/80 dark:bg-slate-800/80 dark:shadow-gray-900 backdrop-blur-md`} h-[70px] bg-stone-100 dark:bg-slate-800 transition-all duration-500 z-[99]`}>
+    <section className={`sticky ${scrollDirection === 'down' ? '-top-[70px]' : 'top-0'} ${!top && `shadow-lg dark:bg-slate-800/80 shadow-stone-500 backdrop-blur-md`} h-[70px] dark:bg-slate-800 transition-all duration-500 z-[99]`}>
       <div className="navbar w-full h-full flex justify-between items-center py-4 px-6">
         <motion.div
           initial={{ opacity: 0 }}
@@ -78,11 +78,6 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
               <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 4 }} viewport={{ once: true }}>
                 <a href="#resume" className="mx-6">Resume</a>
               </motion.li>
-              <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 4.25 }} viewport={{ once: true }} onClick={toggleDarkMode}>
-                <div className="ml-6">
-                  {darkMode ? <Sun /> : <Moon />}
-                </div>
-              </motion.li>
             </ul>
           </div>
 
@@ -111,9 +106,6 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
                   <a href="#projects" className="mobile-links">Projects</a>
                   <a href="#contact" className="mobile-links">Contact</a>
                   <a href="#resume" className="mobile-links">Resume</a>
-                  <button onClick={toggleDarkMode} className="w-1/2 m-2 p-3 flex justify-center items-center text-slate-400 hover:text-gray-800 cursor-pointer">
-                    {darkMode ? <Sun /> : <Moon />}
-                  </button>
                 </div>
               </motion.div>
           ) : (

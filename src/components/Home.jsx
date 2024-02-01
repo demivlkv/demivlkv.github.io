@@ -1,60 +1,37 @@
 import { motion } from 'framer-motion';
-import { TypeAnimation } from 'react-type-animation';
-
 import ChevronsRight from './Icons/ChevronsRight';
 
-const Home = ({ darkMode }) => {
+const Home = () => {
   return (
     <section id="main" className="w-full h-screen flex justify-center">
-      <div className="w-full h-screen absolute top-[70px] left-0 dark:bg-slate-800/30">
+      <div className="w-full h-screen absolute top-[70px] left-0">
         <div className="max-w-screen-md w-full h-full m-auto px-8 flex flex-col justify-center items-start">
           <div className="intro">
-          <motion.h3
-            className=""
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.5 }}
-            viewport={{ once: true }}
-          >
-            Hi, I'm Demi.
-          </motion.h3>
-          <motion.h1
-            className="pt-1"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.75 }}
-            viewport={{ once: true }}
-          >
-            I am a {" "}
-            <span className="bg-gradient-to-r from-rose-200 to-teal-200 inline-block text-transparent bg-clip-text dark:text-slate-100">
-              software engineer
-            </span>
-            .
-          </motion.h1>
-          {/* <motion.h3
-            className="font-['Source_Code_Pro'] flex pt-4 dark:text-slate-100 text-2xl sm:text-3xl"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 1 }}
-            viewport={{ once: true }}
-          >
-            A
-            <TypeAnimation
-              sequence={[
-                'software engineer',
-                2000, // waits 2s
-                'graphic designer',
-                2000,
-                'visual artist',
-                2000
-              ]}
-              wrapper="div"
-              cursor={true}
-              repeat={Infinity}
-              style={{ fontSize: '1em', paddingLeft: '14px' }}
-            /> 
-          </motion.h3>
-            */}
+            <motion.h1
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              viewport={{ once: true }}
+            >
+              Hi, I'm {" "}
+              <span className="gradient">
+                Demi
+              </span>
+              .
+            </motion.h1>
+            <motion.h1
+              className="pt-2"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.75 }}
+              viewport={{ once: true }}
+            >
+              I'm a {" "}
+              <span className="gradient">
+                software engineer
+              </span>
+              .
+            </motion.h1>
           </div>
           <motion.p
             className="py-4"
