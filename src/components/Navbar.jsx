@@ -48,7 +48,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
   }, [top]);
 
   return (
-    <section className={`sticky ${scrollDirection === 'down' ? '-top-[70px]' : 'top-0'} ${!top && `shadow-lg dark:bg-slate-800/80 shadow-stone-500 backdrop-blur-md`} h-[70px] dark:bg-slate-800 transition-all duration-500 z-[99]`}>
+    <section className={`sticky ${scrollDirection === 'down' ? '-top-[70px]' : 'top-0'} ${!top && `shadow-lg shadow-stone-500 backdrop-blur-md`} h-[70px] transition-all duration-500 z-[99]`}>
       <div className="navbar w-full h-full flex justify-between items-center py-4 px-6">
         <motion.div
           initial={{ opacity: 0 }}

@@ -12,7 +12,7 @@
 
 @layer base {
   body {
-    @apply bg-neutral-800 font-['Inter'] text-xs sm:text-sm text-gray-200 font-normal leading-loose;
+    @apply bg-white font-['Inter'] text-xs sm:text-sm text-[#3e3e3e] font-normal leading-loose;
   }
 
   p {
@@ -32,22 +32,22 @@
   }
 
   button[type=submit] {
-    @apply font-['Source_Code_Pro'] text-sm tracking-tight mx-auto flex items-center my-2 pl-6 py-3 border-2 border-teal-200 rounded hover:bg-rose-200/10 hover:border-rose-200;
+    @apply font-['Source_Code_Pro'] text-sm tracking-tight mx-auto flex items-center my-2 pl-6 py-3 border border-gray-300 rounded hover:border-emerald-400;
   }
 
   .gradient {
-    @apply bg-gradient-to-r from-rose-200 to-teal-200 inline-block text-transparent bg-clip-text;
+    @apply bg-gradient-to-r from-blue-900 to-emerald-300 inline-block text-transparent bg-clip-text;
   }
 }
 
 @layer components {
   /* NAVBAR COMPONENT */
   .navbar li {
-    @apply font-['Source_Code_Pro'] text-sm text-gray-200 hover:text-teal-200 cursor-pointer;
+    @apply font-['Source_Code_Pro'] text-sm hover:text-emerald-300 cursor-pointer;
   }
 
   .navbar a.mobile-links {
-    @apply font-['Source_Code_Pro'] w-1/2 m-2 p-3 flex justify-center items-center text-slate-400 hover:text-gray-800 dark:hover:text-slate-200 cursor-pointer;
+    @apply font-['Source_Code_Pro'] w-1/2 m-2 p-3 flex justify-center items-center hover:text-emerald-300 cursor-pointer;
   }
 
   /* HOME COMPONENT */
@@ -56,7 +56,7 @@
   }
 
   #main a.home {
-    @apply text-teal-200 hover:text-gray-200 hover:border-b-4 hover:border-b-rose-200 cursor-pointer;
+    @apply text-emerald-400 hover:text-[#3e3e3e] border-b border-b-gray-300 hover:border-b-0 cursor-pointer;
   }
 
   /* WORK COMPONENT */

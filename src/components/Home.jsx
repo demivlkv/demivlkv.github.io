@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import ChevronsRight from './Icons/ChevronsRight';
+import Greeting from './Greeting';
 
 const Home = () => {
   return (
@@ -13,7 +14,7 @@ const Home = () => {
               transition={{ duration: 0.5, delay: 0.5 }}
               viewport={{ once: true }}
             >
-              Hi, I'm {" "}
+              <Greeting />, I'm {" "}
               <span className="gradient">
                 Demi
               </span>
