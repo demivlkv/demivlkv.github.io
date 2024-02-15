@@ -28,7 +28,7 @@
   }
 
   h2 {
-    @apply font-['Rozha_One'] pb-8 font-semibold text-3xl sm:text-4xl text-blue-900 text-center tracking-tighter;
+    @apply font-['Rozha_One'] pb-8 font-semibold text-3xl sm:text-4xl text-blue-900 dark:text-rose-200 text-center tracking-tighter;
   }
 
   button {
@@ -36,22 +36,22 @@
   }
 
   button[type=submit] {
-    @apply font-['Source_Code_Pro'] text-sm tracking-tight mx-auto flex items-center my-2 pl-6 py-3 border border-gray-300 rounded hover:border-emerald-400;
+    @apply font-['Source_Code_Pro'] text-sm tracking-tight mx-auto flex items-center my-2 pl-6 py-3 border border-gray-300 rounded hover:border-emerald-400 dark:hover:border-teal-200;
   }
 
   .gradient {
-    @apply bg-gradient-to-r from-blue-900 to-emerald-300 inline-block text-transparent bg-clip-text;
+    @apply bg-gradient-to-r from-blue-900 to-emerald-300 dark:from-rose-200 dark:to-teal-200 inline-block text-transparent bg-clip-text;
   }
 }
 
 @layer components {
   /* NAVBAR COMPONENT */
   .navbar li {
-    @apply font-['Source_Code_Pro'] text-sm font-medium hover:text-emerald-400 cursor-pointer;
+    @apply font-['Source_Code_Pro'] text-sm font-medium hover:text-emerald-400 dark:hover:text-teal-200 cursor-pointer;
   }
 
   .navbar a.mobile-links {
-    @apply font-['Source_Code_Pro'] w-1/2 m-2 p-3 flex justify-center items-center hover:text-emerald-300 cursor-pointer;
+    @apply font-['Source_Code_Pro'] w-1/2 m-2 p-3 flex justify-center items-center hover:text-emerald-300 dark:hover:text-teal-200 cursor-pointer;
   }
 
   /* HOME COMPONENT */
@@ -60,7 +60,7 @@
   }
 
   #main a.home {
-    @apply text-emerald-400 hover:text-gray-300 transition-all ease-in duration-300 cursor-pointer;
+    @apply text-emerald-400 dark:text-teal-200 hover:text-gray-300 dark:hover:text-gray-400 transition-all ease-in duration-300 cursor-pointer;
   }
 
   /* WORK COMPONENT */
@@ -69,12 +69,12 @@
   }
 
   #work ul.work {
-    @apply text-emerald-300 hover:text-gray-700 cursor-pointer;
+    @apply text-emerald-300 dark:text-teal-200 hover:text-gray-300 dark:hover:text-gray-400 cursor-pointer;
   }
 
   /* CONTACT COMPONENT */
   #contact input, #contact textarea {
-    @apply w-full my-2 p-2 rounded bg-gray-50 border border-gray-300 focus:outline focus:outline-2 focus:outline-gray-500;
+    @apply w-full my-2 p-2 rounded bg-gray-50 dark:bg-neutral-900 border border-gray-300 dark:border-gray-500 focus:outline focus:outline-2 focus:outline-gray-500;
   }
 
   /* RESUME COMPONENT */
@@ -84,20 +84,20 @@
 
   /* FOOTER COMPONENT */
   footer .social li {
-    @apply px-6 py-3 flex justify-between items-center ml-[5px] hover:ml-[10px] hover:text-emerald-400 cursor-pointer transition-all ease-in;
+    @apply px-6 py-3 flex justify-between items-center ml-[5px] hover:ml-[10px] hover:text-emerald-400 dark:hover:text-teal-200 cursor-pointer transition-all ease-in;
   }
 
   footer .mini-social li {
-    @apply p-3 inline-flex hover:text-emerald-400;
+    @apply p-3 inline-flex hover:text-emerald-400 dark:hover:text-teal-200;
   }
 }
 
 @layer utilities {
-  .light-mode {
+  .light {
     @apply bg-[#f6f6f6] text-[#3e3e3e] transition-all ease-in duration-300;
   }
 
-  .dark-mode {
-    @apply bg-neutral-800 text-slate-300 transition-all ease-in duration-300;
+  .dark {
+    @apply bg-neutral-800 text-slate-200 transition-all ease-in duration-300;
   }
 }

@@ -39,12 +39,12 @@ const WorkItem = ({ year, title, company, company_url, duration, details }) => {
         />
 
         <p className="flex flex-wrap flex-row justify-start items-center text-xs md:text-sm">
-          <span className="inline-block py-1 px-2 mr-4 font-medium text-white bg-blue-900 rounded-md">{year}</span>
+          <span className="inline-block py-1 px-2 mr-4 font-medium text-white dark:text-gray-700 bg-blue-900 dark:bg-rose-200 rounded-md">{year}</span>
           <span className="mr-1 text-base md:text-lg font-medium">{title}</span>
           @ <a
               href={company_url}
               target="_blank"
-              className="ml-1 text-base md:text-lg font-medium text-emerald-400 hover:text-gray-300 transition-all ease-in duration-300 cursor-pointer"
+              className="ml-1 text-base md:text-lg font-medium text-emerald-400 dark:text-teal-200 hover:text-gray-300 dark:hover:text-gray-400 transition-all ease-in duration-300 cursor-pointer"
             >
               {company}
             </a>

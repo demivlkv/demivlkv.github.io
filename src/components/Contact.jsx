@@ -61,25 +61,25 @@ const Contact = () => {
 
           <div className="max-w-[90%] w-full mx-auto py-8 grid grid-cols-2 gap-2 sm:gap-4">
             <div className="inline-flex items-center">
-              <span className="text-emerald-400"><MapPin /></span>&nbsp;Location
+              <span className="text-emerald-400 dark:text-teal-200"><MapPin /></span>&nbsp;Location
             </div>
             <div className="inline-flex justify-end items-center">
               : Los Angeles, CA
             </div>
             <div className="inline-flex items-center">
-              <span className="text-emerald-400"><AtSign /></span>&nbsp;E-mail
+              <span className="text-emerald-400 dark:text-teal-200"><AtSign /></span>&nbsp;E-mail
             </div>
             <div className="inline-flex justify-end items-center">
-              :&nbsp;<a href="mailto:hayashi.demi@gmail.com" className="text-emerald-400 hover:text-gray-300">hayashi.demi@gmail.com</a>
+              :&nbsp;<a href="mailto:hayashi.demi@gmail.com" className="text-emerald-400 dark:text-teal-200 hover:text-gray-300 dark:hover:text-gray-400">hayashi.demi@gmail.com</a>
             </div>
             <div className="inline-flex items-center">
-              <span className="text-emerald-400"><GitHub /></span>&nbsp;GitHub
+              <span className="text-emerald-400 dark:text-teal-200"><GitHub /></span>&nbsp;GitHub
             </div>
             <div className="inline-flex justify-end items-center">
-              :&nbsp;<a href="https://github.com/demivlkv" target="_blank" className="text-emerald-400 hover:text-gray-300">@demivlkv</a>
+              :&nbsp;<a href="https://github.com/demivlkv" target="_blank" className="text-emerald-400 dark:text-teal-200 hover:text-gray-300 dark:hover:text-gray-400">@demivlkv</a>
             </div>
             <div className="inline-flex items-center">
-              <span className="text-emerald-400"><Globe /></span>&nbsp;Languages
+              <span className="text-emerald-400 dark:text-teal-200"><Globe /></span>&nbsp;Languages
             </div>
             <div className="inline-flex justify-end items-center">
               : English, Japanese
@@ -123,12 +123,12 @@ const Contact = () => {
 
               {errorMessage && (
                 <div>
-                  <p className="text-blue-900 font-['Source_Code_pro'] font-medium tracking-tight text-xs">{errorMessage}</p>
+                  <p className="text-blue-900 dark:text-rose-200 font-['Source_Code_pro'] font-medium tracking-tight text-xs">{errorMessage}</p>
                 </div>
               )}
               <button type="submit" className="group w-[120px]">
                 Submit
-                <span className="group-hover:text-emerald-400 group-hover:ml-1 duration-300">
+                <span className="group-hover:text-emerald-400 dark:group-hover:text-teal-200 group-hover:ml-1 duration-300">
                   <ChevronsRight size={15} />
                 </span>
               </button>
