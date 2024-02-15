@@ -42,15 +42,15 @@ const WorkItem = ({ year, title, company, company_url, duration, details }) => {
           <span className="inline-block py-1 px-2 mr-4 font-medium text-white bg-blue-900 rounded-md">{year}</span>
           <span className="mr-1 text-base md:text-lg font-medium">{title}</span>
           @ <a
-              src={company_url}
+              href={company_url}
               target="_blank"
-              className="ml-1 text-base md:text-lg font-medium text-emerald-400 hover:text-gray-300  transition-all ease-in duration-300 cursor-pointer"
+              className="ml-1 text-base md:text-lg font-medium text-emerald-400 hover:text-gray-300 transition-all ease-in duration-300 cursor-pointer"
             >
               {company}
             </a>
         </p>
 
-        <p className="mt-3 text-xs sm:text-sm font-normal text-stone-400">
+        <p className="mt-3 text-xs sm:text-sm font-normal text-gray-400">
           {duration}
         </p>
         <p className="my-2">

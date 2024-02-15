@@ -6,8 +6,8 @@ import TripTideImg from '../assets/portfolio/trip-tide.png';
 import SoundStreamImg from '../assets/portfolio/soundstream.png';
 import TokioImg from '../assets/portfolio/tokio-ramen.png';
 import BookNookv2Img from '../assets/portfolio/book-nook-v2.png';
-import BookNookv1Img from '../assets/portfolio/book-nook-v1.png';
-import TechBlogImg from '../assets/portfolio/tech-blog.png';
+// import BookNookv1Img from '../assets/portfolio/book-nook-v1.png';
+// import TechBlogImg from '../assets/portfolio/tech-blog.png';
 import FindAStoryImg from '../assets/portfolio/find-a-story.png';
 import WeatherImg from '../assets/portfolio/weather-dashboard.png';
 
@@ -121,29 +121,29 @@ const Project = () => {
           variants={animateProjectItem}
           viewport={{ once: true }}
         >
-          <div className="w-full h-max aspect-auto overflow-hidden rounded-lg opacity-90 hover:opacity-100 transition-all shadow-lg dark:shadow-gray-900 cursor-pointer">
+          <div className="w-full h-max aspect-auto overflow-hidden rounded-lg opacity-90 hover:opacity-100 transition-all shadow-lg cursor-pointer">
     
             <img src={project.thumbnail} alt={project.title} className="w-full" />
     
-            <div className="flex rounded-lg justify-center items-center transition-all duration-700 opacity-0 bg-gradient-to-t from-[#222222] via-slate-600 to-opacity-30 group-hover:opacity-90 absolute top-0 left-0 h-full w-full">
+            <div className="flex rounded-lg justify-center items-center transition-all duration-700 opacity-0 bg-gradient-to-t from-[#222222] via-blue-950 to-opacity-30 group-hover:opacity-90 absolute top-0 left-0 h-full w-full">
                             
               <div class="absolute top-0 left-0 w-full h-full flex justify-center items-end opacity-0 hover:opacity-100">
                 <div class="flex-row text-center p-6">
-                  <h3 className="mb-2 font-semibold text-sky-200 text-2xl uppercase drop-shadow-md tracking-tighter">
+                  <h3 className="mb-2 font-semibold text-emerald-300 text-2xl uppercase drop-shadow-md tracking-tighter">
                     {project.title}
                   </h3>
                   <p className="text-white text-sm tracking-tight leading-snug drop-shadow-md">
                     {project.description}
                   </p>
-                  <p className="font-['Source_Code_Pro'] text-sky-200 text-xs py-2">
+                  <p className="font-['Source_Code_Pro'] text-emerald-200 text-xs py-2">
                     {project.technologies}
                   </p>
                   <div className="text-center">
                     <a href={project.url} target="_blank">
-                      <button className="mx-2 w-[50px] h-[50px] inline-flex justify-center items-center rounded-full bg-slate-500 hover:bg-white text-white hover:text-slate-800 transition-all ease-in duration-300"><ExternalLink /></button>
+                      <button className="mx-2 w-[50px] h-[50px] inline-flex justify-center items-center rounded-full bg-blue-900 hover:bg-gray-200 text-white hover:text-emerald-400 transition-all ease-in duration-300"><ExternalLink /></button>
                     </a>
                     <a href={project.github} target="_blank">
-                      <button className="mx-2 w-[50px] h-[50px] inline-flex justify-center items-center rounded-full bg-slate-500 hover:bg-white text-white hover:text-slate-800 transition-all ease-in duration-300"><GitHub /></button>
+                      <button className="mx-2 w-[50px] h-[50px] inline-flex justify-center items-center rounded-full bg-blue-900 hover:bg-gray-200 text-white hover:text-emerald-400 transition-all ease-in duration-300"><GitHub /></button>
                     </a>
                   </div>
                 </div>

@@ -48,7 +48,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
   }, [top]);
 
   return (
-    <section className={`sticky ${scrollDirection === 'down' ? '-top-[70px]' : 'top-0'} ${!top && `shadow-lg shadow-stone-500 backdrop-blur-md`} h-[70px] transition-all duration-500 z-[99]`}>
+    <section className={`sticky ${scrollDirection === 'down' ? '-top-[70px]' : 'top-0'} ${!top && `shadow-lg backdrop-blur-md`} h-[70px] transition-all duration-500 z-[99]`}>
       <div className="navbar w-full h-full flex justify-between items-center py-4 px-6">
         <motion.div
           initial={{ opacity: 0 }}
@@ -90,7 +90,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             )}
             {nav ? (
               <motion.div
-                className={`fixed ${scrollDirection === 'down' ? 'top-[70px]' : 'top-0'} right-0 w-1/2 h-screen shadow-lg bg-stone-100/90 dark:bg-slate-800/90 dark:shadow-gray-900 backdrop-blur-md z-[1]`}
+                className={`fixed ${scrollDirection === 'down' ? 'top-[70px]' : 'top-0'} right-0 w-1/2 h-screen shadow-lg bg-gray-50/90 backdrop-blur-md z-[1]`}
                 initial={{ opacity: 0, x: 100 }}
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: 100 }}
@@ -100,7 +100,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
                 <div className="w-full h-[70px] px-6 flex justify-end items-center">
                   <X />
                 </div>
-                <div className="h-full flex flex-col justify-center items-center">
+                <div className="h-full flex flex-col justify-center items-center font-medium">
                   <a href="#about" className="mobile-links">About</a>
                   <a href="#work" className="mobile-links">Experience</a>
                   <a href="#projects" className="mobile-links">Projects</a>

@@ -15,9 +15,9 @@ const data = [
     details: () => (
       <ul>
         <li>{icon} Drive the development of efficient and maintainable code, leveraging expertise in TypeScript, React, Redux, NextJS, Node, MongoDB, and SCSS within a meticulously crafted component-based architecture tailored for contemporary web browsers</li>
-        <li>{icon} Demonstrate proficiency in troubleshooting, debugging, and optimizing existing software applications by executing rigorous testing protocols to identify and resolve bugs and performance issuesuc</li>
+        <li>{icon} Demonstrate proficiency in troubleshooting, debugging, and optimizing existing software applications by executing rigorous testing protocols to identify and resolve bugs and performance issues</li>
         <li>{icon} Collaborate within a team of 10 in Agile environment and provided help to other team members when needed; handled version control and resolved merge conflicts in Git</li>
-        <li>{icon} Proactively participate in collaborative code reviews, cultivating a culture of excellence in code quality and knowledge sharing; actively contributed in stand-ups, estimations, sprint planning, & retrospectives</li>
+        <li>{icon} Proactively participate in collaborative code reviews, cultivating a culture of excellence in code quality and knowledge sharing; actively contributed in stand-ups, estimations, sprint planning, and retrospectives</li>
       </ul>
     )
   },
