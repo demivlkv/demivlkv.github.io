@@ -41,7 +41,7 @@ const Home = () => {
             transition={{ duration: 0.5, delay: 1.25 }}
             viewport={{ once: true }}
           >
-            I am a full-stack software engineer living in Los Angeles with a passion for technologies. I love to build and design things like web applications, <a href="https://www.tokio-ramen.com/" target="_blank" className="home">branding for local businesses</a>, and even <a href="https://cargocollective.com/demihayashi/Propagation" target="_blank" className="home">sculptures</a>.
+            I am a full-stack software engineer living in Los Angeles with a passion for technologies. I enjoy creating and designing various projects, including web applications, <a href="https://tokio-ramen.netlify.app/" target="_blank" className="home">branding for local businesses</a>, and even <a href="https://cargocollective.com/demihayashi/Propagation" target="_blank" className="home">sculptures</a>. At present, I work as a software engineer at <a href="https://nexalure.com/"  target="_blank" className="home">Nexalure Technologies</a>.
           </motion.p>
           <motion.div
             className="w-full flex items-center justify-between"

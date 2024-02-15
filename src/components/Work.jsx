@@ -10,6 +10,7 @@ const data = [
     year: 2024,
     title: 'Junior Software Engineer',
     company: 'Nexalure Technologies',
+    company_url: 'https://nexalure.com/',
     duration: 'Jan 2024 - Present',
     details: () => (
       <ul>
@@ -24,6 +25,7 @@ const data = [
     year: 2020,
     title: 'Freelance Web Developer, Graphic Designer',
     company: 'Tokio Ramen',
+    company_url: 'https://tokio-ramen.netlify.app/',
     duration: 'Mar 2020 - Jan 2024',
     details: () => (
       <ul>
@@ -38,7 +40,7 @@ const data = [
 
 const Work = () => {
   return (
-    <div id="work" className="max-w-screen-md m-auto md:pl-20 px-8 py-24 sm:py-32">
+    <div id="work" className="max-w-screen-lg m-auto md:pl-20 px-8 py-24 sm:py-32">
       <motion.h2
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -53,6 +55,7 @@ const Work = () => {
           year={item.year}
           title={item.title}
           company={item.company}
+          company_url={item.company_url}
           duration={item.duration}
           details={item.details}
         />
