@@ -17,7 +17,7 @@ function App() {
   };
 
   return (
-    <main className={`${darkMode ? 'dark' : ''}`}>
+    <main className={`${darkMode ? 'dark-mode' : 'light-mode'}`}>
       <Navbar
         darkMode={darkMode}
         toggleDarkMode={toggleDarkMode}

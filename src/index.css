@@ -91,3 +91,13 @@
     @apply p-3 inline-flex hover:text-emerald-400;
   }
 }
+
+@layer utilities {
+  .light-mode {
+    @apply bg-[#f6f6f6] text-[#3e3e3e] transition-all ease-in duration-300;
+  }
+
+  .dark-mode {
+    @apply bg-neutral-800 text-slate-300 transition-all ease-in duration-300;
+  }
+}

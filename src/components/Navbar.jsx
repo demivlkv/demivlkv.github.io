@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 import Logo from '../assets/logo.png';
 import Menu from './Icons/Menu';
 import X from './Icons/X';
-// import Sun from './Icons/Sun';
-// import Moon from './Icons/Moon';
+import Sun from './Icons/Sun';
+import Moon from './Icons/Moon';
 
 function handleScroll() {
   const [scrollDirection, setScrollDirection] = useState(null);
@@ -48,7 +48,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
   }, [top]);
 
   return (
-    <section className={`sticky ${scrollDirection === 'down' ? '-top-[70px]' : 'top-0'} ${!top && `shadow-lg backdrop-blur-md`} h-[70px] transition-all duration-500 z-[99]`}>
+    <nav className={`sticky ${scrollDirection === 'down' ? '-top-[70px]' : 'top-0'} ${!top && `shadow-lg dark:shadow-slate-400 backdrop-blur-md`} h-[70px] transition-all duration-500 z-[99]`}>
       <div className="navbar w-full h-full flex justify-between items-center py-4 px-6">
         <motion.div
           initial={{ opacity: 0 }}
@@ -78,6 +78,11 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
               <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 4 }} viewport={{ once: true }}>
                 <a href="#resume" className="mx-6">Resume</a>
               </motion.li>
+              <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 4.25 }} viewport={{ once: true }} onClick={toggleDarkMode}>
+                <div className="ml-6">
+                  {darkMode ? <Sun /> : <Moon />}
+                </div>
+              </motion.li>
             </ul>
           </div>
 
@@ -90,7 +95,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             )}
             {nav ? (
               <motion.div
-                className={`fixed ${scrollDirection === 'down' ? 'top-[70px]' : 'top-0'} right-0 w-1/2 h-screen shadow-lg bg-gray-50/90 backdrop-blur-md z-[1]`}
+                className={`fixed ${scrollDirection === 'down' ? 'top-[70px]' : 'top-0'} right-0 w-1/2 h-screen shadow-lg bg-gray-50/90 dark:bg-neutral-800/90 backdrop-blur-md z-[1]`}
                 initial={{ opacity: 0, x: 100 }}
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: 100 }}
@@ -106,6 +111,9 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
                   <a href="#projects" className="mobile-links">Projects</a>
                   <a href="#contact" className="mobile-links">Contact</a>
                   <a href="#resume" className="mobile-links">Resume</a>
+                  <button onClick={toggleDarkMode} className="w-1/2 m-2 p-3 flex justify-center items-center cursor-pointer">
+                    {darkMode ? <Sun /> : <Moon />}
+                  </button>
                 </div>
               </motion.div>
           ) : (
@@ -113,7 +121,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
           )}
         </div>
       </div>
-    </section>
+    </nav>
   );
 };
 
