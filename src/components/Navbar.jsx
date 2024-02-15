@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 import Logo from '../assets/logo.png';
 import Menu from './Icons/Menu';
 import X from './Icons/X';
-import Sun from './Icons/Sun';
-import Moon from './Icons/Moon';
+// import Sun from './Icons/Sun';
+// import Moon from './Icons/Moon';
 
 function handleScroll() {
   const [scrollDirection, setScrollDirection] = useState(null);
