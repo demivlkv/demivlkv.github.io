@@ -108,7 +108,7 @@ const animateProjectItem = {
 const Project = () => {
   return (
     <motion.div
-      className="w-full grid md:grid-cols-2 gap-8"
+      className="max-w-screen-md m-auto w-full flex flex-col items-center gap-6"
       variants={animateProject}
       initial="hidden"
       whileInView="animate"
@@ -117,39 +117,34 @@ const Project = () => {
       {projects.map((project) => (
         <motion.article
           key={project}
-          className="relative group"
+          className="relative group w-full h-max flex flex-col md:flex-row items-center overflow-hidden bg-white dark:bg-neutral-900 border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg dark:shadow-neutral-700"
           variants={animateProjectItem}
           viewport={{ once: true }}
         >
-          <div className="w-full h-max aspect-auto overflow-hidden rounded-lg opacity-90 hover:opacity-100 transition-all shadow-lg cursor-pointer">
-    
-            <img src={project.thumbnail} alt={project.title} className="w-full" />
-    
-            <div className="flex rounded-lg justify-center items-center transition-all duration-700 opacity-0 bg-gradient-to-t from-[#222222] via-blue-950 to-opacity-30 group-hover:opacity-90 absolute top-0 left-0 h-full w-full">
-                            
-              <div class="absolute top-0 left-0 w-full h-full flex justify-center items-end opacity-0 hover:opacity-100">
-                <div class="flex-row text-center p-6">
-                  <h3 className="mb-2 font-semibold text-emerald-300 text-2xl uppercase drop-shadow-md tracking-tighter">
-                    {project.title}
-                  </h3>
-                  <p className="text-white text-sm tracking-tight leading-snug drop-shadow-md">
-                    {project.description}
-                  </p>
-                  <p className="font-['Source_Code_Pro'] text-emerald-200 text-xs py-2">
-                    {project.technologies}
-                  </p>
-                  <div className="text-center">
-                    <a href={project.url} target="_blank">
-                      <button className="mx-2 w-[50px] h-[50px] inline-flex justify-center items-center rounded-full bg-blue-900 hover:bg-gray-200 text-white hover:text-emerald-400 transition-all ease-in duration-300"><ExternalLink /></button>
-                    </a>
-                    <a href={project.github} target="_blank">
-                      <button className="mx-2 w-[50px] h-[50px] inline-flex justify-center items-center rounded-full bg-blue-900 hover:bg-gray-200 text-white hover:text-emerald-400 transition-all ease-in duration-300"><GitHub /></button>
-                    </a>
-                  </div>
-                </div>
-              </div>   
+          <img src={project.thumbnail} alt={project.title} className="w-full h-full object-cover md:h-auto md:w-2/5" />
+
+          <div class="w-full h-full flex flex-col justify-between p-8">
+
+            <h3 className="mb-2 font-semibold text-emerald-300 dark:text-teal-200 text-2xl uppercase tracking-tighter">
+              {project.title}
+            </h3>
+            <p className="text-sm tracking-tight leading-snug">
+              {project.description}
+            </p>
+            <p className="font-['Source_Code_Pro'] text-blue-900 dark:text-rose-200 text-xs py-2">
+              {project.technologies}
+            </p>
+            <div className="mt-2 text-center">
+              <a href={project.url} target="_blank">
+                <button className="project-links"><ExternalLink /></button>
+              </a>
+              <a href={project.github} target="_blank">
+                <button className="project-links"><GitHub /></button>
+              </a>
+
             </div>
           </div>
+
         </motion.article>
       ))}
     </motion.div>
