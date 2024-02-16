@@ -10,8 +10,8 @@ const Footer = () => {
   return (
     <footer className="footer py-8 text-xs sm:text-sm">
       <div className="flex flex-col justify-center items-center">
-        <p className="flex justify-center items-center">Made with <Heart /> by <a href="https://github.com/demivlkv/demivlkv.github.io" target="_blank" className="ml-1 text-slate-400 hover:text-gray-700">Demi</a>.</p>
-        <p><span className="text-slate-400">&copy;</span> 2023. All rights reserved.</p>
+        <p className="flex justify-center items-center">Made with <Heart /> by <a href="https://github.com/demivlkv/demivlkv.github.io" target="_blank" className="ml-1 text-emerald-400 hover:text-gray-300 dark:text-teal-200 dark:hover:text-gray-400">Demi</a>.</p>
+        <p><span className="text-emerald-400 dark:text-teal-200">&copy;</span> 2023. All rights reserved.</p>
       </div>
 
       {/* DISPLAY SOCIAL MEDIA ICONS ON SIDE OVER 768PX SCRN RES */}

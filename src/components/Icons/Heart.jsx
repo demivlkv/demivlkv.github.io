@@ -9,7 +9,7 @@ const Heart = () => {
         stroke-width="2"
         stroke-linecap="round"
         stroke-linejoin="round"
-        className="mx-1 text-slate-400"
+        className="mx-1 text-emerald-400 dark:text-teal-200"
       >
         <use href="/feather-sprite.svg#heart"/>
       </svg>
