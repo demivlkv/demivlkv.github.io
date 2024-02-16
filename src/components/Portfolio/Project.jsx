@@ -108,45 +108,55 @@ const animateProjectItem = {
 const Project = () => {
   return (
     <motion.div
-      className="max-w-screen-md m-auto w-full flex flex-col items-center gap-8"
+      className="w-full flex justify-center items-center"
       variants={animateProject}
       initial="hidden"
       whileInView="animate"
       viewport={{ once: true }}
     >
-      {projects.map((project) => (
-        <motion.article
-          key={project}
-          className="relative group w-full h-max flex flex-col md:flex-row items-center overflow-hidden bg-white dark:bg-neutral-900 border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg dark:shadow-neutral-700"
-          variants={animateProjectItem}
-          viewport={{ once: true }}
-        >
-          <img src={project.thumbnail} alt={project.title} className="w-full h-full object-cover md:h-auto md:w-2/5" />
+      <ul className="list-none flex flex-row flex-wrap justify-center gap-8">
+        {projects.map((project) => (
+          <motion.li
+            key={project}
+            className="group w-full md:max-w-xs"
+            variants={animateProjectItem}
+            viewport={{ once: true }}
+          >
+            <div className="w-full h-full flex flex-col items-stretch overflow-hidden bg-white dark:bg-neutral-900 border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg dark:shadow-neutral-700 opacity-70 hover:opacity-100 transition-all duration-300 ease-in cursor-pointer">
+              <img
+                src={project.thumbnail}
+                alt={project.title}
+                className="w-full h-full object-cover md:h-auto"
+              />
 
-          <div class="w-full h-full flex flex-col justify-between p-8">
+              <div class="w-full h-full flex flex-col justify-between p-4">
 
-            <h3 className="mb-2 font-semibold text-emerald-300 dark:text-teal-200 text-2xl uppercase tracking-tighter">
-              {project.title}
-            </h3>
-            <p className="text-sm tracking-tight leading-snug">
-              {project.description}
-            </p>
-            <p className="font-['Source_Code_Pro'] text-blue-900 dark:text-rose-200 text-xs py-2">
-              {project.technologies}
-            </p>
-            <div className="mt-2 text-center">
-              <a href={project.url} target="_blank">
-                <button className="project-links"><ExternalLink /></button>
-              </a>
-              <a href={project.github} target="_blank">
-                <button className="project-links"><GitHub /></button>
-              </a>
-
+                <div className="flex justify-between align-baseline">
+                  <div>
+                    <h3 className="mb-3 font-semibold text-emerald-300 dark:text-teal-200 text-xl uppercase tracking-tighter">
+                      {project.title}
+                    </h3>
+                  </div>
+                  <div>
+                    <a href={project.url} target="_blank">
+                      <button className="project-links"><ExternalLink /></button>
+                    </a>
+                    <a href={project.github} target="_blank">
+                      <button className="project-links"><GitHub /></button>
+                    </a>
+                  </div>
+                </div>
+                <p className="mb-2 text-sm leading-snug">
+                  {project.description}
+                </p>
+                <p className="mb-2 font-['Source_Code_Pro'] text-blue-900 dark:text-rose-200 text-xs text-center tracking-tight py-2">
+                  {project.technologies}
+                </p>
+              </div>
             </div>
-          </div>
-
-        </motion.article>
-      ))}
+          </motion.li>
+        ))}
+      </ul>
     </motion.div>
   );
 };

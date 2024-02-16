@@ -74,12 +74,16 @@
 
   /* PROJECTS COMPONENT */
   #projects .project-links {
-    @apply mx-2 w-[50px] h-[50px] inline-flex justify-center items-center rounded-full hover:bg-blue-900 dark:hover:bg-rose-200 bg-gray-100 dark:bg-neutral-700 hover:text-white dark:hover:text-gray-700 text-emerald-400 dark:text-teal-200 transition-all ease-in duration-300;
+    @apply inline-flex items-center text-emerald-400 dark:text-teal-200 hover:text-gray-300 dark:hover:text-gray-400 transition-all ease-in duration-300;
+  }
+
+  #projects button.project-links svg {
+    @apply w-[20px] h-[20px] ml-3;
   }
 
   /* CONTACT COMPONENT */
   #contact input, #contact textarea {
-    @apply w-full my-2 p-2 rounded bg-gray-50 dark:bg-neutral-900 border border-gray-300 dark:border-gray-600 focus:outline focus:outline-2 focus:outline-gray-500;
+    @apply w-full my-2 p-2 rounded bg-white dark:bg-neutral-900 border border-gray-300 dark:border-gray-700 focus:outline focus:outline-2 focus:outline-gray-500;
   }
 
   /* RESUME COMPONENT */
