@@ -63,12 +63,12 @@
     @apply text-emerald-400 dark:text-teal-200 hover:text-gray-300 dark:hover:text-gray-400 transition-all ease-in duration-300 cursor-pointer;
   }
 
-  /* WORK COMPONENT */
-  #work ul li {
-    @apply ml-6 flex;
+  /* EXPERIENCE COMPONENT */
+  #experience ul li {
+    @apply ml-4 flex;
   }
 
-  #work ul.work {
+  #experience ul.work {
     @apply text-emerald-300 dark:text-teal-200 hover:text-gray-300 dark:hover:text-gray-400 cursor-pointer;
   }
 
@@ -89,7 +89,7 @@
 
   /* FOOTER COMPONENT */
   footer .social li {
-    @apply px-6 py-3 flex justify-between items-center ml-[5px] hover:ml-[10px] hover:text-emerald-400 dark:hover:text-teal-200 cursor-pointer transition-all ease-in;
+    @apply px-3 py-3 flex justify-between items-center ml-[5px] hover:ml-[10px] hover:text-emerald-400 dark:hover:text-teal-200 cursor-pointer transition-all ease-in;
   }
 
   footer .mini-social li {

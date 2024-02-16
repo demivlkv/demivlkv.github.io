@@ -67,7 +67,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
                 <a href="#about" className="mr-6">About</a>
               </motion.li>
               <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 3.25 }} viewport={{ once: true }}>
-                <a href="#work" className="mx-6">Experience</a>
+                <a href="#experience" className="mx-6">Experience</a>
               </motion.li>
               <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 3.5 }} viewport={{ once: true }}>
                 <a href="#projects" className="mx-6">Projects</a>
@@ -107,7 +107,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
                 </div>
                 <div className="h-full flex flex-col justify-center items-center font-medium">
                   <a href="#about" className="mobile-links">About</a>
-                  <a href="#work" className="mobile-links">Experience</a>
+                  <a href="#experience" className="mobile-links">Experience</a>
                   <a href="#projects" className="mobile-links">Projects</a>
                   <a href="#contact" className="mobile-links">Contact</a>
                   <a href="#resume" className="mobile-links">Resume</a>

@@ -1,15 +1,15 @@
 import { motion } from 'framer-motion';
 
-import ExternalLink from './Icons/ExternalLink';
-import GitHub from './Icons/GitHub';
-import TripTideImg from '../assets/portfolio/trip-tide.png';
-import SoundStreamImg from '../assets/portfolio/soundstream.png';
-import TokioImg from '../assets/portfolio/tokio-ramen.png';
-import BookNookv2Img from '../assets/portfolio/book-nook-v2.png';
-// import BookNookv1Img from '../assets/portfolio/book-nook-v1.png';
-// import TechBlogImg from '../assets/portfolio/tech-blog.png';
-import FindAStoryImg from '../assets/portfolio/find-a-story.png';
-import WeatherImg from '../assets/portfolio/weather-dashboard.png';
+import ExternalLink from '../Icons/ExternalLink';
+import GitHub from '../Icons/GitHub';
+import TripTideImg from '../../assets/portfolio/trip-tide.png';
+import SoundStreamImg from '../../assets/portfolio/soundstream.png';
+import TokioImg from '../../assets/portfolio/tokio-ramen.png';
+import BookNookv2Img from '../../assets/portfolio/book-nook-v2.png';
+// import BookNookv1Img from '../../assets/portfolio/book-nook-v1.png';
+// import TechBlogImg from '../../assets/portfolio/tech-blog.png';
+import FindAStoryImg from '../../assets/portfolio/find-a-story.png';
+import WeatherImg from '../../assets/portfolio/weather-dashboard.png';
 
 const projects = [
   {
@@ -108,7 +108,7 @@ const animateProjectItem = {
 const Project = () => {
   return (
     <motion.div
-      className="max-w-screen-md m-auto w-full flex flex-col items-center gap-6"
+      className="max-w-screen-md m-auto w-full flex flex-col items-center gap-8"
       variants={animateProject}
       initial="hidden"
       whileInView="animate"

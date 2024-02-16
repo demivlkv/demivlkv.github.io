@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
-import Work from './components/Work';
+import Experience from './components/Experience';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
@@ -24,7 +24,7 @@ function App() {
       />
       <Home darkMode={darkMode} />
       <About />
-      <Work />
+      <Experience />
       <Portfolio />
       <Contact />
       <Resume darkMode={darkMode} />
