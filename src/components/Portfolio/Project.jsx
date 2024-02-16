@@ -2,14 +2,14 @@ import { motion } from 'framer-motion';
 
 import ExternalLink from '../Icons/ExternalLink';
 import GitHub from '../Icons/GitHub';
-import TripTideImg from '../../assets/portfolio/trip-tide.png';
-import SoundStreamImg from '../../assets/portfolio/soundstream.png';
-import TokioImg from '../../assets/portfolio/tokio-ramen.png';
-import BookNookv2Img from '../../assets/portfolio/book-nook-v2.png';
-// import BookNookv1Img from '../../assets/portfolio/book-nook-v1.png';
-// import TechBlogImg from '../../assets/portfolio/tech-blog.png';
-import FindAStoryImg from '../../assets/portfolio/find-a-story.png';
-import WeatherImg from '../../assets/portfolio/weather-dashboard.png';
+import TripTideImg from '../../assets/portfolio/trip-tide.webp';
+import SoundStreamImg from '../../assets/portfolio/soundstream.webp';
+import TokioImg from '../../assets/portfolio/tokio-ramen.webp';
+import BookNookv2Img from '../../assets/portfolio/book-nook-v2.webp';
+// import BookNookv1Img from '../../assets/portfolio/book-nook-v1.webp';
+import TechBlogImg from '../../assets/portfolio/tech-blog.webp';
+import FindAStoryImg from '../../assets/portfolio/find-a-story.webp';
+// import WeatherImg from '../../assets/portfolio/weather-dashboard.webp';
 
 const projects = [
   {
@@ -36,14 +36,14 @@ const projects = [
     url: 'https://book-nook-v2.herokuapp.com/',
     github: 'https://github.com/demivlkv/book-nook-v2'
   },
-  {
-    title: 'Weather Dashboard',
-    thumbnail: WeatherImg,
-    description: 'A weather dashboard application built with OpenWeather API',
-    technologies: 'ReactJS / TypeScript / Tailwind CSS',
-    url: 'https://creative-gaufre-7a5162.netlify.app/',
-    github: 'https://github.com/demivlkv/weather-dashboard'
-  },
+  // {
+  //   title: 'Weather Dashboard',
+  //   thumbnail: WeatherImg,
+  //   description: 'A weather dashboard application built with OpenWeather API',
+  //   technologies: 'ReactJS / TypeScript / Tailwind CSS',
+  //   url: 'https://creative-gaufre-7a5162.netlify.app/',
+  //   github: 'https://github.com/demivlkv/weather-dashboard'
+  // },
   {
     title: 'Sound Stream',
     thumbnail: SoundStreamImg,
@@ -60,14 +60,14 @@ const projects = [
   //     url: 'https://booknook-stars.herokuapp.com/',
   //     github: 'https://github.com/demivlkv/book-nook'
   // },
-  // {
-  //   title: 'Tech Blog',
-  //   thumbnail: TechBlogImg,
-  //   description: 'A full-stack CMS-style blog site where users can create an account, publish articles, blog posts, & thoughts',
-  //   technologies: 'JavaScript / NodeJS / MySQL',
-  //   url: 'https://frozen-sierra-30429.herokuapp.com/',
-  //   github: 'https://github.com/demivlkv/tech-blog'
-  // },
+  {
+    title: 'Tech Blog',
+    thumbnail: TechBlogImg,
+    description: 'A full-stack CMS-style blog site where users can create an account, publish articles, blog posts, & thoughts',
+    technologies: 'JavaScript / NodeJS / MySQL',
+    url: 'https://frozen-sierra-30429.herokuapp.com/',
+    github: 'https://github.com/demivlkv/tech-blog'
+  },
   {
     title: 'Find-A-Story',
     thumbnail: FindAStoryImg,

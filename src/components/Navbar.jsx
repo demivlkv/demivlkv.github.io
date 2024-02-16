@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
-import Logo from '../assets/logo.png';
+import LogoLightMode from '../assets/logo-lightmode.webp';
+import LogoDarkMode from '../assets/logo-darkmode.webp';
 import Menu from './Icons/Menu';
 import X from './Icons/X';
 import Sun from './Icons/Sun';
@@ -57,7 +58,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
           viewport={{ once: true }}
         >
           <a href="/">
-            <img src={Logo} alt="DH" className="h-10 hover:opacity-75 transition-all ease-in duration-300 cursor-pointer" />
+            <img src={darkMode ? LogoDarkMode : LogoLightMode} alt="DH" className="h-10 hover:opacity-75 transition-all ease-in duration-300 cursor-pointer" />
           </a>
         </motion.div>
           {/* NAVBAR AT 768PX & ABOVE */}
