@@ -28,7 +28,7 @@
   }
 
   h2 {
-    @apply font-['Rozha_One'] pb-8 font-semibold text-3xl sm:text-4xl text-blue-900 dark:text-rose-200 text-center tracking-tighter;
+    @apply font-['Rozha_One'] pb-8 font-semibold text-3xl sm:text-4xl text-slate-500 dark:text-rose-100 text-center tracking-tighter;
   }
 
   button {
@@ -40,7 +40,7 @@
   }
 
   .gradient {
-    @apply bg-gradient-to-r from-blue-900 to-emerald-300 dark:from-rose-200 dark:to-teal-200 inline-block text-transparent bg-clip-text;
+    @apply bg-gradient-to-r from-slate-500 to-emerald-300 dark:from-rose-100 dark:to-teal-200 inline-block text-transparent bg-clip-text;
   }
 }
 

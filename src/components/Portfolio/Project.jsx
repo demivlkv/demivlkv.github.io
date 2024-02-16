@@ -149,7 +149,7 @@ const Project = () => {
                 <p className="mb-2 text-sm leading-snug">
                   {project.description}
                 </p>
-                <p className="mb-2 font-['Source_Code_Pro'] text-blue-900 dark:text-rose-200 text-xs text-center tracking-tight py-2">
+                <p className="mb-2 font-['Source_Code_Pro'] text-slate-500 dark:text-rose-100 text-xs text-center tracking-tight py-2">
                   {project.technologies}
                 </p>
               </div>

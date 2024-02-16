@@ -26,7 +26,7 @@ const WorkItem = ({ year, title, company, company_url, duration, details }) => {
         viewport={{ once: true }}
       >
         <div className="mb-2">
-          <span className="inline-block py-1 px-2 mr-2 font-medium text-white dark:text-gray-700 bg-blue-900 dark:bg-rose-200 rounded-md">{year}</span>
+          <span className="inline-block py-1 px-2 mr-2 font-medium text-white dark:text-gray-700 bg-slate-500 dark:bg-rose-100 rounded-md">{year}</span>
           <span className="mr-1 text-base md:text-lg font-medium">{title}</span>
         </div>
         <div className="w-full flex items-center">
