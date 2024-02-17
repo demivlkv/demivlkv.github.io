@@ -3,7 +3,7 @@ import AboutImg from '../assets/me.webp';
 
 const About = () => {
   return (
-    <section id="about" className="max-w-screen-lg m-auto md:pl-20 px-8 py-24 sm:py-32">
+    <section id="about" className="max-w-screen-lg m-auto md:pl-20 px-8 py-12 sm:py-28">
       <motion.h2
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}

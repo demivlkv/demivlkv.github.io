@@ -3,9 +3,12 @@ import { useState, useEffect } from 'react';
 const greetings = [
   `Hi`,
   `Hola`,
-  `初めまして`,
+  `こんにちは`,
   `Здравствуйте`,
-  `Bonjour`
+  `Bonjour`,
+  `Ciao`,
+  `Aloha`,
+  `Hallo`
 ];
 
 const Greeting = () => {
