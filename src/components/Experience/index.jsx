@@ -8,7 +8,7 @@ const icon = <FastForward />;
 const data = [
   {
     year: 2024,
-    title: 'Junior Software Engineer',
+    title: 'Software Engineer',
     company: 'Nexalure Technologies',
     company_url: 'https://nexalure.com/',
     duration: 'Jan 2024 - Present',
