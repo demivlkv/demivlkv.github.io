@@ -139,10 +139,10 @@ const Project = () => {
                   </div>
                   <div>
                     <a href={project.url} target="_blank" aria-label="View deployed application">
-                      <button className="project-links"><ExternalLink /></button>
+                      <button id="external-link-btn" className="project-links"><ExternalLink /></button>
                     </a>
                     <a href={project.github} target="_blank" aria-label="View GitHub Repo">
-                      <button className="project-links"><GitHub /></button>
+                      <button id="github-link-btn" className="project-links"><GitHub /></button>
                     </a>
                   </div>
                 </div>
