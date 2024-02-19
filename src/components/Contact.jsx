@@ -91,32 +91,38 @@ const Contact = () => {
         <div>
           <form method="POST" action={formUrl} id="contact-form" className="flex flex-col justify-center max-w-[600px] mx-auto w-full">
             <div class="w-full mx-auto">
-              <label for="name">Name:</label>
-              <input
-                type="text"
-                name="name"
-                aria-labelledby="name"
-                defaultValue={name}
-                onBlur={handleChange}
-              />
+              <label for="name">
+                Name:
+                <input
+                  type="text"
+                  name="name"
+                  aria-labelledby="name"
+                  defaultValue={name}
+                  onBlur={handleChange}
+                />
+              </label>
 
-              <label for="email">E-mail:</label>
-              <input
-                type="email"
-                name="email"
-                aria-labelledby="email"
-                defaultValue={email}
-                onBlur={handleChange}
-              />
+              <label for="email">
+                E-mail:
+                <input
+                  type="email"
+                  name="email"
+                  aria-labelledby="email"
+                  defaultValue={email}
+                  onBlur={handleChange}
+                />
+              </label>
 
-              <label for="message">Message:</label>
-              <textarea
-                name="message"
-                aria-labelledby="message"
-                defaultValue={message}
-                onBlur={handleChange}
-                rows="4"
-              />
+              <label for="message">
+                Message:
+                <textarea
+                  name="message"
+                  aria-labelledby="message"
+                  defaultValue={message}
+                  onBlur={handleChange}
+                  rows="4"
+                />
+              </label>
 
               {errorMessage && (
                 <div>
