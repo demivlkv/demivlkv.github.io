@@ -126,7 +126,7 @@ const Contact = () => {
 
               {errorMessage && (
                 <div>
-                  <p className="text-blue-900 dark:text-rose-200 font-['Source_Code_pro'] font-medium tracking-tight text-xs">{errorMessage}</p>
+                  <p className="text-slate-500 dark:text-rose-200 font-['Source_Code_pro'] font-medium tracking-tight text-xs">{errorMessage}</p>
                 </div>
               )}
               <Button>Submit</Button>
