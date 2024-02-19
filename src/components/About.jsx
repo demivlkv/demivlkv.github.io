@@ -3,7 +3,7 @@ import AboutImg from '../assets/me.webp';
 
 const About = () => {
   return (
-    <section id="about" className="max-w-screen-lg m-auto md:pl-20 px-8 py-12 sm:py-28">
+    <section id="about" className="container">
       <motion.h2
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -26,7 +26,7 @@ const About = () => {
             alt="Hi, I'm Demi!"
           />
         </div>
-        <div className="pb-6">
+        <div>
           <p className="mb-5">
             My interest in coding began back in the early 2000s, when Geocities and MySpace were popular. I never thought that customizing a MySpace page would lead to teaching myself HTML, CSS, JavaScript, PHP, and b2/Greymatter/WordPress just to put together a blog. This inspired me to major in Fine Arts at the University of Florida, where I expanded my knowledge in graphic design, typography, color theory, digital imaging, and technology in art.
           </p>

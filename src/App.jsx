@@ -27,7 +27,7 @@ function App() {
       <Experience />
       <Portfolio />
       <Contact />
-      <Resume darkMode={darkMode} />
+      <Resume />
       <Footer />
     </main>
   );

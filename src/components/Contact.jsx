@@ -38,7 +38,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="max-w-screen-lg m-auto md:pl-20 px-8 py-12 sm:py-28">
+    <section id="contact" className="container">
       <motion.h2
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -48,7 +48,7 @@ const Contact = () => {
         Contact
       </motion.h2>
       <motion.div
-        className="max-w-screen-lg w-full grid grid-cols-1 md:grid-cols-2 gap-4"
+        className="max-w-screen-lg mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-4"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4, delay: 0.75 }}
@@ -70,13 +70,13 @@ const Contact = () => {
               <span className="text-emerald-400 dark:text-teal-200"><AtSign /></span>&nbsp;E-mail
             </div>
             <div className="inline-flex justify-end items-center">
-              :&nbsp;<a href="mailto:hayashi.demi@gmail.com" className="text-emerald-400 dark:text-teal-200 hover:text-gray-300 dark:hover:text-gray-400">hayashi.demi@gmail.com</a>
+              :&nbsp;<a href="mailto:hayashi.demi@gmail.com" className="text-emerald-400 dark:text-teal-200 hover:text-gray-300 dark:hover:text-gray-400" aria-label="hayashi.demi@gmail.com">hayashi.demi@gmail.com</a>
             </div>
             <div className="inline-flex items-center">
               <span className="text-emerald-400 dark:text-teal-200"><GitHub /></span>&nbsp;GitHub
             </div>
             <div className="inline-flex justify-end items-center">
-              :&nbsp;<a href="https://github.com/demivlkv" target="_blank" className="text-emerald-400 dark:text-teal-200 hover:text-gray-300 dark:hover:text-gray-400">@demivlkv</a>
+              :&nbsp;<a href="https://github.com/demivlkv" target="_blank" className="text-emerald-400 dark:text-teal-200 hover:text-gray-300 dark:hover:text-gray-400" aria-label="GitHub: @demivlkv">@demivlkv</a>
             </div>
             <div className="inline-flex items-center">
               <span className="text-emerald-400 dark:text-teal-200"><Globe /></span>&nbsp;Languages
@@ -91,25 +91,28 @@ const Contact = () => {
         <div>
           <form method="POST" action={formUrl} id="contact-form" className="flex flex-col justify-center max-w-[600px] mx-auto w-full">
             <div class="w-full mx-auto">
-              <label>Name:</label>
+              <label for="name">Name:</label>
               <input
                 type="text"
                 name="name"
+                aria-labelledby="name"
                 defaultValue={name}
                 onBlur={handleChange}
               />
 
-              <label>E-mail:</label>
+              <label for="email">E-mail:</label>
               <input
                 type="email"
                 name="email"
+                aria-labelledby="email"
                 defaultValue={email}
                 onBlur={handleChange}
               />
 
-              <label>Message:</label>
+              <label for="message">Message:</label>
               <textarea
                 name="message"
+                aria-labelledby="message"
                 defaultValue={message}
                 onBlur={handleChange}
                 rows="4"

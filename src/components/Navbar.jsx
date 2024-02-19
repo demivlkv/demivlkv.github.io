@@ -3,37 +3,14 @@ import { motion } from 'framer-motion';
 
 import LogoLightMode from '../assets/logo-lightmode.webp';
 import LogoDarkMode from '../assets/logo-darkmode.webp';
+import useScrollDirection from '../utils/hooks';
 import Menu from './Icons/Menu';
 import X from './Icons/X';
 import Sun from './Icons/Sun';
 import Moon from './Icons/Moon';
 
-function handleScroll() {
-  const [scrollDirection, setScrollDirection] = useState(null);
-
-  useEffect(() => {
-    let lastScrollY = window.pageYOffset;
-
-    const updateScrollDirection = () => {
-      const scrollY = window.pageYOffset;
-      const direction = scrollY > lastScrollY ? 'down' : 'up';
-      if (direction !== scrollDirection && (scrollY - lastScrollY > 10 || scrollY - lastScrollY < -10)) {
-        setScrollDirection(direction);
-      }
-      lastScrollY = scrollY > 0 ? scrollY : 0;
-    };
-
-    window.addEventListener('scroll', updateScrollDirection);
-    return () => {
-      window.removeEventListener('scroll', updateScrollDirection);
-    }
-  }, [scrollDirection]);
-
-  return scrollDirection;
-};
-
 const Navbar = ({ darkMode, toggleDarkMode }) => {
-  const scrollDirection = handleScroll();
+  const scrollDirection = useScrollDirection();
   // toggle hamburger menu
   const [nav, setNav] = useState(false);
   const handleNav = () => setNav(!nav);
@@ -49,7 +26,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
   }, [top]);
 
   return (
-    <section className={`sticky ${scrollDirection === 'down' ? '-top-[70px]' : 'top-0'} ${!top && `shadow-lg dark:shadow-neutral-600 backdrop-blur-md`} h-[70px] transition-all duration-500 z-[99]`}>
+    <nav className={`sticky ${scrollDirection === 'down' ? '-top-[70px]' : 'top-0'} ${!top && `shadow-lg dark:shadow-neutral-600 backdrop-blur-md`} h-[70px] transition-all duration-500 z-[99]`}>
       <div className="navbar w-full h-full flex justify-between items-center py-4 px-6">
         <motion.div
           initial={{ opacity: 0 }}
@@ -89,12 +66,8 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
 
           {/* HAMBURGER MENU AT 768PX & LOWER */}
           <div onClick={handleNav} className={`md:hidden transition-all ease-in duration-500 z-20`}>
-            {!nav ? (
-              <Menu />
-            ) : (
-              ''
-            )}
-            {nav ? (
+            {!nav && <Menu />}
+            {nav && (
               <motion.div
                 className={`fixed ${scrollDirection === 'down' ? 'top-[70px]' : 'top-0'} right-0 w-3/4 h-screen shadow-lg dark:shadow-neutral-600 bg-gray-50/90 dark:bg-neutral-800/90 backdrop-blur-md z-[1]`}
                 initial={{ opacity: 0, x: 100 }}
@@ -117,12 +90,10 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
                   </button>
                 </div>
               </motion.div>
-          ) : (
-            ''
           )}
         </div>
       </div>
-    </section>
+    </nav>
   );
 };
 

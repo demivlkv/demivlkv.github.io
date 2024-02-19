@@ -18,16 +18,16 @@ const Footer = () => {
       <div className="social hidden md:block fixed top-[40%] z-10">
         <ul className="list-none flex flex-col">
           <motion.li initial={{ opacity: 0, x: -70 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.4, delay: 1.75 }} viewport={{ once: true }}>
-            <a href="https://github.com/demivlkv" target="_blank"><GitHub size={30} /></a>
+            <a href="https://github.com/demivlkv" target="_blank" aria-label="GitHub"><GitHub size={30} /></a>
           </motion.li>
           <motion.li initial={{ opacity: 0, x: -70 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.4, delay: 2 }} viewport={{ once: true }}>
-            <a href="https://www.linkedin.com/in/demihayashi/" target="_blank"><Linkedin size={30} /></a>
+            <a href="https://www.linkedin.com/in/demihayashi/" target="_blank" aria-label="LinkedIn"><Linkedin size={30} /></a>
           </motion.li>
           <motion.li initial={{ opacity: 0, x: -70 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.4, delay: 2.25 }} viewport={{ once: true }}>
-            <a href="https://www.instagram.com/hii.demii/" target="_blank"><Instagram size={30} /></a>
+            <a href="https://www.instagram.com/hii.demii/" target="_blank" aria-label="Instagram"><Instagram size={30} /></a>
           </motion.li>
           <motion.li initial={{ opacity: 0, x: -70 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.4, delay: 2.5 }} viewport={{ once: true }}>
-            <a href="mailto:hayashi.demi@gmail.com"><Mail size={30} /></a>
+            <a href="mailto:hayashi.demi@gmail.com" aria-label="E-mail me at hayashi.demi@gmail.com"><Mail size={30} /></a>
           </motion.li>
         </ul>
       </div>
@@ -35,10 +35,10 @@ const Footer = () => {
       {/* DISPLAY SOCIAL MEDIA ICONS ON BOTTOM UNDER 768PX SCRN RES */}
       <div className="mini-social">
         <ul className="md:hidden flex flex-row justify-center">
-          <li><a href="https://github.com/demivlkv" target="_blank"><GitHub size={24} /></a></li>
-          <li><a href="https://www.linkedin.com/in/demihayashi/" target="_blank"><Linkedin size={24} /></a></li>
-          <li><a href="https://www.instagram.com/hii.demii/" target="_blank"><Instagram size={24} /></a></li>
-          <li><a href="mailto:hayashi.demi@gmail.com"><Mail size={24} /></a></li>
+          <li><a href="https://github.com/demivlkv" target="_blank" aria-label="GitHub"><GitHub size={24} /></a></li>
+          <li><a href="https://www.linkedin.com/in/demihayashi/" target="_blank" aria-label="LinkedIn"><Linkedin size={24} /></a></li>
+          <li><a href="https://www.instagram.com/hii.demii/" target="_blank" aria-label="Instagram"><Instagram size={24} /></a></li>
+          <li><a href="mailto:hayashi.demi@gmail.com" aria-label="E-mail me at hayashi.demi@gmail.com"><Mail size={24} /></a></li>
         </ul>
       </div>
     </footer>

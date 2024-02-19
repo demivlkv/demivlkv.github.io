@@ -39,12 +39,8 @@
     @apply font-['Source_Code_Pro'] text-sm tracking-tight mx-auto flex items-center my-2 pl-6 py-3 border border-gray-300 rounded hover:border-emerald-400 dark:border-gray-600 dark:hover:border-teal-200;
   }
 
-  #main button[type=submit], #resume button[type=submit] {
-    @apply w-[159px];
-  }
-
-  #contact button[type=submit] {
-    @apply w-[117px];
+  section.container {
+    @apply max-w-screen-lg mx-auto md:pl-20 px-8 py-12 sm:py-28;
   }
 
   .gradient {
@@ -69,6 +65,10 @@
 
   #main a.home {
     @apply text-emerald-400 dark:text-teal-200 hover:text-gray-300 dark:hover:text-gray-400 transition-all ease-in duration-300 cursor-pointer;
+  }
+
+  #main button[type=submit], #resume button[type=submit] {
+    @apply w-[159px];
   }
 
   /* EXPERIENCE COMPONENT */
@@ -96,6 +96,10 @@
 
   #contact input, #contact textarea {
     @apply w-full my-2 p-2 rounded bg-white dark:bg-neutral-900 border border-gray-300 dark:border-gray-700 focus:outline focus:outline-2 focus:outline-gray-500;
+  }
+
+  #contact button[type=submit] {
+    @apply w-[117px];
   }
 
   /* RESUME COMPONENT */

@@ -35,6 +35,7 @@ const WorkItem = ({ year, title, company, company_url, duration, details }) => {
           <a
             href={company_url}
             target="_blank"
+            aria-label={company}
             className="ml-2 text-base md:text-lg font-medium text-emerald-400 dark:text-teal-200 hover:text-gray-300 dark:hover:text-gray-400 transition-all ease-in duration-300 cursor-pointer"
           >
             {company}
@@ -83,6 +84,7 @@ const WorkItem = ({ year, title, company, company_url, duration, details }) => {
               <a
                 href={company_url}
                 target="_blank"
+                aria-label={company}
                 className="ml-1 font-medium text-emerald-400 dark:text-teal-200 hover:text-gray-300 dark:hover:text-gray-400 transition-all ease-in duration-300 cursor-pointer"
                 >
                 {company}
