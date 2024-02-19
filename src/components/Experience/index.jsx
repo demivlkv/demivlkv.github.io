@@ -52,12 +52,7 @@ const Experience = () => {
       {data.map((item, i) => (
         <WorkItem
           key={i}
-          year={item.year}
-          title={item.title}
-          company={item.company}
-          company_url={item.company_url}
-          duration={item.duration}
-          details={item.details}
+          {...item}
         />
       ))}
     </div>

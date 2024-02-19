@@ -6,7 +6,7 @@ import MapPin from './Icons/MapPin';
 import AtSign from './Icons/AtSign';
 import GitHub from './Icons/GitHub';
 import Globe from './Icons/Globe';
-import ChevronsRight from './Icons/ChevronsRight';
+import Button from './Button';
 
 const Contact = () => {
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
@@ -91,9 +91,7 @@ const Contact = () => {
         <div>
           <form method="POST" action={formUrl} id="contact-form" className="flex flex-col justify-center max-w-[600px] mx-auto w-full">
             <div class="w-full mx-auto">
-              <label className="block font-['Source_Code_Pro'] font-medium">
-                Name:
-              </label>
+              <label>Name:</label>
               <input
                 type="text"
                 name="name"
@@ -101,9 +99,7 @@ const Contact = () => {
                 onBlur={handleChange}
               />
 
-              <label className="block font-['Source_Code_Pro'] font-medium">
-                E-mail:
-              </label>
+              <label>E-mail:</label>
               <input
                 type="email"
                 name="email"
@@ -111,9 +107,7 @@ const Contact = () => {
                 onBlur={handleChange}
               />
 
-              <label className="block font-['Source_Code_Pro'] font-medium">
-                Message:
-              </label>
+              <label>Message:</label>
               <textarea
                 name="message"
                 defaultValue={message}
@@ -126,12 +120,7 @@ const Contact = () => {
                   <p className="text-blue-900 dark:text-rose-200 font-['Source_Code_pro'] font-medium tracking-tight text-xs">{errorMessage}</p>
                 </div>
               )}
-              <button type="submit" className="group w-[120px]">
-                Submit
-                <span className="group-hover:text-emerald-400 dark:group-hover:text-teal-200 group-hover:ml-1 duration-300">
-                  <ChevronsRight size={15} />
-                </span>
-              </button>
+              <Button>Submit</Button>
             </div>
           </form>
         </div>

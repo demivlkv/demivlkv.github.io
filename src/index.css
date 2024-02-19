@@ -36,7 +36,15 @@
   }
 
   button[type=submit] {
-    @apply font-['Source_Code_Pro'] text-sm tracking-tight mx-auto flex items-center my-2 pl-6 py-3 border border-gray-300 rounded hover:border-emerald-400 dark:hover:border-teal-200;
+    @apply font-['Source_Code_Pro'] text-sm tracking-tight mx-auto flex items-center my-2 pl-6 py-3 border border-gray-300 rounded hover:border-emerald-400 dark:border-gray-600 dark:hover:border-teal-200;
+  }
+
+  #main button[type=submit], #resume button[type=submit] {
+    @apply w-[159px];
+  }
+
+  #contact button[type=submit] {
+    @apply w-[117px];
   }
 
   .gradient {
@@ -82,6 +90,10 @@
   }
 
   /* CONTACT COMPONENT */
+  #contact label {
+    @apply block font-['Source_Code_Pro'] font-medium;
+  }
+
   #contact input, #contact textarea {
     @apply w-full my-2 p-2 rounded bg-white dark:bg-neutral-900 border border-gray-300 dark:border-gray-700 focus:outline focus:outline-2 focus:outline-gray-500;
   }
@@ -107,6 +119,6 @@
   }
 
   .dark {
-    @apply bg-neutral-800 text-slate-200 transition-all ease-in duration-300;
+    @apply bg-neutral-800 text-slate-300 transition-all ease-in duration-300;
   }
 }

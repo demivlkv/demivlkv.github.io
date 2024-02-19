@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-import ChevronsRight from './Icons/ChevronsRight';
+import Button from './Button';
 import FastForward from './Icons/FastForward';
 
 const Resume = () => {
@@ -25,12 +25,7 @@ const Resume = () => {
           viewport={{ once: true }}
         >
           <a href="/Demi-Hayashi-CV.pdf">
-            <button type="submit" className="group w-[160px]">
-              Download CV
-              <span className="group-hover:text-emerald-400 dark:group-hover:text-teal-200 group-hover:ml-1 duration-300">
-                <ChevronsRight />
-              </span>
-            </button>
+            <Button>Download CV</Button>
           </a>
         </motion.article>
 

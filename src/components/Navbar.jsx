@@ -96,7 +96,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             )}
             {nav ? (
               <motion.div
-                className={`fixed ${scrollDirection === 'down' ? 'top-[70px]' : 'top-0'} right-0 w-1/2 h-screen shadow-lg dark:shadow-neutral-600 bg-gray-50/90 dark:bg-neutral-800/90 backdrop-blur-md z-[1]`}
+                className={`fixed ${scrollDirection === 'down' ? 'top-[70px]' : 'top-0'} right-0 w-3/4 h-screen shadow-lg dark:shadow-neutral-600 bg-gray-50/90 dark:bg-neutral-800/90 backdrop-blur-md z-[1]`}
                 initial={{ opacity: 0, x: 100 }}
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: 100 }}
