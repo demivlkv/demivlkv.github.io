@@ -97,7 +97,7 @@ const Contact = () => {
                   type="text"
                   id="name"
                   name="name"
-                  aria-labelledby="sender-name"
+                  aria-labelledby="name"
                   defaultValue={name}
                   onBlur={handleChange}
                 />
@@ -108,7 +108,7 @@ const Contact = () => {
                 <input
                   type="email"
                   id="email"
-                  name="email-address"
+                  name="email"
                   aria-labelledby="email"
                   defaultValue={email}
                   onBlur={handleChange}
@@ -120,7 +120,7 @@ const Contact = () => {
                 <textarea
                   name="message"
                   id="message"
-                  aria-labelledby="sender-message"
+                  aria-labelledby="message"
                   defaultValue={message}
                   onBlur={handleChange}
                   rows="4"
