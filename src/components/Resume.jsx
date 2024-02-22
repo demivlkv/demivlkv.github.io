@@ -54,6 +54,7 @@ const Resume = () => {
           <h3 className="block font-['Source_Code_Pro'] font-semibold text-lg md:text-xl tracking-tighter">Technologies</h3>
           <p>{icon} ReactJS</p>
           <p>{icon} NextJS</p>
+          <p>{icon} Redux</p>
           <p>{icon} NodeJS</p>
           <p>{icon} GraphQL</p>
           <p>{icon} REST APIs</p>
