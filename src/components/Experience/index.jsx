@@ -14,10 +14,10 @@ const data = [
     duration: 'Jan 2024 - Present',
     details: () => (
       <ul>
-        <li>{icon} Drive the development of efficient and maintainable code, leveraging expertise in TypeScript, React, Redux, NextJS, Node, MongoDB, and SCSS within a meticulously crafted component-based architecture tailored for contemporary web browsers</li>
-        <li>{icon} Demonstrate proficiency in troubleshooting, debugging, and optimizing existing software applications by executing rigorous testing protocols to identify and resolve bugs and performance issues</li>
-        <li>{icon} Collaborate within a team of 10 in Agile environment and provided help to other team members when needed; handled version control and resolved merge conflicts in Git</li>
-        <li>{icon} Proactively participate in collaborative code reviews, cultivating a culture of excellence in code quality and knowledge sharing; actively contributed in stand-ups, estimations, sprint planning, and retrospectives</li>
+        <li>{icon} Lead the development of front-end and full-stack solutions using TypeScript, React, Redux, NextJS, Node, MongoDB, and SCSS, creating dynamic, responsive user interfaces optimized for contemporary web browsers</li>
+        <li>{icon} Collaborate in a 9-member in Agile team, participating in stand-ups, sprint planning, estimation, and retrospectives, resulting in a 15% increase through continuous process improvement and effective teamwork</li>
+        <li>{icon} Manage Git for version control, resolving complex merge conflicts to ensure smooth and efficient team collaboration in a fast-paced development environment</li>
+        <li>{icon} Actively contribute in code reviews and conduct pair programming, fostering a collaboration, providing constructive feedback, and improving code quality and maintainability</li>
       </ul>
     )
   },
@@ -29,10 +29,10 @@ const data = [
     duration: 'Mar 2020 - Jan 2024',
     details: () => (
       <ul>
-        <li>{icon} Developed and redesigned a responsive front-end web application for a local ramen shop using JavaScript, Gatsby.js, GraphQL, Tailwind CSS, and Contentful CMS to attract more traffic and enhance user experience</li>
-        <li>{icon} Worked closely with the client to create a cohesive and visually appealing brand identity by designing a new company logo, menus, and digital content</li>
-        <li>{icon} Successfully built and maintained relationships with English-speaking and Japanese-speaking customers through bilingual communication skills</li>
-        <li>{icon} Identified areas for improvement and implemented solutions to optimize website functionality and usability</li>
+        <li>{icon} Engineered and revamped a dynamic front-end web application for a local ramen shop using JavaScript, Gatsby.js, GraphQL, Tailwind CSS, and Contentful, increasing website traffic by 40% and enhancing user engagement by 50%</li>
+        <li>{icon} Revamped company's visual identity with a new logo, menus, and digital content, resulting in a 20% increase in brand recognition</li>
+        <li>{icon} Improved website functionality by 25% through key solutions, enhancing user experience and increasing customer satisfaction</li>
+        <li>{icon} Build and maintain relationships with English-speaking and Japanese-speaking customers through bilingual communication skills</li>
       </ul>
     )
   }
