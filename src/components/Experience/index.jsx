@@ -26,7 +26,7 @@ const data = [
     title: 'Freelance Web Developer',
     company: 'Tokio Ramen',
     company_url: 'https://tokio-ramen.netlify.app/',
-    duration: 'Mar 2020 - Jan 2024',
+    duration: 'Mar 2020 - Dec 2023',
     details: () => (
       <ul>
         <li>{icon} Engineered and revamped a dynamic front-end web application for a local ramen shop using JavaScript, Gatsby.js, GraphQL, Tailwind CSS, and Contentful, increasing website traffic by 40% and enhancing user engagement by 50%</li>
