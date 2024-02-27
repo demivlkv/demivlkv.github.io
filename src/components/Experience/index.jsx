@@ -14,10 +14,10 @@ const data = [
     duration: 'Jan 2024 - Present',
     details: () => (
       <ul>
-        <li>{icon} Lead the development of front-end and full-stack solutions using TypeScript, React, Redux, NextJS, Node, MongoDB, and SCSS, creating dynamic, responsive user interfaces optimized for contemporary web browsers</li>
-        <li>{icon} Collaborate in a 9-member in Agile team, participating in stand-ups, sprint planning, estimation, and retrospectives, resulting in a 15% increase through continuous process improvement and effective teamwork</li>
+        <li>{icon} Lead the development of front-end and full-stack solutions using TypeScript, React, Redux, NextJS, Node, MongoDB, and SCSS, delivering dynamic, responsive user interfaces optimized for modern web browsers</li>
+        <li>{icon} Collaborate in a 9-member in Agile team, contributing to stand-ups, sprint planning, estimation, and retrospectives, fostering a culture of excellence through proactive engagement and effective teamwork</li>
         <li>{icon} Manage Git for version control, resolving complex merge conflicts to ensure smooth and efficient team collaboration in a fast-paced development environment</li>
-        <li>{icon} Actively contribute in code reviews and conduct pair programming, fostering a collaboration, providing constructive feedback, and improving code quality and maintainability</li>
+        <li>{icon} Actively participate in code reviews and conduct pair programming within an international team, cultivating a collaboration, providing constructive feedback, and improving code quality and maintainability</li>
       </ul>
     )
   },
