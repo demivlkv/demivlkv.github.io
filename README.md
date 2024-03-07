@@ -5,7 +5,7 @@
 ![Screenshot](/../main/src/assets/screenshot.png)
 
 ### Built With:
-- [Vite](https://vitejs.dev/)
+- [ViteJS](https://vitejs.dev/)
 - JavaScript
 - CSS / [Tailwind CSS](https://tailwindcss.com/)
 - npm packages:

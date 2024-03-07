@@ -122,38 +122,40 @@ const Project = () => {
             variants={animateProjectItem}
             viewport={{ once: true }}
           >
-            <div className="w-full h-full flex flex-col items-stretch overflow-hidden bg-white dark:bg-neutral-900 border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg dark:shadow-neutral-700 opacity-70 hover:opacity-100 transition-all duration-300 ease-in cursor-pointer">
-              <img
-                src={project.thumbnail}
-                alt={project.title}
-                className="w-full h-full object-cover md:h-auto"
-              />
+            <a href={project.url} target="_blank" aria-label="Visit application">
+              <div className="w-full h-full flex flex-col items-stretch overflow-hidden bg-white dark:bg-neutral-900 border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg dark:shadow-neutral-700 opacity-70 hover:opacity-100 transition-all duration-300 ease-in cursor-pointer">
+                <img
+                  src={project.thumbnail}
+                  alt={project.title}
+                  className="w-full h-full object-cover md:h-auto"
+                />
 
-              <div class="w-full h-full flex flex-col justify-between p-4">
+                <div class="w-full h-full flex flex-col justify-between p-4">
 
-                <div className="flex justify-between align-baseline">
-                  <div>
-                    <h3 className="mb-3 font-semibold text-emerald-300 dark:text-teal-200 text-xl uppercase tracking-tighter">
-                      {project.title}
-                    </h3>
+                  <div className="flex justify-between align-baseline">
+                    <div>
+                      <h3 className="mb-3 font-semibold text-emerald-300 dark:text-teal-200 text-xl uppercase tracking-tighter">
+                        {project.title}
+                      </h3>
+                    </div>
+                    <div>
+                      <a href={project.url} target="_blank" aria-label="View deployed application">
+                        <button id="external-link-btn" className="project-links"><ExternalLink /></button>
+                      </a>
+                      <a href={project.github} target="_blank" aria-label="View GitHub Repo">
+                        <button id="github-link-btn" className="project-links"><GitHub /></button>
+                      </a>
+                    </div>
                   </div>
-                  <div>
-                    <a href={project.url} target="_blank" aria-label="View deployed application">
-                      <button id="external-link-btn" className="project-links"><ExternalLink /></button>
-                    </a>
-                    <a href={project.github} target="_blank" aria-label="View GitHub Repo">
-                      <button id="github-link-btn" className="project-links"><GitHub /></button>
-                    </a>
-                  </div>
+                  <p className="mb-2 text-sm leading-snug">
+                    {project.description}
+                  </p>
+                  <p className="mb-2 font-['Source_Code_Pro'] text-slate-500 dark:text-rose-100 text-xs text-center tracking-tight py-2">
+                    {project.technologies}
+                  </p>
                 </div>
-                <p className="mb-2 text-sm leading-snug">
-                  {project.description}
-                </p>
-                <p className="mb-2 font-['Source_Code_Pro'] text-slate-500 dark:text-rose-100 text-xs text-center tracking-tight py-2">
-                  {project.technologies}
-                </p>
               </div>
-            </div>
+            </a>
           </motion.li>
         ))}
       </ul>

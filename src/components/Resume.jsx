@@ -37,7 +37,7 @@ const Resume = () => {
         Technical Skills
       </motion.h2>
       <motion.article
-        className="w-full sm:w-3/4 mx-auto grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-4"
+        className="w-full sm:w-11/12 mx-auto grid grid-cols-2 lg:grid-cols-4 gap-4"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4, delay: 1.25 }}
@@ -52,7 +52,7 @@ const Resume = () => {
         </div>
         <div className="leading-loose">
           <h3 className="block font-['Source_Code_Pro'] font-semibold text-lg md:text-xl tracking-tighter">Technologies</h3>
-          <p>{icon} ReactJS</p>
+          <p>{icon} ReactJS + React Native</p>
           <p>{icon} NextJS</p>
           <p>{icon} Redux</p>
           <p>{icon} NodeJS</p>
@@ -63,7 +63,7 @@ const Resume = () => {
           <p>{icon} jQuery</p>
         </div>
         <div className="leading-loose">
-          <h3 className="block font-['Source_Code_Pro'] font-semibold text-lg md:text-xl tracking-tighter">Database</h3>
+          <h3 className="block font-['Source_Code_Pro'] font-semibold text-lg md:text-xl tracking-tighter">Databases</h3>
           <p>{icon} MySQL</p>
           <p>{icon} MongoDB</p>
         </div>
