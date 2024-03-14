@@ -9,26 +9,26 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+	const [darkMode, setDarkMode] = useState(false);
 
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
+	const toggleDarkMode = () => {
+		setDarkMode(!darkMode);
+	};
 
-  return (
-    <main className={`${darkMode ? 'dark' : 'light'}`}>
-      <Navbar
-        darkMode={darkMode}
-        toggleDarkMode={toggleDarkMode}
-      />
-      <Home darkMode={darkMode} />
-      <About />
-      <Experience />
-      <Portfolio />
-      <Contact />
-      <Footer />
-    </main>
-  );
-};
+	return (
+		<main className={`${darkMode ? 'dark' : 'light'}`}>
+			<Navbar
+				darkMode={darkMode}
+				toggleDarkMode={toggleDarkMode}
+			/>
+			<Home darkMode={darkMode} />
+			<About />
+			<Experience />
+			<Portfolio />
+			<Contact />
+			<Footer />
+		</main>
+	);
+}
 
 export default App;

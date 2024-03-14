@@ -5,128 +5,130 @@
 @tailwind utilities;
 
 * {
-  scroll-behavior: smooth;
-  margin: 0;
-  padding: 0;
+	scroll-behavior: smooth;
+	margin: 0;
+	padding: 0;
 }
 
 @layer base {
-  body {
-    @apply bg-[#f6f6f6] font-['Outfit'] text-xs sm:text-base text-[#3e3e3e] font-light leading-loose;
-  }
+	body {
+		@apply bg-[#f6f6f6] font-['Outfit'] text-xs sm:text-base text-[#3e3e3e] font-light leading-loose;
+	}
 
-  p {
-    @apply leading-loose;
-  }
+	p {
+		@apply leading-loose;
+	}
 
-  a {
-    @apply transition-all ease-in duration-300;
-  }
+	a {
+		@apply transition-all ease-in duration-300;
+	}
 
-  h1 {
-    @apply font-['Rozha_One'];
-  }
+	h1 {
+		@apply font-['Rozha_One'];
+	}
 
-  h2 {
-    @apply font-['Rozha_One'] pb-8 font-semibold text-3xl sm:text-4xl text-slate-500 dark:text-rose-100 text-center tracking-tighter;
-  }
+	h2 {
+		@apply font-['Rozha_One'] pb-8 font-semibold text-3xl sm:text-4xl text-slate-500 dark:text-rose-100 text-center tracking-tighter;
+	}
 
-  button#outline-btn {
-    @apply font-normal transition-all ease-in duration-300;
-  }
+	button#outline-btn {
+		@apply font-normal transition-all ease-in duration-300;
+	}
 
-  button[type=submit]#outline-btn {
-    @apply font-['Source_Code_Pro'] text-sm tracking-tight mx-auto flex items-center my-2 pl-6 py-3 border border-gray-300 rounded hover:border-emerald-400 dark:border-gray-600 dark:hover:border-teal-200;
-  }
+	button[type='submit']#outline-btn {
+		@apply font-['Source_Code_Pro'] text-sm tracking-tight mx-auto flex items-center my-2 pl-6 py-3 border border-gray-300 rounded hover:border-emerald-400 dark:border-gray-600 dark:hover:border-teal-200;
+	}
 
-  section.container {
-    @apply max-w-screen-lg mx-auto md:pl-20 px-8 py-12 sm:py-28;
-  }
+	section.container {
+		@apply max-w-screen-lg mx-auto md:pl-20 px-8 py-12 sm:py-28;
+	}
 
-  .gradient {
-    @apply bg-gradient-to-r from-slate-500 to-emerald-300 dark:from-rose-100 dark:to-teal-200 inline-block text-transparent bg-clip-text;
-  }
+	.gradient {
+		@apply bg-gradient-to-r from-slate-500 to-emerald-300 dark:from-rose-100 dark:to-teal-200 inline-block text-transparent bg-clip-text;
+	}
 }
 
 @layer components {
-  /* NAVBAR COMPONENT */
-  .navbar li {
-    @apply font-['Source_Code_Pro'] text-sm font-medium hover:text-emerald-400 dark:hover:text-teal-200 cursor-pointer;
-  }
+	/* NAVBAR COMPONENT */
+	.navbar li {
+		@apply font-['Source_Code_Pro'] text-sm font-medium hover:text-emerald-400 dark:hover:text-teal-200 cursor-pointer;
+	}
 
-  .navbar button[type=submit]#navbar-btn {
-    @apply font-['Source_Code_Pro'] text-[#3e3e3e] dark:text-slate-300 mx-auto flex items-center my-0 sm:my-2 px-6 py-3 border border-gray-300 rounded hover:border-emerald-400 dark:border-gray-600 dark:hover:border-teal-200 transition-all ease-in duration-300;
-  }
+	.navbar button[type='submit']#navbar-btn {
+		@apply font-['Source_Code_Pro'] text-[#3e3e3e] dark:text-slate-300 mx-auto flex items-center my-0 sm:my-2 px-6 py-3 border border-gray-300 rounded hover:border-emerald-400 dark:border-gray-600 dark:hover:border-teal-200 transition-all ease-in duration-300;
+	}
 
-  .navbar a.mobile-links {
-    @apply font-['Source_Code_Pro'] w-1/2 m-2 p-3 flex justify-center items-center hover:text-emerald-300 dark:hover:text-teal-200 cursor-pointer;
-  }
+	.navbar a.mobile-links {
+		@apply font-['Source_Code_Pro'] w-1/2 m-2 p-3 flex justify-center items-center hover:text-emerald-300 dark:hover:text-teal-200 cursor-pointer;
+	}
 
-  /* HOME COMPONENT */
-  #main .intro {
-    @apply font-semibold text-2xl sm:text-6xl font-['Rozha+One'];
-  }
+	/* HOME COMPONENT */
+	#main .intro {
+		@apply font-semibold text-2xl sm:text-6xl font-['Rozha+One'];
+	}
 
-  #main a.home {
-    @apply relative transition-all ease-in duration-300 cursor-pointer;
-  }
+	#main a.home {
+		@apply relative transition-all ease-in duration-300 cursor-pointer;
+	}
 
-  #main button[type=submit], #resume button[type=submit] {
-    @apply w-[158px];
-  }
+	#main button[type='submit'],
+	#resume button[type='submit'] {
+		@apply w-[158px];
+	}
 
-  /* ABOUT COMPONENT */
-  #about div p {
-    @apply flex;
-  }
+	/* ABOUT COMPONENT */
+	#about div p {
+		@apply flex;
+	}
 
-  /* EXPERIENCE COMPONENT */
-  #experience ul li {
-    @apply ml-4 flex;
-  }
+	/* EXPERIENCE COMPONENT */
+	#experience ul li {
+		@apply ml-4 flex;
+	}
 
-  #experience ul.work {
-    @apply text-emerald-300 dark:text-teal-200 hover:text-gray-300 dark:hover:text-gray-400 cursor-pointer;
-  }
+	#experience ul.work {
+		@apply text-emerald-300 dark:text-teal-200 hover:text-gray-300 dark:hover:text-gray-400 cursor-pointer;
+	}
 
-  /* PROJECTS COMPONENT */
-  #projects .project-links {
-    @apply inline-flex items-center text-emerald-400 dark:text-teal-200 hover:text-gray-300 dark:hover:text-gray-400 transition-all ease-in duration-300;
-  }
+	/* PROJECTS COMPONENT */
+	#projects .project-links {
+		@apply inline-flex items-center text-emerald-400 dark:text-teal-200 hover:text-gray-300 dark:hover:text-gray-400 transition-all ease-in duration-300;
+	}
 
-  #projects button.project-links svg {
-    @apply w-[20px] h-[20px] ml-3;
-  }
+	#projects button.project-links svg {
+		@apply w-[20px] h-[20px] ml-3;
+	}
 
-  /* CONTACT COMPONENT */
-  #contact label {
-    @apply block font-['Source_Code_Pro'] font-medium;
-  }
+	/* CONTACT COMPONENT */
+	#contact label {
+		@apply block font-['Source_Code_Pro'] font-medium;
+	}
 
-  #contact input, #contact textarea {
-    @apply w-full my-2 p-2 rounded bg-white dark:bg-neutral-900 border border-gray-300 dark:border-gray-700 focus:outline focus:outline-2 focus:outline-gray-500;
-  }
+	#contact input,
+	#contact textarea {
+		@apply w-full my-2 p-2 rounded bg-white dark:bg-neutral-900 border border-gray-300 dark:border-gray-700 focus:outline focus:outline-2 focus:outline-gray-500;
+	}
 
-  #contact button[type=submit] {
-    @apply w-[117px];
-  }
+	#contact button[type='submit'] {
+		@apply w-[117px];
+	}
 
-  /* FOOTER COMPONENT */
-  footer .social li {
-    @apply px-3 py-3 flex justify-between items-center ml-[5px] hover:ml-[10px] hover:text-emerald-400 dark:hover:text-teal-200 cursor-pointer transition-all ease-in;
-  }
+	/* FOOTER COMPONENT */
+	footer .social li {
+		@apply px-3 py-3 flex justify-between items-center ml-[5px] hover:ml-[10px] hover:text-emerald-400 dark:hover:text-teal-200 cursor-pointer transition-all ease-in;
+	}
 
-  footer .mini-social li {
-    @apply p-3 inline-flex hover:text-emerald-400 dark:hover:text-teal-200;
-  }
+	footer .mini-social li {
+		@apply p-3 inline-flex hover:text-emerald-400 dark:hover:text-teal-200;
+	}
 }
 
 @layer utilities {
-  .light {
-    @apply bg-[#f6f6f6] text-[#3e3e3e] transition-all ease-in duration-300;
-  }
+	.light {
+		@apply bg-[#f6f6f6] text-[#3e3e3e] transition-all ease-in duration-300;
+	}
 
-  .dark {
-    @apply bg-neutral-800 text-slate-300 transition-all ease-in duration-300;
-  }
+	.dark {
+		@apply bg-neutral-800 text-slate-300 transition-all ease-in duration-300;
+	}
 }
