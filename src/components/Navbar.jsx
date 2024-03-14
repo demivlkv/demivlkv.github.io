@@ -151,10 +151,10 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
 							transition={{ duration: 0.5 }}
 							viewport={{ once: true }}
 						>
-							<div className='w-full h-[70px] px-6 flex justify-end items-center'>
+							<div className='w-full p-6 flex justify-end items-center'>
 								<X />
 							</div>
-							<div className='absolute top-0 right-1/2 h-full flex flex-col justify-center items-center font-medium'>
+							<div className='h-full flex flex-col justify-center items-center font-medium'>
 								<a
 									href='#about'
 									className='mobile-links'
