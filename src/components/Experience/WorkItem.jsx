@@ -33,18 +33,20 @@ const WorkItem = ({ year, title, company, company_url, duration, details }) => {
 					</span>
 					<span className='mr-1 text-base md:text-lg font-medium'>{title}</span>
 				</div>
-				<div className='w-full gap-2 flex items-center'>
-					@
-					<HyperLink>
-						<a
-							href={company_url}
-							target='_blank'
-							aria-label={company}
-							className='relative text-base md:text-lg font-medium'
-						>
-							{company}
-						</a>
-					</HyperLink>
+				<div className='w-full'>
+					<p className='text-base md:text-lg font-medium'>
+						@ &nbsp;
+						<HyperLink>
+							<a
+								href={company_url}
+								target='_blank'
+								aria-label={company}
+								className='relative'
+							>
+								{company}
+							</a>
+						</HyperLink>
+					</p>
 				</div>
 
 				<p className='mt-3 text-xs sm:text-sm font-normal text-gray-400'>
@@ -82,22 +84,24 @@ const WorkItem = ({ year, title, company, company_url, duration, details }) => {
 						transition={{ duration: 1, delay: 0.75 }}
 						viewport={{ once: true }}
 					>
-						<div className='flex flex-row flex-wrap items-baseline text-xs sm:text-base md:text-lg'>
-							<span className='inline-block py-1 px-2 mr-2 font-medium text-white dark:text-gray-700 bg-slate-500 dark:bg-rose-100 rounded-md'>
+						<div className='flex flex-row flex-wrap items-center text-xs sm:text-base md:text-lg'>
+							<span className='inline-block py-1 px-2 mr-2 font-medium text-xs sm:text-base text-white dark:text-gray-700 bg-slate-500 dark:bg-rose-100 rounded-md'>
 								{year}
 							</span>
 							<span className='mr-1 font-medium'>{title}</span>
-							<div className='mt-1'>
-								@
-								<a
-									href={company_url}
-									target='_blank'
-									aria-label={company}
-									className='ml-1 font-medium text-emerald-400 dark:text-teal-200 hover:text-gray-300 dark:hover:text-gray-400 transition-all ease-in duration-300 cursor-pointer'
-								>
-									{company}
-								</a>
-							</div>
+							<p className='font-medium'>
+								@ &nbsp;
+								<HyperLink>
+									<a
+										href={company_url}
+										target='_blank'
+										aria-label={company}
+										className='relative'
+									>
+										{company}
+									</a>
+								</HyperLink>
+							</p>
 						</div>
 						<p className='block lg:hidden my-3 text-xs sm:text-sm font-normal text-gray-400'>
 							{duration}
