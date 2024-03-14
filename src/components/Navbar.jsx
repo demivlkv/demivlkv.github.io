@@ -54,7 +54,9 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
                 <a href="#contact" className="mx-6">Contact</a>
               </motion.li>
               <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 4 }} viewport={{ once: true }}>
-                <a href="#resume" className="mx-6">Resume</a>
+                <a href="/Demi-Hayashi-CV.pdf" aria-label="View my resume" className="mx-6">
+                  <button id="navbar-btn" type="submit">Resume</button>
+                </a>
               </motion.li>
               <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 4.25 }} viewport={{ once: true }} onClick={toggleDarkMode}>
                 <div className="ml-6">
@@ -84,7 +86,9 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
                   <a href="#experience" className="mobile-links">Experience</a>
                   <a href="#projects" className="mobile-links">Projects</a>
                   <a href="#contact" className="mobile-links">Contact</a>
-                  <a href="#resume" className="mobile-links">Resume</a>
+                  <a href="/Demi-Hayashi-CV.pdf" aria-label="View my resume" className="mobile-links">
+                    <button id="navbar-btn" type="submit">Resume</button>
+                  </a>
                   <button onClick={toggleDarkMode} className="w-1/2 m-2 p-3 flex justify-center items-center hover:text-emerald-300 cursor-pointer">
                     {darkMode ? <Sun /> : <Moon />}
                   </button>

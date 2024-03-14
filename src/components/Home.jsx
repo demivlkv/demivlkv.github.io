@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import HyperLink from './HyperLink';
 import Button from './Button';
 import Greeting from './Greeting';
 
@@ -39,9 +40,11 @@ const Home = () => {
         transition={{ duration: 0.5, delay: 1.25 }}
         viewport={{ once: true }}
       >
-        I am a full-stack software engineer living in Los Angeles with a passion for technologies.
-        I enjoy creating and designing various projects, such as web applications, <a href="https://tokio-ramen.netlify.app/" target="_blank" className="home" aria-label="Visit Tokio Ramen!">branding for local businesses</a>, and even <a href="https://cargocollective.com/demihayashi/Propagation" target="_blank" className="home" aria-label="Visit my artist website!">sculptures</a>.
-        At present, I provide top-tier web and software solutions at <a href="https://nexalure.com/"  target="_blank" className="home" aria-label="Nexalure Technologies">Nexalure Technologies</a>.
+
+          I am a full-stack software engineer living in Los Angeles with a passion for technologies.
+          I enjoy creating and designing various projects, such as web applications, <HyperLink><a href="https://tokio-ramen.netlify.app/" target="_blank" className="home" aria-label="Visit Tokio Ramen!">branding for local businesses</a></HyperLink>, and even <HyperLink><a href="https://cargocollective.com/demihayashi/Propagation" target="_blank" className="home" aria-label="Visit my artist website!">sculptures</a></HyperLink>.
+          At present, I provide top-tier web and software solutions at <HyperLink><a href="https://nexalure.com/"  target="_blank" className="home" aria-label="Nexalure Technologies">Nexalure Technologies</a></HyperLink>.
+
       </motion.p>
       <motion.div
         className="w-full flex items-center justify-between"

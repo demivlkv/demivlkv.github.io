@@ -54,6 +54,10 @@
     @apply font-['Source_Code_Pro'] text-sm font-medium hover:text-emerald-400 dark:hover:text-teal-200 cursor-pointer;
   }
 
+  .navbar button[type=submit]#navbar-btn {
+    @apply font-['Source_Code_Pro'] text-[#3e3e3e] dark:text-slate-300 mx-auto flex items-center my-0 sm:my-2 px-6 py-3 border border-gray-300 rounded hover:border-emerald-400 dark:border-gray-600 dark:hover:border-teal-200 transition-all ease-in duration-300;
+  }
+
   .navbar a.mobile-links {
     @apply font-['Source_Code_Pro'] w-1/2 m-2 p-3 flex justify-center items-center hover:text-emerald-300 dark:hover:text-teal-200 cursor-pointer;
   }
@@ -64,11 +68,16 @@
   }
 
   #main a.home {
-    @apply text-emerald-400 dark:text-teal-200 hover:text-gray-300 dark:hover:text-gray-400 transition-all ease-in duration-300 cursor-pointer;
+    @apply relative transition-all ease-in duration-300 cursor-pointer;
   }
 
   #main button[type=submit], #resume button[type=submit] {
     @apply w-[158px];
+  }
+
+  /* ABOUT COMPONENT */
+  #about div p {
+    @apply flex;
   }
 
   /* EXPERIENCE COMPONENT */
@@ -100,11 +109,6 @@
 
   #contact button[type=submit] {
     @apply w-[117px];
-  }
-
-  /* RESUME COMPONENT */
-  #resume article p {
-    @apply flex;
   }
 
   /* FOOTER COMPONENT */

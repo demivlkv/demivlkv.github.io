@@ -1,7 +1,10 @@
 import { motion } from 'framer-motion';
 import AboutImg from '../assets/me.webp';
+import FastForward from './Icons/FastForward';
 
 const About = () => {
+  const icon = <FastForward />;
+
   return (
     <section id="about" className="container">
       <motion.h2
@@ -33,6 +36,55 @@ const About = () => {
           <p>
             When I'm not on my computer, I'm most likely traveling the world, playing video games, hiking, watching true-crime documentaries, or learning new languages like Java and Russian. :3
           </p>
+        </div>
+      </motion.div>
+
+      <motion.h2
+        className="mt-12"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, delay: 1 }}
+        viewport={{ once: true }}
+      >
+        Technical Skills
+      </motion.h2>
+      <motion.div
+        className="w-full sm:w-11/12 mx-auto grid grid-cols-2 lg:grid-cols-4 gap-4"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, delay: 1.25 }}
+        viewport={{ once: true }}
+       >
+        <div className="leading-loose">
+          <h3 className="font-['Source_Code_Pro'] font-semibold text-lg md:text-xl tracking-tighter">Languages</h3>
+          <p>{icon} JavaScript (ES6)</p>
+          <p>{icon} TypeScript</p>
+          <p>{icon} HTML5</p>
+          <p>{icon} CSS3</p>
+        </div>
+        <div className="leading-loose">
+          <h3 className="block font-['Source_Code_Pro'] font-semibold text-lg md:text-xl tracking-tighter">Technologies</h3>
+          <p>{icon} ReactJS + React Native</p>
+          <p>{icon} NextJS</p>
+          <p>{icon} Redux</p>
+          <p>{icon} NodeJS</p>
+          <p>{icon} GraphQL</p>
+          <p>{icon} REST APIs</p>
+          <p>{icon} Tailwind CSS</p>
+          <p>{icon} Bootstrap</p>
+          <p>{icon} jQuery</p>
+        </div>
+        <div className="leading-loose">
+          <h3 className="block font-['Source_Code_Pro'] font-semibold text-lg md:text-xl tracking-tighter">Databases</h3>
+          <p>{icon} MySQL</p>
+          <p>{icon} MongoDB</p>
+        </div>
+        <div className="leading-loose">
+          <h3 className="block font-['Source_Code_Pro'] font-semibold text-lg md:text-xl tracking-tighter">Tools</h3>
+          <p>{icon} Git + GitHub</p>
+          <p>{icon} Heroku</p>
+          <p>{icon} Chrome Dev Tools</p>
+          <p>{icon} Photoshop</p>
         </div>
       </motion.div>
     </section>

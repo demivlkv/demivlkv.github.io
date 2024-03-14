@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import HyperLink from '../HyperLink';
 
 const animateWorkSection = {
   hidden: { opacity: 0, y: 50 },
@@ -30,16 +31,18 @@ const WorkItem = ({ year, title, company, company_url, duration, details }) => {
           <span className="inline-block py-1 px-2 mr-2 font-medium text-white dark:text-gray-700 bg-slate-500 dark:bg-rose-100 rounded-md">{year}</span>
           <span className="mr-1 text-base md:text-lg font-medium">{title}</span>
         </div>
-        <div className="w-full flex items-center">
-          @ 
-          <a
-            href={company_url}
-            target="_blank"
-            aria-label={company}
-            className="ml-2 text-base md:text-lg font-medium text-emerald-400 dark:text-teal-200 hover:text-gray-300 dark:hover:text-gray-400 transition-all ease-in duration-300 cursor-pointer"
-          >
-            {company}
-          </a>
+        <div className="w-full gap-2 flex items-center">
+          @
+          <HyperLink>
+            <a
+              href={company_url}
+              target="_blank"
+              aria-label={company}
+              className="relative text-base md:text-lg font-medium"
+            >
+              {company}
+            </a>
+          </HyperLink>
         </div>
 
         <p className="mt-3 text-xs sm:text-sm font-normal text-gray-400">
