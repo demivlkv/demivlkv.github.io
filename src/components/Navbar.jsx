@@ -144,7 +144,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
 						<motion.div
 							className={`fixed ${
 								scrollDirection === 'down' ? 'top-[70px]' : 'top-0'
-							} right-0 w-3/4 h-screen shadow-lg dark:shadow-neutral-600 bg-gray-50/90 dark:bg-neutral-800/90 backdrop-blur-md z-[1]`}
+							} right-0 w-3/4 h-screen shadow-lg dark:shadow-gray-600 bg-gray-100/90 dark:bg-gray-800/90 backdrop-blur-md z-[1]`}
 							initial={{ opacity: 0, x: 100 }}
 							animate={{ opacity: 1, x: 0 }}
 							exit={{ opacity: 0, x: 100 }}
@@ -193,7 +193,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
 								</a>
 								<button
 									onClick={toggleDarkMode}
-									className='w-1/2 m-2 p-3 flex justify-center items-center hover:text-emerald-300 cursor-pointer'
+									className='w-1/2 m-2 p-3 flex justify-center items-center hover:text-emerald-300 dark:hover:text-indigo-500 cursor-pointer'
 								>
 									{darkMode ? <Sun /> : <Moon />}
 								</button>

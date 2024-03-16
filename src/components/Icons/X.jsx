@@ -9,7 +9,7 @@ const X = () => {
 				stroke-width='2'
 				stroke-linecap='round'
 				stroke-linejoin='round'
-				className='hover:text-emerald-400 dark:hover:text-teal-200 transition-all ease-in duration-300 cursor-pointer'
+				className='hover:text-emerald-400 dark:hover:text-indigo-500 transition-all ease-in duration-300 cursor-pointer'
 			>
 				<use href='/feather-sprite.svg#x' />
 			</svg>
