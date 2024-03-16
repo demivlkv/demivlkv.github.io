@@ -30,7 +30,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
 			className={`sticky ${
 				scrollDirection === 'down' ? '-top-[70px]' : 'top-0'
 			} ${
-				!top && `shadow-lg dark:shadow-neutral-600 backdrop-blur-md`
+				!top && `shadow-lg dark:shadow-gray-700 backdrop-blur-md`
 			} h-[70px] transition-all duration-500 z-[99]`}
 		>
 			<div className='navbar w-full h-full flex justify-between items-center py-4 px-6'>

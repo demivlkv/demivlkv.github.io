@@ -132,7 +132,7 @@ const Project = () => {
 							target='_blank'
 							aria-label='Visit application'
 						>
-							<div className='w-full h-full flex flex-col items-stretch overflow-hidden bg-white dark:bg-neutral-900 border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg dark:shadow-neutral-700 opacity-70 hover:opacity-100 transition-all duration-300 ease-in cursor-pointer'>
+							<div className='w-full h-full flex flex-col items-stretch overflow-hidden bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg dark:shadow-gray-600 opacity-70 hover:opacity-100 transition-all duration-300 ease-in cursor-pointer'>
 								<img
 									src={project.thumbnail}
 									alt={project.title}
@@ -142,7 +142,7 @@ const Project = () => {
 								<div class='w-full h-full flex flex-col justify-between p-4'>
 									<div className='flex justify-between align-baseline'>
 										<div>
-											<h3 className='mb-3 font-semibold text-emerald-300 dark:text-teal-200 text-xl uppercase tracking-tighter'>
+											<h3 className='mb-3 font-semibold text-emerald-300 dark:text-indigo-500 text-xl uppercase tracking-tighter'>
 												{project.title}
 											</h3>
 										</div>
@@ -176,7 +176,7 @@ const Project = () => {
 									<p className='mb-2 text-sm leading-snug'>
 										{project.description}
 									</p>
-									<p className="mb-2 font-['Source_Code_Pro'] text-slate-500 dark:text-rose-100 text-xs text-center tracking-tight py-2">
+									<p className="mb-2 font-['Source_Code_Pro'] text-slate-500 dark:text-cyan-100 text-xs text-center tracking-tight py-2">
 										{project.technologies}
 									</p>
 								</div>
