@@ -8,7 +8,7 @@ const Button = ({ children }) => {
 			className='group'
 		>
 			{children}
-			<span className='group-hover:text-emerald-300 dark:group-hover:text-indigo-500 group-hover:ml-1 duration-300'>
+			<span className='group-hover:text-emerald-400 dark:group-hover:text-teal-200 group-hover:ml-1 duration-300'>
 				<ChevronsRight
 					size={15}
 					className='ml-2'

@@ -28,7 +28,7 @@ const WorkItem = ({ year, title, company, company_url, duration, details }) => {
 			>
 				{/* DISPLAY ON DESKTOP */}
 				<div className='mb-2'>
-					<span className='inline-block py-1 px-2 mr-2 font-medium text-white dark:text-gray-700 bg-slate-500 dark:bg-cyan-200 rounded-md'>
+					<span className='inline-block py-1 px-2 mr-2 font-medium text-white dark:text-gray-700 bg-slate-500 dark:bg-blue-400 rounded-md'>
 						{year}
 					</span>
 					<span className='mr-1 text-base md:text-lg font-medium'>{title}</span>
@@ -36,16 +36,16 @@ const WorkItem = ({ year, title, company, company_url, duration, details }) => {
 				<div className='w-full'>
 					<p className='text-base md:text-lg font-medium'>
 						@ &nbsp;
-						<HyperLink>
-							<a
-								href={company_url}
-								target='_blank'
-								aria-label={company}
-								className='relative'
-							>
-								{company}
-							</a>
-						</HyperLink>
+						{/* <HyperLink> */}
+						<a
+							href={company_url}
+							target='_blank'
+							aria-label={company}
+							className='relative'
+						>
+							{company}
+						</a>
+						{/* </HyperLink> */}
 					</p>
 				</div>
 
@@ -85,22 +85,22 @@ const WorkItem = ({ year, title, company, company_url, duration, details }) => {
 						viewport={{ once: true }}
 					>
 						<div className='flex flex-row flex-wrap items-center text-xs sm:text-base md:text-lg'>
-							<span className='inline-block py-1 px-2 mr-2 font-medium text-xs sm:text-base text-white dark:text-gray-700 bg-slate-500 dark:bg-cyan-200 rounded-md'>
+							<span className='inline-block py-1 px-2 mr-2 font-medium text-xs sm:text-base text-white dark:text-gray-700 bg-slate-500 dark:bg-blue-400 rounded-md'>
 								{year}
 							</span>
 							<span className='mr-1 font-medium'>{title}</span>
 							<p className='font-medium'>
 								@ &nbsp;
-								<HyperLink>
-									<a
-										href={company_url}
-										target='_blank'
-										aria-label={company}
-										className='relative'
-									>
-										{company}
-									</a>
-								</HyperLink>
+								{/* <HyperLink> */}
+								<a
+									href={company_url}
+									target='_blank'
+									aria-label={company}
+									className='relative'
+								>
+									{company}
+								</a>
+								{/* </HyperLink> */}
 							</p>
 						</div>
 						<p className='block lg:hidden my-3 text-xs sm:text-sm font-normal text-gray-400'>

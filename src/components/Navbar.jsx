@@ -193,7 +193,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
 								</a>
 								<button
 									onClick={toggleDarkMode}
-									className='w-1/2 m-2 p-3 flex justify-center items-center hover:text-emerald-300 dark:hover:text-indigo-500 cursor-pointer'
+									className='w-1/2 m-2 p-3 flex justify-center items-center hover:text-emerald-300 dark:hover:text-teal-200 cursor-pointer'
 								>
 									{darkMode ? <Sun /> : <Moon />}
 								</button>

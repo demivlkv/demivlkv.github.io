@@ -142,7 +142,7 @@ const Project = () => {
 								<div class='w-full h-full flex flex-col justify-between p-4'>
 									<div className='flex justify-between align-baseline'>
 										<div>
-											<h3 className='mb-3 font-semibold text-slate-500 dark:text-cyan-200 hover:text-emerald-300 dark:hover:text-indigo-500 text-xl uppercase tracking-tighter transition-all duration-300 ease-in'>
+											<h3 className='mb-3 font-semibold text-emerald-400 dark:text-teal-200 hover:text-slate-500 dark:hover:text-blue-400 text-xl uppercase tracking-tighter transition-all duration-300 ease-in'>
 												{project.title}
 											</h3>
 										</div>
@@ -176,7 +176,7 @@ const Project = () => {
 									<p className='mb-2 text-sm leading-snug'>
 										{project.description}
 									</p>
-									<p className="mb-2 font-['Source_Code_Pro'] text-slate-500 dark:text-cyan-200 text-xs text-center tracking-tight py-2">
+									<p className="mb-2 font-['Source_Code_Pro'] text-slate-500 dark:text-blue-400 text-xs text-center tracking-tight py-2">
 										{project.technologies}
 									</p>
 								</div>

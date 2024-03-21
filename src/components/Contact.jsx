@@ -70,7 +70,7 @@ const Contact = () => {
 
 					<div className='max-w-[90%] w-full mx-auto py-8 grid grid-cols-2 gap-2 sm:gap-4'>
 						<div className='inline-flex items-center'>
-							<span className='text-emerald-400 dark:text-indigo-500'>
+							<span className='text-emerald-400 dark:text-teal-200'>
 								<MapPin />
 							</span>
 							&nbsp;Location
@@ -79,7 +79,7 @@ const Contact = () => {
 							: Los Angeles, CA
 						</div>
 						<div className='inline-flex items-center'>
-							<span className='text-emerald-400 dark:text-indigo-500'>
+							<span className='text-emerald-400 dark:text-teal-200'>
 								<AtSign />
 							</span>
 							&nbsp;E-mail
@@ -88,14 +88,14 @@ const Contact = () => {
 							:&nbsp;
 							<a
 								href='mailto:hayashi.demi@gmail.com'
-								className='text-emerald-400 dark:text-indigo-500 hover:text-slate-500 dark:hover:text-cyan-200'
+								className='text-emerald-400 dark:text-teal-200 hover:text-slate-500 dark:hover:text-blue-400'
 								aria-label='hayashi.demi@gmail.com'
 							>
 								hayashi.demi@gmail.com
 							</a>
 						</div>
 						<div className='inline-flex items-center'>
-							<span className='text-emerald-400 dark:text-indigo-500'>
+							<span className='text-emerald-400 dark:text-teal-200'>
 								<GitHub />
 							</span>
 							&nbsp;GitHub
@@ -105,14 +105,14 @@ const Contact = () => {
 							<a
 								href='https://github.com/demivlkv'
 								target='_blank'
-								className='text-emerald-400 dark:text-indigo-500 hover:text-slate-500 dark:hover:text-cyan-200'
+								className='text-emerald-400 dark:text-teal-200 hover:text-slate-500 dark:hover:text-blue-400'
 								aria-label='GitHub: @demivlkv'
 							>
 								@demivlkv
 							</a>
 						</div>
 						<div className='inline-flex items-center'>
-							<span className='text-emerald-400 dark:text-indigo-500'>
+							<span className='text-emerald-400 dark:text-teal-200'>
 								<Globe />
 							</span>
 							&nbsp;Languages
@@ -170,7 +170,7 @@ const Contact = () => {
 
 							{errorMessage && (
 								<div>
-									<p className='text-slate-500 dark:text-cyan-200 font-["Source_Code_pro"] font-medium tracking-tight text-xs'>
+									<p className='text-slate-500 dark:text-blue-400 font-["Source_Code_pro"] font-medium tracking-tight text-xs'>
 										{errorMessage}
 									</p>
 								</div>

@@ -15,14 +15,14 @@ const Footer = () => {
 					<a
 						href='https://github.com/demivlkv/demivlkv.github.io'
 						target='_blank'
-						className='text-emerald-400 hover:text-slate-500 dark:text-indigo-500 dark:hover:text-cyan-200'
+						className='text-emerald-400 hover:text-slate-500 dark:text-teal-200 dark:hover:text-blue-400'
 					>
 						Demi
 					</a>
 					.
 				</p>
 				<p>
-					<span className='text-emerald-400 dark:text-indigo-500'>&copy;</span>{' '}
+					<span className='text-emerald-400 dark:text-teal-200'>&copy;</span>{' '}
 					2024. All rights reserved.
 				</p>
 			</div>
