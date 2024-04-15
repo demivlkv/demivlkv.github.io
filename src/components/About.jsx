@@ -42,6 +42,36 @@ const About = () => {
 						expanded my knowledge in graphic design, typography, color theory,
 						digital imaging, and technology in art.
 					</p>
+					<p className='mb-5'>
+						In my technical career, I have helped a launch a{' '}
+						<a
+							href='https://tokio-ramen.netlify.app/'
+							target='_blank'
+							className='about'
+							aria-label='Visit Tokio Ramen!'
+						>
+							local business
+						</a>{' '}
+						from the ground up, supported a{' '}
+						<a
+							href='https://nexalure.com/'
+							target='_blank'
+							className='about'
+							aria-label='Nexalure Technologies'
+						>
+							startup
+						</a>
+						, and am currently contributing to a national{' '}
+						<a
+							href='https://blue360media.com/'
+							target='_blank'
+							className='about'
+							aria-label='Blue360 Media'
+						>
+							book publishing
+						</a>{' '}
+						company.
+					</p>
 					<p>
 						When I'm not on my computer, I'm most likely traveling the world,
 						playing video games, hiking, watching true-crime documentaries, or
@@ -66,7 +96,7 @@ const About = () => {
 				transition={{ duration: 0.4, delay: 1.25 }}
 				viewport={{ once: true }}
 			>
-				<div className='leading-loose'>
+				<div className='tech-list leading-loose'>
 					<h3 className="font-['Source_Code_Pro'] font-semibold text-lg md:text-xl tracking-tighter">
 						Languages
 					</h3>
@@ -75,7 +105,7 @@ const About = () => {
 					<p>{icon} HTML5</p>
 					<p>{icon} CSS3</p>
 				</div>
-				<div className='leading-loose'>
+				<div className='tech-list leading-loose'>
 					<h3 className="block font-['Source_Code_Pro'] font-semibold text-lg md:text-xl tracking-tighter">
 						Technologies
 					</h3>
@@ -83,26 +113,24 @@ const About = () => {
 					<p>{icon} NextJS</p>
 					<p>{icon} Redux</p>
 					<p>{icon} NodeJS</p>
-					<p>{icon} GraphQL</p>
 					<p>{icon} REST APIs</p>
-					<p>{icon} Tailwind CSS</p>
-					<p>{icon} Bootstrap</p>
-					<p>{icon} jQuery</p>
+					<p>{icon} GraphQL</p>
 				</div>
-				<div className='leading-loose'>
+				<div className='tech-list leading-loose'>
 					<h3 className="block font-['Source_Code_Pro'] font-semibold text-lg md:text-xl tracking-tighter">
 						Databases
 					</h3>
 					<p>{icon} MySQL</p>
 					<p>{icon} MongoDB</p>
 				</div>
-				<div className='leading-loose'>
+				<div className='tech-list leading-loose'>
 					<h3 className="block font-['Source_Code_Pro'] font-semibold text-lg md:text-xl tracking-tighter">
 						Tools
 					</h3>
 					<p>{icon} Git + GitHub</p>
 					<p>{icon} Heroku</p>
 					<p>{icon} Chrome Dev Tools</p>
+					<p>{icon} Expo</p>
 					<p>{icon} Photoshop</p>
 				</div>
 			</motion.div>

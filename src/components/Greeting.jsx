@@ -5,10 +5,14 @@ const greetings = [
 	`Hola`,
 	`こんにちは`,
 	`Здравствуйте`,
+	`Привіт`,
+	`Cześć`,
 	`Bonjour`,
 	`Ciao`,
 	`Aloha`,
 	`Hallo`,
+	`Olá`,
+	`Hej`,
 ];
 
 const Greeting = () => {

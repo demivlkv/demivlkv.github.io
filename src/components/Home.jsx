@@ -25,7 +25,7 @@ const Home = () => {
 					transition={{ duration: 0.5, delay: 0.75 }}
 					viewport={{ once: true }}
 				>
-					I'm a <span className='gradient'>software engineer</span>.
+					I'm a <span className='gradient'>full-stack developer</span>.
 				</motion.h1>
 			</div>
 			<motion.p
@@ -35,9 +35,17 @@ const Home = () => {
 				transition={{ duration: 0.5, delay: 1.25 }}
 				viewport={{ once: true }}
 			>
-				I am a full-stack software engineer living in Los Angeles with a passion
-				for technologies. I enjoy creating and designing various projects, such
-				as web applications, {/* <HyperLink> */}
+				I am a full-stack web developer living in Los Angeles with a passion for
+				technologies. I enjoy creating and designing various projects, such as{' '}
+				<a
+					href='https://github.com/demivlkv'
+					target='_blank'
+					className='home'
+					aria-label='Visit my GitHub!'
+				>
+					web applications
+				</a>
+				, {/* <HyperLink> */}
 				<a
 					href='https://tokio-ramen.netlify.app/'
 					target='_blank'
@@ -58,12 +66,12 @@ const Home = () => {
 				{/* </HyperLink> */}. At present, I provide top-tier web and software
 				solutions at {/* <HyperLink> */}
 				<a
-					href='https://nexalure.com/'
+					href='https://blue360media.com/'
 					target='_blank'
 					className='home'
-					aria-label='Nexalure Technologies'
+					aria-label='Blue360 Media'
 				>
-					Nexalure Technologies
+					Blue360 Media
 				</a>
 				{/* </HyperLink> */}.
 			</motion.p>

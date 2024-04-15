@@ -64,10 +64,11 @@
 
 	/* HOME COMPONENT */
 	#main .intro {
-		@apply font-semibold text-2xl sm:text-6xl font-['Rozha+One'];
+		@apply font-semibold text-2xl sm:text-5xl font-['Rozha+One'];
 	}
 
-	#main a.home {
+	#main a.home,
+	#about a.about {
 		@apply text-emerald-400 dark:text-teal-200 hover:text-slate-500 dark:hover:text-blue-400 transition-all ease-in duration-300 cursor-pointer;
 	}
 
@@ -77,7 +78,7 @@
 	}
 
 	/* ABOUT COMPONENT */
-	#about div p {
+	#about div.tech-list p {
 		@apply flex;
 	}
 
@@ -115,7 +116,7 @@
 
 	/* FOOTER COMPONENT */
 	footer .social li {
-		@apply px-3 py-3 flex justify-between items-center ml-[5px] hover:ml-[10px] hover:text-emerald-400 dark:hover:text-teal-200 cursor-pointer transition-all ease-in;
+		@apply px-6 py-3 flex justify-between items-center hover:ml-[6px] hover:text-emerald-400 dark:hover:text-teal-200 cursor-pointer transition-all ease-in;
 	}
 
 	footer .mini-social li {
