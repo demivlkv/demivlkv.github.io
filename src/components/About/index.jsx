@@ -1,10 +1,8 @@
 import { motion } from 'framer-motion';
-import AboutImg from '../assets/me.webp';
-import FastForward from './Icons/FastForward';
+import AboutImg from '../../assets/me.webp';
+import TechnicalSkills from './TechnicalSkills';
 
 const About = () => {
-	const icon = <FastForward />;
-
 	return (
 		<section
 			id='about'
@@ -96,43 +94,7 @@ const About = () => {
 				transition={{ duration: 0.4, delay: 1.25 }}
 				viewport={{ once: true }}
 			>
-				<div className='tech-list leading-loose'>
-					<h3 className="font-['Source_Code_Pro'] font-semibold text-lg md:text-xl tracking-tighter">
-						Languages
-					</h3>
-					<p>{icon} JavaScript (ES6)</p>
-					<p>{icon} TypeScript</p>
-					<p>{icon} HTML5</p>
-					<p>{icon} CSS3</p>
-				</div>
-				<div className='tech-list leading-loose'>
-					<h3 className="block font-['Source_Code_Pro'] font-semibold text-lg md:text-xl tracking-tighter">
-						Technologies
-					</h3>
-					<p>{icon} ReactJS + React Native</p>
-					<p>{icon} NextJS</p>
-					<p>{icon} Redux</p>
-					<p>{icon} NodeJS</p>
-					<p>{icon} REST APIs</p>
-					<p>{icon} GraphQL</p>
-				</div>
-				<div className='tech-list leading-loose'>
-					<h3 className="block font-['Source_Code_Pro'] font-semibold text-lg md:text-xl tracking-tighter">
-						Databases
-					</h3>
-					<p>{icon} MySQL</p>
-					<p>{icon} MongoDB</p>
-				</div>
-				<div className='tech-list leading-loose'>
-					<h3 className="block font-['Source_Code_Pro'] font-semibold text-lg md:text-xl tracking-tighter">
-						Tools
-					</h3>
-					<p>{icon} Git + GitHub</p>
-					<p>{icon} Heroku</p>
-					<p>{icon} Chrome Dev Tools</p>
-					<p>{icon} Expo</p>
-					<p>{icon} Photoshop</p>
-				</div>
+				<TechnicalSkills />
 			</motion.div>
 		</section>
 	);

@@ -17,16 +17,16 @@ const data = [
 				<li>
 					{icon} Design and develop responsive user interfaces with React.js,
 					leveraging modern JavaScript, React hooks, Redux, and Next.js for
-					scalable web applications.
+					scalable web applications
 				</li>
 				<li>
 					{icon} Integrate RESTful and GraphQL APIs, managing asynchronous data
 					operations and ensuring efficient data presentation within
-					applications.
+					applications
 				</li>
 				<li>
 					{icon} Utilize Git for version control within team environments,
-					adhering to best practices for code management and collaboration.
+					adhering to best practices for code management and collaboration
 				</li>
 			</ul>
 		),

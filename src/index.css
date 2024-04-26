@@ -78,7 +78,7 @@
 	}
 
 	/* ABOUT COMPONENT */
-	#about div.tech-list p {
+	#about ul.tech-list li {
 		@apply flex;
 	}
 
