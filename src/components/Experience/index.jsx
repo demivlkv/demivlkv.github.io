@@ -15,18 +15,20 @@ const data = [
 		details: () => (
 			<ul>
 				<li>
-					{icon} Design and develop responsive user interfaces with React.js,
-					leveraging modern JavaScript, React hooks, Redux, and Next.js for
-					scalable web applications
+					{icon} Redesign the e-commerce platform UI/UX, migrating from Magento
+					to a modern stack (React, TypeScript, Tailwind CSS) to enhance mobile
+					responsiveness, user accessibility, and customer retention
 				</li>
 				<li>
-					{icon} Integrate RESTful and GraphQL APIs, managing asynchronous data
-					operations and ensuring efficient data presentation within
-					applications
+					{icon} Integrate Salesforce CRM into the new front-end, ensuring
+					seamless synchronization of customer data across platforms,
+					streamlining workflow efficiency, and enabling better customer
+					insights for sales and support teams
 				</li>
 				<li>
-					{icon} Utilize Git for version control within team environments,
-					adhering to best practices for code management and collaboration
+					{icon} Partner with cross-functional teams to develop new interactive
+					features, boosting customer satisfaction and refining order processing
+					efficiency
 				</li>
 			</ul>
 		),
